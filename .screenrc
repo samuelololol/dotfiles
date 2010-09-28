@@ -1,0 +1,76 @@
+#
+# Samuel's .vimrc config file
+#
+#          2010, 09/28, @NSYSU
+#  
+
+
+# no audible bell, just visual
+vbell off
+vbell_msg "Ding Ding"
+
+# detach on hangup
+autodetach on
+
+# don't display copyright page
+startup_message off
+
+# scroll back
+defscrollback 1000
+
+# setup the caption
+# caption always "%{bw}%m/%d %c %{wb} %-w%{c}%n %t%{w}%+w%{k}"
+# hardstatus alwayslastline “%{= wk} %{by} %H %{wk} | %-Lw%{kw}◣%{= g}%n%f* %t%{wk}◤%{wk}%+Lw%< %= %{kw}◣%{= R} [%m/%d %c] %{-}”
+#hardstatus alwayslastline " %-Lw%{= Bw}%n%f %t%{-}%+Lw %=| %0c:%s "
+
+#caption always "%{= bk}%e %{= bY} [%n]%t @ %H %{-} %= %{= bR} %l %{-} | %{= KG} %Y-%m-%d %{-} "
+
+# nice feature
+caption always "%{.KW} %-w%{.mW}[%n] %t%{.KW}%+w"
+hardstatus alwayslastline "%=%{..M} %{..G}%h %{..Y} %c:%s %{..R} %m/%d/%y %{.K} Load: %l  %{wb}"
+# hardstatus alwayslastline "%=%{..M}  %{..G}%H %{..Y} %c:%s %{..R} %m/%d/%y %{.K} Load: %l %{wb}"
+
+# very simple feature
+# caption always "%{=u .G} %-w%<%{=ub .C}%n %t%{=u .G}%+w %=%c %d/%m/%Y" 
+################
+# keybindings
+
+# remove some key bindings
+bind .
+bind ^\
+bind \\
+bind ' '
+bind ^a
+
+#escape ^Oo
+
+# define Ctrl+ left/right arrow to change between screens
+termcapinfo xterm "ks=\E[?1l\E=:ku=\E[A:kd=\E[B:kl=\E[D:kr=\E[C:kh=\E[5~:kH=\E[F"
+
+# putty bindings
+bindkey "^[OC" next
+bindkey "^[OD" prev
+
+bindkey "^[[1;5C" next
+bindkey "^[[1;5D" prev
+
+# bind F7  to detach screen session from this terminal
+# bind F8 to kill current screen window.
+# bind F9 to create a new screen
+# bind F10 to rename current screen window
+# bind F11 to move to previous window
+# bind F12 to move to next window
+#
+# conflict with vimgdb
+#bindkey -k k7 detach
+bindkey -k k8 kill
+bindkey -k k9 screen
+bindkey -k k; title
+bindkey -k F1 prev
+bindkey -k F2 next
+#encoding Big5
+#defencoding Big5
+
+term xterm
+utf8 on          # display encoding = utf8
+defencoding utf8 # internal encoding = utf8
