@@ -1,0 +1,16 @@
+echo "Loading python virtualenv/virtualenvwrapper environment...."
+#TODO: use pyenv instead!
+# pythonbrew
+[[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
+[[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && alias pbw='pythonbrew'
+[[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && alias pnv='pbw venv'
+
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2.7
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='-p /usr/bin/python2.7 --no-site-packages'
+
+# virtualenvwrapper (linux)
+[[ -s "/usr/bin/virtualenvwrapper.sh"  ]] && source "/usr/bin/virtualenvwrapper.sh" 
+
+# virtualenvwrapper (mac)
+[[ -s "/usr/local/bin/virtualenvwrapper.sh"  ]] && source "/usr/local/bin/virtualenvwrapper.sh" 
+

@@ -1,0 +1,99 @@
+pcm.intel {
+    type hw
+    card 0
+    device 0
+}
+
+pcm.intelDmixed {
+    type dmix
+    ipc_key 1024
+    ipc_key_add_uid false
+    ipc_perm 0666
+    slave {
+        pcm "intel"
+        period_time 0
+        period_size 1024
+        buffer_size 4096
+        rate 44100
+    }
+    bindings {
+        0 0
+        1 1
+    }
+}
+
+pcm.rme96 {
+    type hw
+    card 1
+    device 0
+}
+
+pcm.rme96Dmixed {
+    type dmix
+    ipc_key 1024
+    ipc_key_add_uid false
+    ipc_perm 0666
+    slave {
+        pcm "rme96"
+        period_time 0
+        period_size 1024
+        buffer_size 4096
+        rate 44100
+    }
+    bindings {
+        0 0
+        1 1
+    }
+}
+
+pcm.both {
+    type route;
+    slave.pcm {
+        type multi
+        slaves.a {
+            pcm "rme96Dmixed"
+            channels 2
+        }
+        slaves.b {
+            pcm "intelDmixed"
+            channels 2
+        }
+        bindings.0.slave a
+        bindings.0.channel 0
+        bindings.1.slave a
+        bindings.1.channel 1
+
+        bindings.2.slave b
+        bindings.2.channel 0
+        bindings.3.slave b
+        bindings.3.channel 1
+    }
+    ttable.0.0 1
+    ttable.1.1 1
+    ttable.0.2 1
+    ttable.1.3 1
+}
+
+#pcm.!default {
+#    type plug
+#    slave {
+#        pcm "both"
+#    }
+#}
+
+pcm.pulse {
+type pulse
+}
+
+ctl.pulse {
+type pulse
+}
+
+pcm.!default {
+type pulse
+}
+
+ctl.!default {
+type pulse
+}
+

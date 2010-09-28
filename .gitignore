@@ -1,0 +1,14 @@
+tags
+*.zip
+.vim/doc/tags
+.vim/.netrwhist
+.vim/init.vim
+.myenvvar
+.ctags
+.vim/view/*
+*.pyc
+
+
+.vim/extfdr*
+.vim/my_projects
+samuel_zshrc

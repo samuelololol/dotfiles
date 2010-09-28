@@ -1,0 +1,31 @@
+#!/bin/bash
+git submodule foreach --recursive git clean -fdx
+
+#cd ~/dotfiles/.zsh
+#echo "oh-my-zsh"
+#git clean -fdx
+#cd ..
+#git add .zsh
+#cd ~/dotfiles/.vim/bundle/
+#modules=(
+#auto-pairs
+#crefvim
+#ctrlp.vim
+#doxygentoolkit
+#matchit
+#nerdtree
+#surround
+#tagbar
+#tasklist
+#valgrind
+#vim-easymotion
+#vim-pathogen
+#)
+#for mod in ${modules[@]}; do
+#   cd $mod
+#   echo "........"
+#   echo "module: $mod"
+#   git clean -fdx
+#   cd ..
+#done
+#cd ../..

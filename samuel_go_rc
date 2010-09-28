@@ -1,0 +1,2 @@
+[[ -s "/usr/local/opt/go/libexec/bin/go"  ]] && export PATH=$PATH:/usr/local/opt/go/libexec/bin
+[[ -s "/usr/local/opt/go/libexec/bin/go"  ]] && export GOPATH=/usr/local/opt/go
