@@ -51,7 +51,8 @@ bind \\
 bind ' '
 bind ^a
 
-#escape ^Oo
+# change escape key to `
+escape ``
 
 # define Ctrl+ left/right arrow to change between screens
 termcapinfo xterm "ks=\E[?1l\E=:ku=\E[A:kd=\E[B:kl=\E[D:kr=\E[C:kh=\E[5~:kH=\E[F"
@@ -74,7 +75,8 @@ bindkey "^[[1;5D" prev
 #bindkey -k k7 detach
 bindkey -k k8 kill
 bindkey -k k9 screen
-bindkey -k k; title
+#bindkey -k k; title
+bindkey -k k;
 bindkey -k F1 prev
 bindkey -k F2 next
 #encoding Big5
