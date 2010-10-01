@@ -62,9 +62,11 @@ nmap gw :wincmd w<CR>
 
 source ~/.vim/plugin/supertab.vim
 source ~/.vim/plugin/crefvim.vim
-source ~/.vim/plugin/mycursor_in_brace.vim
+source ~/.vim/plugin/mybrace.vim
 source ~/.vim/plugin/mymvtotab.vim
 source ~/.vim/plugin/mymaptoggle.vim
+source ~/.vim/plugin/mycsct.vim
+source ~/.vim/plugin/mycscope.vim
 
 " set map key by MoveTo-function in mvtotab.vim 
 nmap gmt :call MoveToNextTab() <CR>
@@ -73,3 +75,5 @@ nmap gmT :call MoveToPrevTab() <CR>
 " set F5 F6 by MapToggle-function in mymaptoggle.vim
 MapToggle <F6> scrollbind
 MapToggle <F5> nopaste
+
+helptags ~/.vim/doc

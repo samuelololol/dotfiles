@@ -1,0 +1,26 @@
+Installed ViM plugin
+====================
+- crefvim
+- supertab
+
+crefvim
+-------
+  doc/crefvim.txt  
+  doc/crefvimdoc.txt  
+  after/syntax/
+  after/syntax/help.vim  
+  plugin/crefvim.vim  
+
+supertab
+--------
+  plugin/supertab.vim
+
+
+my custom vim script
+--------------------
+  mycscope.vim     key map for cscope
+  mycsct.vim       ctags/cscope detection and generation
+  mybrace.vim      brace utils
+  mymaptoggle      contain a function used by MoveTo*()
+  mymvtotab        MoveTo*() function used for moving tab
+  
