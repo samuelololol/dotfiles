@@ -60,8 +60,8 @@ endif
 nmap gw :wincmd w<CR>
 
 
-source ~/.vim/plugin/supertab.vim
 source ~/.vim/plugin/crefvim.vim
+source ~/.vim/plugin/supertab.vim
 source ~/.vim/plugin/mybrace.vim
 source ~/.vim/plugin/mymvtotab.vim
 source ~/.vim/plugin/mymaptoggle.vim

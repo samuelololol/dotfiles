@@ -10,6 +10,8 @@ sssssssssssssamuelolololololololol      /\_ \         /\_ \     ___\//\ \     __
 
 My dot-files:
 
+    crefvim/
+    supertab/
     .gntrc
     .screenrc
     .vimrc
@@ -21,14 +23,14 @@ My dot-files:
      
        *crefvim
        -------
+         crefvim/after/syntax/help.vim  
          doc/crefvim.txt  
          doc/crefvimdoc.txt  
-         after/syntax/
-         after/syntax/help.vim  
          plugin/crefvim.vim  
        
        *supertab
        --------
+         doc/supertab.txt
          plugin/supertab.vim
        
        
