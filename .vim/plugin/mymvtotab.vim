@@ -41,4 +41,3 @@ function! MoveToNextTab()
   "opening current buffer in new window
   exe "b".l:cur_buf
 endfunc
-

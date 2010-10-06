@@ -17,4 +17,3 @@ inoremap "" ""
 inoremap [ []<Left>
 inoremap [[ [
 inoremap [] []
-
