@@ -1,1 +1,1 @@
-../supertab/doc/supertab.txt
+../../supertab/doc/supertab.txt

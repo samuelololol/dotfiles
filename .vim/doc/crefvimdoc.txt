@@ -1,1 +1,1 @@
-../crefvim/doc/crefvimdoc.txt
+../../crefvim/doc/crefvimdoc.txt
