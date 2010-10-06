@@ -11,6 +11,7 @@ sssssssssssssamuelolololololololol      /\_ \         /\_ \     ___\//\ \     __
 My dot-files:
 
     crefvim/
+    pydiction/
     supertab/
     .gntrc
     .screenrc
@@ -19,17 +20,25 @@ My dot-files:
      Installed ViM Plugin
      --------------------
      - crefvim ( http://github.com/vim-scripts/CRefVim )
+     - pydiction ( http://github.com/vim-scripts/Pydiction )
      - supertab ( http://github.com/ervandew/supertab )
      
        *crefvim
-       -------
+       --------
          crefvim/after/syntax/help.vim  
          doc/crefvim.txt  
          doc/crefvimdoc.txt  
          plugin/crefvim.vim  
+
+       *pydiction
+       ----------
+         complete-dict
+         doc/README.txt
+         plugin/python_diction.vim
+         pydiction.py
        
        *supertab
-       --------
+       ---------
          doc/supertab.txt
          plugin/supertab.vim
        
@@ -39,6 +48,7 @@ My dot-files:
          mycscope.vim     key map for cscope
          mycsct.vim       ctags/cscope detection and generation
          mybrace.vim      brace utils
+         myfiletype.vim   source different vim script accroding to the filetype
          mymaptoggle      contain a function used by MoveTo*()
          mymvtotab        MoveTo*() function used for moving tab
         
