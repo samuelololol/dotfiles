@@ -1,3 +1,11 @@
+"""""""""""""""
+" MoveTo* functions
+"
+"""""""""""""""
+"""""""""""""""
+" MoveToPrevTab()
+"
+"""""""""""""""
 function! MoveToPrevTab()
   "there is only one window
   if tabpagenr('$') == 1 && winnr('$') == 1
@@ -20,6 +28,10 @@ function! MoveToPrevTab()
   exe "b".l:cur_buf
 endfunc
 
+"""""""""""""""
+" MoveToNextTab()
+"
+"""""""""""""""
 function! MoveToNextTab()
   "there is only one window
   if tabpagenr('$') == 1 && winnr('$') == 1

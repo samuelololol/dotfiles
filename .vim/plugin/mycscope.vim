@@ -1,5 +1,7 @@
+"""""""""""""""
 "some hotkey for cscope in vim
 "
+"""""""""""""""
 nmap <C-\>s
 	\:vert scs find s <C-R>=expand("<cword>")<CR><CR>
 nmap <C-\>g

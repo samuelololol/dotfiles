@@ -4,3 +4,6 @@
 [submodule "crefvim"]
 	path = crefvim
 	url = git://github.com/vim-scripts/CRefVim
+[submodule "pydiction"]
+	path = pydiction
+	url = git://github.com/vim-scripts/Pydiction.git

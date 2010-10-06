@@ -1,9 +1,16 @@
+"""""""""""""""
 "tags file detection
+"
+"""""""""""""""
 if has("tags")
     set tags=./tags,tags 
 endif
 
+
+"""""""""""""""
 "cscope.out file detection
+"
+"""""""""""""""
 if has("cscope")
 	set csprg=/usr/bin/cscope
 	set csto=0
@@ -19,7 +26,11 @@ if has("cscope")
 	set csverb
 endif
 
+
+"""""""""""""""
 "my ctags and cscope generator
+"
+"""""""""""""""
 function! CSCTGen(opt)
     if a:opt  == "cscope"
         !find . -name "*.h" -o -name "*.c" -o -name "*.cc" > cscope.files
@@ -58,7 +69,12 @@ command! -nargs=1 CSCTGen call CSCTGen(<f-args>)
 
 
 
+
+
+"""""""""""""""
 "ctags and cscope command in shell"
+"
+"""""""""""""""
 
 "Usage: cscope [-bcCdehklLqRTuUvV] [-f file] [-F file] [-i file] [-I dir] [-s dir]
 "              [-p number] [-P path] [-[0-8] pattern] [source files]

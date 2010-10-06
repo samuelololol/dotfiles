@@ -1,8 +1,11 @@
+"""""""""""""""
 " cursor in the brace
 " open brace at the end of line, cursor in the new line, close brace in next
 "   next line
 " 2 {{ means 1 {
 " fast {}, cursor will at end of {}
+"
+"""""""""""""""
 inoremap {      {}<Left>
 inoremap {<CR>  {<CR>}<Esc>O
 inoremap {{     {   
