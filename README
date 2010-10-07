@@ -8,7 +8,17 @@ sssssssssssssamuelolololololololol      /\_ \         /\_ \     ___\//\ \     __
  \/___/ \/__/\/_/\/_/\/_/\/_/\/___/ \/____/\/____/\/___/ \/____/ by samuelololol@gmail.com
                                                                                                           
 
-My dot-files:
+INSTALL:
+    1. git clone git://github.com/samuelololol/dotfiles.git
+    2. select what dotfile you want to use, delete and use softlink 
+       * rm ~/.vimrc && ln -s dotfiles/.vimrc ~/.vimrc
+       * rm ~/.vim -rf && ln -s dotfiles/.vim ~/.vim
+       * rm ~/.screenrc && ln -s dotfiles/.screenrc ~/.screenrc
+       * rm ~/.gntrc && ln -s dotfiles/.gntrc ~/.gntrc
+    3. git submodule update --init
+       
+
+INFO:
 
     crefvim/
     pydiction/
