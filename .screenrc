@@ -52,7 +52,7 @@ bind ' '
 bind ^a
 
 # change escape key to `
-escape ``
+# escape ``
 
 # define Ctrl+ left/right arrow to change between screens
 termcapinfo xterm "ks=\E[?1l\E=:ku=\E[A:kd=\E[B:kl=\E[D:kr=\E[C:kh=\E[5~:kH=\E[F"

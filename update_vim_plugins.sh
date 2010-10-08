@@ -1,7 +1,7 @@
 #!/bin/bash
 
 git submodule update --init
-for mod in crefvim pydiction snipmate supertab; do
+for mod in crefvim pydiction snipmate supertab nerdtree; do
    cd $mod
    echo "........"
    echo "module: $mod"

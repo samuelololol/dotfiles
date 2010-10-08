@@ -22,7 +22,9 @@ INSTALL:
 INFO:
 
     crefvim/
+    nerdtree/
     pydiction/
+    snipmate/
     supertab/
     .gntrc
     .screenrc
@@ -31,6 +33,7 @@ INFO:
      Installed ViM Plugin
      --------------------
      + crefvim ( http://github.com/vim-scripts/CRefVim )
+     + nerdtree ( http://github.com/scrooloose/nerdtree.git )
      * pydiction ( http://github.com/vim-scripts/Pydiction )
      + snipmate ( http://github.com/msanders/snipmate.vim )
      + supertab ( http://github.com/ervandew/supertab )
@@ -40,33 +43,40 @@ INFO:
          crefvim/after/syntax/help.vim  
          doc/crefvim.txt  
          doc/crefvimdoc.txt  
-         plugin/crefvim.vim (conditional) 
+         ftplugin/c/crefvim.vim 
     
+       *nerdtree
+       ---------
+         doc/NERD_tree.txt
+         nerdtree_plugin/exec_menuitem.vim
+         nerdtree_plugin/fs_menu.vim
+         plugin/NERD_tree.txt
+
        *snipmate
        ---------
          after/plugin/snipMate.vim
-         after/plugin/snipMate_after.vim
          autoload/snipMate.vim
          doc/snipMate.txt
-         ftplugin/html_snip_helper.vim
+         ftplugin/xhtml/html_snip_helper.vim
          syntax/snippet.vim
-         snippets
+         snippets/*.snippets
 
        *supertab
        ---------
          doc/supertab.txt
          plugin/supertab.vim
-
-
-       (*) change <Tab> key to <BS>
-       *pydiction ( conflict to snipmate, disable )
+       
+       *pydiction
        ----------
-         complete-dict
          doc/README.txt
+         ftplugin/python/python_pydiction.vim (fork-version, change the key map to C-J)
          plugin/python_diction.vim
+         complete-dict
          pydiction.py
        
        
+
+
        *my custom vim script
        --------------------
          mycscope.vim         key map for cscope
@@ -74,7 +84,3 @@ INFO:
          mybrace.vim          brace utils
          mymaptoggle          contain a function used by MoveTo*()
          mymvtotab            MoveTo*() function used for moving tab
-         after/plugin/
-           myfiletype.vim     source different vim script conditionally 
-                              accroding to the filetype
-        
