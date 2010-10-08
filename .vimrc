@@ -12,60 +12,66 @@
 "   \/___/ \/__/\/_/\/_/\/_/\/_/\/___/ \/____/\/____/\/___/ \/____/ by samuelololol@gmail.com
 "
  
- 
 
 set nocompatible
-"translate the <tab> to <space>
-set expandtab
 
-"set noet <-- to unset the expandtab
-"how many SPACE when read \t (<TAB>) char
+"tab-related"
+"
+"translate the <tab> to <space> with the counts: tabstop
+"(counts of space for pressing tab)
+"unset:   :set noet
+set expandtab
 set tabstop=4
- 
-"control the indentation width of shift right
-"setting the <tab> width
+"how many SPACE when read \t (<TAB>) char
+"colorize the <Tab>
+set listchars=tab:>-
+set list
+
+"indentation-related"
+"Number of spaces to use for each step of (auto)indent.
+"(counts of space for indentation)
 set shiftwidth=4
 
-"explaination for <BackSpace>
+"explaination for <BackSpace> and <Tab> when u in insert mode editing
 set softtabstop=4
 set smarttab
 
-set nu
-set cursorline
-
 set smartindent
+set autoindent
 set cindent
+
+
+
+
+
+
 
 " show line number
 set nu
+set cursorline
 syntax on
-" setting backspace
+
+" setting backspace work
 set backspace=indent,eol,start
 
+"comment color
 highlight Comment ctermfg=darkcyan
-set autoindent
 
-set showmatch
-"set mouse=a
-
+"spell check
 setlocal spell spelllang=en_us
-" set spell
 set nospell
+" set spell
 
-
+"terminal setting
 if $TERM == 'screen'
   set term=xterm
 endif
 
+"change window
 nmap gw :wincmd w<CR>
 
-" set map key by MoveTo-function in mvtotab.vim 
-au BufNew nmap gmt :call MoveToNextTab() <CR>
-au BufNew nmap gmT :call MoveToPrevTab() <CR>
-
-" set F5 F6 by MapToggle-function in mymaptoggle.vim
-au BufNew MapToggle <F6> scrollbind
-au BufNew MapToggle <F5> nopaste
+" NERDTree map to <F2>
+map <F2> :NERDTreeToggle<CR>
 
 " read the vim doc in ~/.vim/doc
 helptags ~/.vim/doc

@@ -6,6 +6,7 @@
 " fast {}, cursor will at end of {}
 "
 """""""""""""""
+set showmatch
 inoremap {      {}<Left>
 inoremap {<CR>  {<CR>}<Esc>O
 inoremap {{     {   

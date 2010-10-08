@@ -53,3 +53,6 @@ function! MoveToNextTab()
   "opening current buffer in new window
   exe "b".l:cur_buf
 endfunc
+
+nmap gmt :call MoveToNextTab() <CR>
+nmap gmT :call MoveToPrevTab() <CR>
