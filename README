@@ -15,7 +15,8 @@ INSTALL:
        * rm ~/.vim -rf && ln -s dotfiles/.vim ~/.vim
        * rm ~/.screenrc && ln -s dotfiles/.screenrc ~/.screenrc
        * rm ~/.gntrc && ln -s dotfiles/.gntrc ~/.gntrc
-    3. git submodule update --init
+    3. cd dotfiles
+       ./update_vim_plugins.sh
        
 
 INFO:
