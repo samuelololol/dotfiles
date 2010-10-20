@@ -8,16 +8,22 @@ sssssssssssssamuelolololololololol      /\_ \         /\_ \     ___\//\ \     __
  \/___/ \/__/\/_/\/_/\/_/\/_/\/___/ \/____/\/____/\/___/ \/____/ by samuelololol@gmail.com
                                                                                                           
 
-INSTALL:
-    1. git clone git://github.com/samuelololol/dotfiles.git
-    2. select what dotfile you want to use, delete and use softlink 
-       * rm ~/.vimrc && ln -s dotfiles/.vimrc ~/.vimrc
-       * rm ~/.vim -rf && ln -s dotfiles/.vim ~/.vim
-       * rm ~/.screenrc && ln -s dotfiles/.screenrc ~/.screenrc
-       * rm ~/.gntrc && ln -s dotfiles/.gntrc ~/.gntrc
-    3. cd dotfiles
-       ./update_vim_plugins.sh
+HOW TO INSTALL:
+    1. Clone the source file to ur home directory from github:
+        # git clone git://github.com/samuelololol/dotfiles.git
+
+    2. Select what dotfiles, delete(or backup) old ones and softlink to ~/dotfiles
+        # rm ~/.vimrc    && ln -s dotfiles/.vimrc ~/.vimrc
+        # rm ~/.vim -rf  && ln -s dotfiles/.vim ~/.vim
+        # rm ~/.screenrc && ln -s dotfiles/.screenrc ~/.screenrc
+        # rm ~/.gntrc    && ln -s dotfiles/.gntrc ~/.gntrc
+
+    3. Update the sources in dotfiles
+        # cd dotfiles
+        # ./update_vim_plugins.sh
        
+
+
 
 INFO:
 
@@ -74,7 +80,8 @@ INFO:
          complete-dict
          pydiction.py
        
-       
+
+
 
 
        *my custom vim script
