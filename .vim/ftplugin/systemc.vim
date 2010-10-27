@@ -1,0 +1,1 @@
+../../systemc_syntax/after/syntax/cpp.vim

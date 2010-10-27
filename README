@@ -32,6 +32,7 @@ INFO:
     pydiction/
     snipmate/
     supertab/
+    systemc_syntax/
     .gntrc
     .screenrc
     .vimrc
@@ -43,6 +44,7 @@ INFO:
      * pydiction ( http://github.com/vim-scripts/Pydiction )
      + snipmate ( http://github.com/msanders/snipmate.vim )
      + supertab ( http://github.com/ervandew/supertab )
+     + systemc_syntax ( http://www.vim.org/scripts/script.php?script_id=835 )
 
        *crefvim
        --------
@@ -72,6 +74,11 @@ INFO:
          doc/supertab.txt
          plugin/supertab.vim
        
+       *systemc_syntax
+       ---------------
+         ftplugin/systemc.vim
+
+
        *pydiction
        ----------
          doc/README.txt
@@ -89,5 +96,6 @@ INFO:
          mycscope.vim         key map for cscope
          mycsct.vim           ctags/cscope detection and generation
          mybrace.vim          brace utils
-         mymaptoggle          contain a function used by MoveTo*()
-         mymvtotab            MoveTo*() function used for moving tab
+         mymaptoggle.vim      contain a function used by MoveTo*()
+         mymvtotab.vim        MoveTo*() function used for moving tab
+         mysystemc.vim        Sysc() function to enable SystemC syntax
