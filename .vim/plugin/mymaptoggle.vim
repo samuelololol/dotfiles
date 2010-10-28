@@ -11,8 +11,8 @@ command! -nargs=+ MapToggle call MapToggle(<f-args>)
 
  
 " set F5 F6 by MapToggle-function in mymaptoggle.vim
-"au BufNew MapToggle <F6> scrollbind
-"au BufNew MapToggle <F5> nopaste
+au BufNew MapToggle <F6> scrollbind
+au BufNew MapToggle <F5> nopaste
 
 " set F5 F6 by MapToggle-function in mymaptoggle.vim
 MapToggle <F6> scrollbind

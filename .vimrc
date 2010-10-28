@@ -73,5 +73,10 @@ nmap gw :wincmd w<CR>
 " NERDTree map to <F2>
 map <F2> :NERDTreeToggle<CR>
 
+"TagList"
+let Tlist_GainFocus_On_ToggleOpen = 1
+let Tlist_Close_On_Select = 1
+map <F3> :Tlist<CR>
+
 " read the vim doc in ~/.vim/doc
 helptags ~/.vim/doc
