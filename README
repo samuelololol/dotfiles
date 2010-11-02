@@ -8,11 +8,13 @@ sssssssssssssamuelolololololololol      /\_ \         /\_ \     ___\//\ \     __
  \/___/ \/__/\/_/\/_/\/_/\/_/\/___/ \/____/\/____/\/___/ \/____/ by samuelololol@gmail.com
                                                                                                           
 
-HOW TO INSTALL:
+HOW TO INSTALL
+==============
+
     1. Clone the source file to ur home directory from github:
         # git clone git://github.com/samuelololol/dotfiles.git
 
-    2. Select what dotfiles, delete(or backup) old ones and softlink to ~/dotfiles
+    2. Select dotfiles, delete(or backup) old ones and softlink to ~/dotfiles
         # rm ~/.vimrc    && ln -s dotfiles/.vimrc ~/.vimrc
         # rm ~/.vim -rf  && ln -s dotfiles/.vim ~/.vim
         # rm ~/.screenrc && ln -s dotfiles/.screenrc ~/.screenrc
@@ -24,10 +26,11 @@ HOW TO INSTALL:
        
 
 
-
-INFO:
+INFO
+====
 
     crefvim/
+    gist-vim/
     nerdtree/
     pydiction/
     snipmate/
@@ -39,12 +42,29 @@ INFO:
 
      Installed ViM Plugin
      --------------------
-     + crefvim ( http://github.com/vim-scripts/CRefVim )
-     + nerdtree ( http://github.com/scrooloose/nerdtree.git )
-     * pydiction ( http://github.com/vim-scripts/Pydiction )
-     + snipmate ( http://github.com/msanders/snipmate.vim )
-     + supertab ( http://github.com/ervandew/supertab )
-     + systemc_syntax ( http://www.vim.org/scripts/script.php?script_id=835 )
+     + crefvim ( http://github.com/vim-scripts/CRefVim ): 
+        C reference support for ViM
+
+     + gist-vim ( http://github.com/mattn/gist-vim ): 
+        To post the current buffer to gist
+
+     + nerdtree ( http://github.com/scrooloose/nerdtree ): 
+        A tree explorer plugin for navigating the filesystem
+
+     * pydiction ( http://github.com/vim-scripts/Pydiction ): 
+        Tab-complete your Python code *(I've changed the hotkey from Tab to C-J )
+
+     + snipmate ( http://github.com/msanders/snipmate.vim ): 
+        TextMate-style snippets for ViM
+
+     + supertab ( http://github.com/ervandew/supertab ): 
+        Do all your inser-mode completion with Tab!
+
+     + systemc_syntax ( http://www.vim.org/scripts/script.php?script_id=835 ): 
+        Syntax file for SystemC
+
+Files Arrangements
+==================
 
        *crefvim
        --------
@@ -52,6 +72,10 @@ INFO:
          doc/crefvim.txt  
          doc/crefvimdoc.txt  
          ftplugin/c/crefvim.vim 
+
+       *gist-vim
+       ---------
+         plugin/gist-vim
     
        *nerdtree
        ---------
@@ -77,7 +101,6 @@ INFO:
        *systemc_syntax
        ---------------
          ftplugin/systemc.vim
-
 
        *pydiction
        ----------
