@@ -36,8 +36,8 @@ defscrollback 1000
 
 # nice feature
 caption always "%{.KW} %-w%{.mW}[%n] %t%{.KW}%+w"
-hardstatus alwayslastline "%=%{..M} %{..G}%h %{..Y} %c:%s %{..R} %m/%d/%y %{.K} Load: %l  %{wb}"
-# hardstatus alwayslastline "%=%{..M}  %{..G}%H %{..Y} %c:%s %{..R} %m/%d/%y %{.K} Load: %l %{wb}"
+hardstatus alwayslastline "%=%{..M} %{..G}%h %{..Y} %c:%s %{..R} %D %m/%d/%y  %{.K} Load: %l %{Bb}"
+# hardstatus alwayslastline "%=%{..M} %{..G}%H %{..Y} %c:%s %{..R} %m/%d/%y %{.K} Load: %l %{wb}"
 
 # very simple feature
 # caption always "%{=u .G} %-w%<%{=ub .C}%n %t%{=u .G}%+w %=%c %d/%m/%Y" 

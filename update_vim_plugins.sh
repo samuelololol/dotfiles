@@ -13,3 +13,8 @@ for mod in crefvim nerdtree pydiction snipmate supertab gist-vim; do
    cd ..
    git add $mod
 done
+
+# add submodule
+
+# git submodule add <FULL GIT REPO PATH> <local folder name>
+# git submodule update --init

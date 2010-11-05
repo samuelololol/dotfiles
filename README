@@ -36,6 +36,7 @@ INFO
     snipmate/
     supertab/
     systemc_syntax/
+    valgrind/
     .gntrc
     .screenrc
     .vimrc
@@ -62,6 +63,9 @@ INFO
 
      + systemc_syntax ( http://www.vim.org/scripts/script.php?script_id=835 ): 
         Syntax file for SystemC
+
+     + valgrind ( https://github.com/vim-scripts/valgrind.vim )
+        Navigate in the output of the memory checker valgrind
 
 Files Arrangements
 ==================
@@ -101,6 +105,10 @@ Files Arrangements
        *systemc_syntax
        ---------------
          ftplugin/systemc.vim
+
+       *valgrind
+       ---------
+         plugin/valgrind.vim
 
        *pydiction
        ----------

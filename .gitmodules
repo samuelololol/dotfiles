@@ -16,3 +16,6 @@
 [submodule "gist-vim"]
 	path = gist-vim
 	url = git://github.com/mattn/gist-vim.git
+[submodule "valgrind"]
+	path = valgrind
+	url = git://github.com/vim-scripts/valgrind.vim.git
