@@ -21,3 +21,7 @@ inoremap "" ""
 inoremap [ []<Left>
 inoremap [[ [
 inoremap [] []
+
+"folding mark, for vim marker fdm
+inoremap {{{ {{{
+inoremap }}} }}}<CR><C-y><C-y><Space>vim:fdm=marker

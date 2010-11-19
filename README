@@ -31,6 +31,7 @@ INFO
 
     crefvim/
     gist-vim/
+    gtk-vim-syntax/
     nerdtree/
     pydiction/
     snipmate/
@@ -41,6 +42,7 @@ INFO
     .screenrc
     .vimrc
 
+
      Installed ViM Plugin
      --------------------
      + crefvim ( http://github.com/vim-scripts/CRefVim ): 
@@ -48,6 +50,9 @@ INFO
 
      + gist-vim ( http://github.com/mattn/gist-vim ): 
         To post the current buffer to gist
+
+     * gtk-vim-syntax ( git://github.com/vim-scripts/gtk-vim-syntax.git )
+        Syntax highlighting for GLib, Gtk+, Xlib, Gimp, Gnome, and more. 
 
      + nerdtree ( http://github.com/scrooloose/nerdtree ): 
         A tree explorer plugin for navigating the filesystem
@@ -67,9 +72,10 @@ INFO
      + valgrind ( https://github.com/vim-scripts/valgrind.vim )
         Navigate in the output of the memory checker valgrind
 
-Files Arrangements
-==================
 
+Files Arrangements(Detail)
+==========================
+## {{{
        *crefvim
        --------
          crefvim/after/syntax/help.vim  
@@ -80,6 +86,45 @@ Files Arrangements
        *gist-vim
        ---------
          plugin/gist-vim
+
+       *gtk-vim-syntax
+       ---------------
+         syntax/c/atk.vim
+         syntax/c/atspi.vim
+         syntax/c/cairo.vim
+         syntax/c/clutter.vim
+         syntax/c/dbusglib.vim
+         syntax/c/evince.vim
+         syntax/c/gail.vim
+         syntax/c/gconf.vim
+         syntax/c/gdk.vim
+         syntax/c/gdkpixbuf.vim
+         syntax/c/gimp.vim
+         syntax/c/gio.vim
+         syntax/c/glib.vim
+         syntax/c/gnomedesktop.vim
+         syntax/c/gnomevfs.vim
+         syntax/c/gobject.vim
+         syntax/c/goocanvas.vim
+         syntax/c/gtk.vim
+         syntax/c/gtkglext.vim
+         syntax/c/gtksourceview.vim
+         syntax/c/libglade.vim
+         syntax/c/libgnome.vim
+         syntax/c/libgnomecanvas.vim
+         syntax/c/libgnomeui.vim
+         syntax/c/libgsf.vim
+         syntax/c/libnotify.vim
+         syntax/c/liboil.vim
+         syntax/c/librsvg.vim
+         syntax/c/libsoup.vim
+         syntax/c/libunique.vim
+         syntax/c/libwnck.vim
+         syntax/c/orbit2.vim
+         syntax/c/pango.vim
+         syntax/c/poppler.vim
+         syntax/c/vte.vim
+         syntax/c/xlib.vim
     
        *nerdtree
        ---------
@@ -119,9 +164,6 @@ Files Arrangements
          pydiction.py
        
 
-
-
-
        *my custom vim script
        --------------------
          mycscope.vim         key map for cscope
@@ -130,3 +172,5 @@ Files Arrangements
          mymaptoggle.vim      contain a function used by MoveTo*()
          mymvtotab.vim        MoveTo*() function used for moving tab
          mysystemc.vim        Sysc() function to enable SystemC syntax
+## }}}
+## vim:fdm=marker
