@@ -1,9 +1,6 @@
 [submodule "supertab"]
 	path = supertab
 	url = git://github.com/ervandew/supertab.git
-[submodule "crefvim"]
-	path = crefvim
-	url = git://github.com/vim-scripts/CRefVim.git
 [submodule "pydiction"]
 	path = pydiction
 	url = git://github.com/vim-scripts/Pydiction.git
