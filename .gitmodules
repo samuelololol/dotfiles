@@ -19,3 +19,6 @@
 [submodule "gtk-vim-syntax"]
 	path = gtk-vim-syntax
 	url = git://github.com/vim-scripts/gtk-vim-syntax.git
+[submodule "crefvim"]
+	path = crefvim
+	url = git://github.com/vim-scripts/CRefVim.git

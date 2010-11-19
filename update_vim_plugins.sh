@@ -1,7 +1,7 @@
 #!/bin/bash
 
 git submodule update --init
-for mod in nerdtree pydiction snipmate supertab gist-vim valgrind gtk-vim-syntax; do
+for mod in crefvim nerdtree pydiction snipmate supertab gist-vim valgrind gtk-vim-syntax; do
    cd $mod
    echo
    echo
