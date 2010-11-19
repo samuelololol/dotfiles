@@ -1,0 +1,1 @@
+../../../gtk-vim-syntax/syntax/gimp.vim

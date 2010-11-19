@@ -1,0 +1,1 @@
+../../../gtk-vim-syntax/syntax/orbit2.vim

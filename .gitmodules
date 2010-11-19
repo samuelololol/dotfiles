@@ -19,3 +19,6 @@
 [submodule "valgrind"]
 	path = valgrind
 	url = git://github.com/vim-scripts/valgrind.vim.git
+[submodule "gtk-vim-syntax"]
+	path = gtk-vim-syntax
+	url = git://github.com/vim-scripts/gtk-vim-syntax.git

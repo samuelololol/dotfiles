@@ -1,0 +1,1 @@
+../../../gtk-vim-syntax/syntax/libnotify.vim
