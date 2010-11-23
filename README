@@ -36,6 +36,7 @@ INFO
     pydiction/
     snipmate/
     supertab/
+    surround/
     systemc_syntax/
     valgrind/
     .gntrc
@@ -65,6 +66,9 @@ INFO
 
      + supertab ( http://github.com/ervandew/supertab ): 
         Do all your inser-mode completion with Tab!
+
+     + surround ( git://github.com/vim-scripts/surround.vim.git ):
+        Delete/change/add parentheses/quotes/XML-tags/much more with ease
 
      + systemc_syntax ( http://www.vim.org/scripts/script.php?script_id=835 ): 
         Syntax file for SystemC
@@ -146,6 +150,11 @@ Files Arrangements(Detail)
        ---------
          doc/supertab.txt
          plugin/supertab.vim
+
+       *surround
+       ---------
+         doc/surround.txt
+         plugin/surround.vim
        
        *systemc_syntax
        ---------------
@@ -172,5 +181,20 @@ Files Arrangements(Detail)
          mymaptoggle.vim      contain a function used by MoveTo*()
          mymvtotab.vim        MoveTo*() function used for moving tab
          mysystemc.vim        Sysc() function to enable SystemC syntax
+
+
+
+git note for adding others' repo into mime:
+ * add submodule:
+    $ git submodule add <FULL GIT REPO PATH> <local folder name>
+    $ git submodule update --init
+    $ cd <local folder name>
+    $ git pull origin master
+    $ cd ..
+    $ git commit -m'add a new submodule'
+
+
 ## }}}
 ## vim:fdm=marker
+
+

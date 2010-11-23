@@ -22,3 +22,6 @@
 [submodule "crefvim"]
 	path = crefvim
 	url = git://github.com/vim-scripts/CRefVim.git
+[submodule "surround"]
+	path = surround
+	url = git://github.com/vim-scripts/surround.vim.git
