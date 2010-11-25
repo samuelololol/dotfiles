@@ -33,7 +33,7 @@ endif
 """""""""""""""
 function! CSCTGen(opt)
     if a:opt  == "cscope"
-        !find . -name "*.h" -o -name "*.c" -o -name "*.cc" > cscope.files
+        !find . -name "*.h" -o -name "*.c" -o -name "*.cpp" > cscope.files
         !cscope -bkq -i cscope.files
         echo "cscope.out generation is done."
 
