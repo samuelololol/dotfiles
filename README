@@ -15,10 +15,12 @@ HOW TO INSTALL
         # git clone git://github.com/samuelololol/dotfiles.git
 
     2. Select dotfiles, delete(or backup) old ones and softlink to ~/dotfiles
+        # rm ~/.gntrc    && ln -s dotfiles/.gntrc ~/.gntrc
+        # rm ~/.screenrc && ln -s dotfiles/.screenrc ~/.screenrc
+        # rm ~/.tmux.conf && ln -s dotfiles/.tmux.conf ~/.tmux.conf
         # rm ~/.vimrc    && ln -s dotfiles/.vimrc ~/.vimrc
         # rm ~/.vim -rf  && ln -s dotfiles/.vim ~/.vim
-        # rm ~/.screenrc && ln -s dotfiles/.screenrc ~/.screenrc
-        # rm ~/.gntrc    && ln -s dotfiles/.gntrc ~/.gntrc
+
 
     3. Update the sources in dotfiles
         # cd dotfiles
