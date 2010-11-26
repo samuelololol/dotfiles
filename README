@@ -54,14 +54,16 @@ INFO
      + gist-vim ( http://github.com/mattn/gist-vim ): 
         To post the current buffer to gist
 
-     * gtk-vim-syntax ( git://github.com/vim-scripts/gtk-vim-syntax.git )
+     + gtk-vim-syntax ( git://github.com/vim-scripts/gtk-vim-syntax.git )
         Syntax highlighting for GLib, Gtk+, Xlib, Gimp, Gnome, and more. 
 
      + nerdtree ( http://github.com/scrooloose/nerdtree ): 
         A tree explorer plugin for navigating the filesystem
 
      * pydiction ( http://github.com/vim-scripts/Pydiction ): 
-        Tab-complete your Python code *(I've changed the hotkey from Tab to C-J )
+        Tab-complete your Python code 
+        *(I've changed the hotkey from Tab to C-J,
+          and load complete-dict manually by my vim script) 
 
      + snipmate ( http://github.com/msanders/snipmate.vim ): 
         TextMate-style snippets for ViM
@@ -171,18 +173,23 @@ Files Arrangements(Detail)
          doc/README.txt
          ftplugin/python/python_pydiction.vim (fork-version, change the key map to C-J)
          plugin/python_diction.vim
-         complete-dict
          pydiction.py
+         (complete-dict) 
        
 
        *my custom vim script
        --------------------
+       plugin/
          mycscope.vim         key map for cscope
          mycsct.vim           ctags/cscope detection and generation
          mybrace.vim          brace utils
          mymaptoggle.vim      contain a function used by MoveTo*()
          mymvtotab.vim        MoveTo*() function used for moving tab
          mysystemc.vim        Sysc() function to enable SystemC syntax
+
+       ftplugin/python/
+         mypython.vim         Load dictionary file: complete-dict need
+                              by pydiction
 
 
 
