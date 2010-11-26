@@ -25,3 +25,6 @@
 [submodule "pydiction"]
 	path = pydiction
 	url = http://github.com/vim-scripts/Pydiction.git
+[submodule "matchit"]
+	path = matchit
+	url = git://github.com/vim-scripts/matchit.zip.git

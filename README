@@ -34,6 +34,7 @@ INFO
     crefvim/
     gist-vim/
     gtk-vim-syntax/
+    matchit/
     nerdtree/
     pydiction/
     snipmate/
@@ -56,6 +57,9 @@ INFO
 
      + gtk-vim-syntax ( git://github.com/vim-scripts/gtk-vim-syntax.git )
         Syntax highlighting for GLib, Gtk+, Xlib, Gimp, Gnome, and more. 
+
+     + matchit ( git://github.com/vim-scripts/matchit.zip.git )
+        extended % matching for HTML, LaTeX, and many other languages
 
      + nerdtree ( http://github.com/scrooloose/nerdtree ): 
         A tree explorer plugin for navigating the filesystem
@@ -133,6 +137,11 @@ Files Arrangements(Detail)
          syntax/c/poppler.vim
          syntax/c/vte.vim
          syntax/c/xlib.vim
+         
+       *matchit
+       --------
+         doc/matchit.txt
+         plugin/matchit.vim
     
        *nerdtree
        ---------
