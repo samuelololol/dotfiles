@@ -22,3 +22,6 @@
 [submodule "surround"]
 	path = surround
 	url = git://github.com/vim-scripts/surround.vim.git
+[submodule "pydiction"]
+	path = pydiction
+	url = http://github.com/vim-scripts/Pydiction.git
