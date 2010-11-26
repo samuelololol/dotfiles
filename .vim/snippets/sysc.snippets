@@ -1,0 +1,38 @@
+snippet SC_MO
+	SC_MODULE(${1://[[Module Name]]})  
+	{
+		//Ports / Channels declarations 
+		//
+		//Local variables declarations
+		//
+		${4://[local variable]]}
+		SC_HAS_PROCESS($1);  
+		SC_CTOR($1);
+		$1(sc_module_name nm);
+		void ${5://[[Process Function]]}();
+	};
+
+
+	$1::$1(sc_module_name nm):
+		sc_module(nm),
+		${2://[[local variable initial]]}(${3://[[initial value]})
+	{
+		SC_THREAD($5);  
+		//sensitive << ${6://[[Sensitive event]]}
+		//dont_initialize();
+	}
+	void $1::$5(){
+		while(1){
+			${7://[[Do something here]]}
+			wait();
+		}
+	}
+
+snippet sc_i
+	sc_in<${1://[[Data Type]]}> ${2://[[Port Name]]}
+
+snippet sc_o
+	sc_out<${1://[[Data Type]]}> ${2://[[Port Name]]}
+
+snippet sc_si
+	sc_signal<${1://[[Data Type]]} ${2://[Channel Name]]}

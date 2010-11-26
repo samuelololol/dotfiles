@@ -46,10 +46,9 @@ function! CSCTGen(opt)
         echo "cscope.out is loaded."
 
         elseif a:opt == "ctags"
-            !ctags -R
+            !ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .
             echo "tag-file generation is done."
-
-            set tags=./tags,tags 
+            set tags+=./tags
             echo "cscope.out is loaded."
         elseif a:opt == "clean"
             !rm -f cscope.files cscope.in.out cscope.out cscope.po.out tags
