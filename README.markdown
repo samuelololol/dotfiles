@@ -49,7 +49,8 @@ Installed ViM Plugins
 
 + [gist-vim]( http://github.com/mattn/gist-vim ): 
 
-   To post the current buffer to gist
+   To post the current buffer to gist  
+   (reuqire _curl_ support)
 
 + [gtk-vim-syntax]( git://github.com/vim-scripts/gtk-vim-syntax.git )
 
