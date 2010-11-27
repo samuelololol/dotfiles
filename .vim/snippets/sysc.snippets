@@ -1,18 +1,19 @@
 snippet SC_MO
+	// declaration part in header .h file
 	SC_MODULE(${1://[[Module Name]]})  
 	{
 		//Ports / Channels declarations 
 		//
 		//Local variables declarations
 		//
-		${4://[local variable]]}
+		${4://[local variable]]};
 		SC_HAS_PROCESS($1);  
 		SC_CTOR($1);
 		$1(sc_module_name nm);
 		void ${5://[[Process Function]]}();
 	};
 
-
+	// implementation part in .cpp file
 	$1::$1(sc_module_name nm):
 		sc_module(nm),
 		${2://[[local variable initial]]}(${3://[[initial value]})
@@ -29,10 +30,10 @@ snippet SC_MO
 	}
 
 snippet sc_i
-	sc_in<${1://[[Data Type]]}> ${2://[[Port Name]]}
+	sc_in<${1://[[Data Type]]}> ${2://[[Port Name]]};
 
 snippet sc_o
-	sc_out<${1://[[Data Type]]}> ${2://[[Port Name]]}
+	sc_out<${1://[[Data Type]]}> ${2://[[Port Name]]};
 
 snippet sc_si
-	sc_signal<${1://[[Data Type]]} ${2://[Channel Name]]}
+	sc_signal<${1://[[Data Type]]} ${2://[Channel Name]]};
