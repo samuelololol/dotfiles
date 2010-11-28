@@ -91,8 +91,8 @@ Installed ViM Plugins
    Navigate in the output of the memory checker valgrind
 
 
-<!-- {{{  -->
-Files Arrangements
+<!-- {{{ 
+The Detail of Files Placement
 ==================
 
 * crefvim/
@@ -195,5 +195,6 @@ NOTES
         $ git commit -m'add a new submodule'  
 
 
-<!-- }}} -->
-<!-- vim:fdm=marker
+}}} 
+vim:fdm=marker
+-->
