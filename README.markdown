@@ -35,16 +35,19 @@
         # git pull
         # ./update_vim_plugins.sh
        
+#NOTICE  
 
-## gist-vim
+### gist-vim
 
-+ requirement: _curl_  
++ requirement:   
+
+    _curl_  
 
 ### install LanguageTool  
 
 + requirement:  
 
-    (gentoo)
+    (gentoo)  
     >\>= _java-jdk_-1.6_04  
     >_ant_  
 
