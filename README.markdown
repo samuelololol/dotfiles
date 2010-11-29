@@ -43,7 +43,7 @@
 
     _curl_  
 
-### install LanguageTool  
+### LanguageTool installation 
 
 + requirement:  
 
@@ -57,7 +57,7 @@
         # cd ~/dotfiles  
         # ./build_languagetool.sh
 
-### install ydict
+### ydict installation
 
 + requirement:  
 
