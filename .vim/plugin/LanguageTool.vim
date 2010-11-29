@@ -1,0 +1,1 @@
+../../LanguageTool/plugin/LanguageTool.vim

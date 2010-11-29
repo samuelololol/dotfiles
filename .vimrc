@@ -80,3 +80,7 @@ map <F3> :Tlist<CR>
 
 " read the vim doc in ~/.vim/doc
 helptags ~/.vim/doc
+
+
+" LanguageTool
+let g:languagetool_jar='~/dotfiles/LanguageTool/JLanguageTool/dist/LanguageTool.jar'

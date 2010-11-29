@@ -8,18 +8,17 @@
      \/___/ \/__/\/_/\/_/\/_/\/_/\/___/ \/____/\/____/\/___/ \/____/ by samuelololol@gmail.com
                                                                                                           
 
-HOW TO INSTALL
-==============
+#HOW TO INSTALL
 
 1. Clone the source file to ur home directory from github:  
     
-    type:
+    Type:
 
         # git clone git://github.com/samuelololol/dotfiles.git
 
 2. Select dotfiles, delete(or backup) old ones and softlink to ~/dotfiles  
 
-    type:
+    Type:
 
         # rm ~/.gntrc     && ln -s dotfiles/.gntrc ~/.gntrc  
         # rm ~/.screenrc  && ln -s dotfiles/.screenrc ~/.screenrc  
@@ -30,70 +29,95 @@ HOW TO INSTALL
 
 3. Update the sources in dotfiles  
 
-    type:
+    Type:
 
         # cd dotfiles  
         # git pull
         # ./update_vim_plugins.sh
        
 
+##gist-vim
 
-INFO
-====
++ requirement: _curl_  
+
+###install LanguageTool  
+
++ requirement:  
+
+    java-jdk(gentoo)
+
++ Type the following commands
+
+        # cd ~/dotfiles  
+        # ./build_languagetool  
+
+
+#INFO
+
 
 Installed ViM Plugins
 
-+ [crefvim]( http://github.com/vim-scripts/CRefVim ): 
++ [crefvim](http://github.com/vim-scripts/CRefVim): 
 
    C reference support for ViM
 
-+ [gist-vim]( http://github.com/mattn/gist-vim ): 
++ [gist-vim](http://github.com/mattn/gist-vim): 
 
    To post the current buffer to gist  
    (reuqire _curl_ support)
 
-+ [gtk-vim-syntax]( git://github.com/vim-scripts/gtk-vim-syntax.git )
++ [gtk-vim-syntax](git://github.com/vim-scripts/gtk-vim-syntax.git)
 
    Syntax highlighting for GLib, Gtk+, Xlib, Gimp, Gnome, and more. 
 
-+ [matchit]( git://github.com/vim-scripts/matchit.zip.git )
++ [LanguageTool](http://www.vim.org/scripts/script.php?script_id=3223)  
+  
+   [LanguageTool](http://www.languagetool.org/) : Grammar checker for English, French, German (etc.) in Vim   
+   (require _java-jdk_ support)  
+   Project Homepage: http://www.languagetool.org/  
+   Project CVS:   
 
-   extended % matching for HTML, LaTeX, and many other languages
+                 cvs -z3 \   
+                 -d:pserver:anonymous@languagetool.cvs.sourceforge.net:/cvsroot/languagetool \   
+                 co -P JLanguageTool   
 
-+ [nerdtree]( http://github.com/scrooloose/nerdtree ): 
++ [matchit](git://github.com/vim-scripts/matchit.zip.git)
+
+   Extended % matching for HTML, LaTeX, and many other languages
+
++ [nerdtree](http://github.com/scrooloose/nerdtree): 
 
    A tree explorer plugin for navigating the filesystem
 
-* [pydiction]( http://github.com/vim-scripts/Pydiction ): 
+* [pydiction](http://github.com/vim-scripts/Pydiction): 
 
    Tab-complete your Python code 
    *(I've changed the hotkey from Tab to C-J,
      and load complete-dict manually by my vim script) 
 
-+ [snipmate]( http://github.com/msanders/snipmate.vim ): 
++ [snipmate](http://github.com/msanders/snipmate.vim): 
 
    TextMate-style snippets for ViM
 
-+ [supertab]( http://github.com/ervandew/supertab ): 
++ [supertab](http://github.com/ervandew/supertab): 
 
    Do all your inser-mode completion with Tab!
 
-+ [surround]( git://github.com/vim-scripts/surround.vim.git ):
++ [surround](git://github.com/vim-scripts/surround.vim.git):
 
    Delete/change/add parentheses/quotes/XML-tags/much more with ease
 
-+ [systemc_syntax]( http://www.vim.org/scripts/script.php?script_id=835 ): 
++ [systemc_syntax](http://www.vim.org/scripts/script.php?script_id=835): 
 
    Syntax file for SystemC
 
-+ [valgrind]( https://github.com/vim-scripts/valgrind.vim )
++ [valgrind](https://github.com/vim-scripts/valgrind.vim)
 
    Navigate in the output of the memory checker valgrind
 
 
 <!-- {{{ 
-The Detail of Files Placement
-==================
+#The Detail of Files Placement
 
 * crefvim/
 * gist-vim/

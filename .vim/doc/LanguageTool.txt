@@ -1,0 +1,1 @@
+../../LanguageTool/doc/LanguageTool.txt
