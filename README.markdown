@@ -36,21 +36,33 @@
         # ./update_vim_plugins.sh
        
 
-##gist-vim
+## gist-vim
 
 + requirement: _curl_  
 
-###install LanguageTool  
+### install LanguageTool  
 
 + requirement:  
 
-    java-jdk(gentoo)
+    >= _java-jdk_-1.6_04(gentoo)  
+    _ant_  
+
 
 + Type the following commands
 
         # cd ~/dotfiles  
-        # ./build_languagetool  
+        # ./build_languagetool.sh
 
+### install ydict
+
++ requirement:  
+
+    _python_  
+
++ Type:  
+
+        # cd ~/dotfiles
+        # ./update_ydict.sh
 
 #INFO
 
@@ -200,6 +212,7 @@ Installed ViM Plugins
         mymaptoggle.vim      contain a function used by MoveTo*()  
         mymvtotab.vim        MoveTo*() function used for moving tab  
         mysystemc.vim        Sysc() function to enable SystemC syntax  
+        myydict.vim          bind key to look up yahoo dictionary 
 
     ftplugin/python/  
 
