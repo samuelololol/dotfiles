@@ -44,7 +44,7 @@
 
 + requirement:  
 
-    >= _java-jdk_-1.6_04(gentoo)  
+    \>= _java-jdk_-1.6_04(gentoo)  
     _ant_  
 
 
