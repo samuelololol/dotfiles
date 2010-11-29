@@ -44,8 +44,9 @@
 
 + requirement:  
 
-    \>= _java-jdk_-1.6_04(gentoo)  
-    _ant_  
+    (gentoo)
+    >\>= _java-jdk_-1.6_04  
+    >_ant_  
 
 
 + Type the following commands
