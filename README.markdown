@@ -76,6 +76,7 @@ Installed ViM Plugins
 + [crefvim](http://github.com/vim-scripts/CRefVim): 
 
    C reference support for ViM
+   [my blog](http://samuelololol.blogspot.com/2010/01/crefvim-c-reference-manual-especially.html)
 
 + [gist-vim](http://github.com/mattn/gist-vim): 
 
