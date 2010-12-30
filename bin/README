@@ -1,0 +1,4 @@
+
+soft link in /usr/local/bin.
+
+/usr/local/bin $ sudo ln -s ~/dotfiles/bin/google_vim
