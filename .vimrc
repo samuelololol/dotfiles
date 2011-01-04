@@ -12,7 +12,7 @@
 "   \/___/ \/__/\/_/\/_/\/_/\/_/\/___/ \/____/\/____/\/___/ \/____/ by samuelololol@gmail.com
 "
  
-
+"關閉vi compatible模式
 set nocompatible
 
 "tab-related"
@@ -40,12 +40,6 @@ set smartindent
 set autoindent
 set cindent
 
-
-
-
-
-
-
 " show line number
 set nu
 set cursorline
@@ -67,6 +61,16 @@ if $TERM == 'screen'
   set term=xterm
 endif
 
+"encoding
+" 設定檔案編碼清單
+set fencs=utf-8,big5,bgk,euc-jp,utf-16le
+" 設定編碼 內部編碼 Terminal編碼
+set fenc=utf-8 enc=utf-8 tenc=utf-8
+
+
+
+
+"some key mapping
 "change window
 nmap gw :wincmd w<CR>
 
@@ -78,9 +82,29 @@ let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_Close_On_Select = 1
 map <F3> :Tlist<CR>
 
+"clear search result
+nmap <F4> :let @/=""<CR>"
+
 " read the vim doc in ~/.vim/doc
 helptags ~/.vim/doc
 
-
 " LanguageTool
 let g:languagetool_jar='~/dotfiles/LanguageTool/JLanguageTool/dist/LanguageTool.jar'
+
+
+"pct's statusline
+" 設定狀態列訊息
+highlight User1 ctermfg=red
+highlight User2 term=underline cterm=underline ctermfg=green
+highlight User3 term=underline cterm=underline ctermfg=yellow
+"highlight User4 term=underline cterm=underline ctermfg=white
+highlight User5 ctermfg=cyan
+highlight User6 ctermfg=white
+
+" %1* -> User1's highlight, %2*->User2's highlight
+" =   -> Separation point between left and right aligned items.
+" <   -> Where to truncate line if too long.  Default is at the start.
+set statusline=%4*%<\ %1*[%F]
+set statusline+=%4*\ %5*[%{&encoding}, " encoding
+set statusline+=%{&fileformat}]%m " file format
+set statusline+=%4*%=\ %6*%y%4*\ %3*%l%4*,\ %3*%c%4*\ \<\ %2*%P%4*\ \>
