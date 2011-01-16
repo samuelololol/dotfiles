@@ -14,13 +14,12 @@
 
 
 [general]
-mouse = 1
+#mouse = 1
 [Finch]
-mouse = 1
+#mouse = 1
 
 
 [GntWidget::binding]
-f10 = context-menu
-
-[GntWindow::binding]
-c-o = show-menu
+#these 2 are default settings
+#f10 = context-menu
+#c-o = show-menu
