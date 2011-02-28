@@ -62,10 +62,14 @@ if $TERM == 'screen'
 endif
 
 "encoding
-" 設定檔案編碼清單
-set fencs=utf-8,big5,bgk,euc-jp,utf-16le
-" 設定編碼 內部編碼 Terminal編碼
-set fenc=utf-8 enc=utf-8 tenc=utf-8
+" 檔案編碼,檔案編碼清單 (file encoding)(file encoding list)
+set fenc=utf-8 
+set fencs=utf-8,big5,gbk,euc-jp,utf-16le
+" 內部編碼      (encoding inside Vim)
+set enc=utf-8 
+" Terminal編碼  (terminal encoding)
+set tenc=utf-8
+
 
 
 
