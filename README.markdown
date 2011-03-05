@@ -76,10 +76,6 @@ Installed ViM Plugins
    To post the current buffer to gist  
    (reuqire _curl_ support)
 
-+ [gtk-vim-syntax](git://github.com/vim-scripts/gtk-vim-syntax.git)
-
-   Syntax highlighting for GLib, Gtk+, Xlib, Gimp, Gnome, and more. 
-
 + [LanguageTool](http://www.vim.org/scripts/script.php?script_id=3223)  
   
    [LanguageTool](http://www.languagetool.org/) : Grammar checker for English, French, German (etc.) in Vim   
@@ -131,7 +127,6 @@ Installed ViM Plugins
 
 * crefvim/
 * gist-vim/
-* gtk-vim-syntax/
 * matchit/
 * nerdtree/
 * pydiction/
@@ -158,9 +153,6 @@ Installed ViM Plugins
 * gist-vim  
   plugin/gist-vim
 
-* gtk-vim-syntax  
-  syntax/c/*.vim  
-  
 * matchit  
   doc/matchit.txt  
   plugin/matchit.vim  

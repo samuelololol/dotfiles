@@ -1,1 +1,0 @@
-../../../gtk-vim-syntax/syntax/cairo.vim
