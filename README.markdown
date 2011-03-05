@@ -61,8 +61,8 @@
 
         # cd ~/dotfiles
         # ./update_ydict.sh 
-#INFO
 
+#INFO
 
 Installed ViM Plugins
 
