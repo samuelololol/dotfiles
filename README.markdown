@@ -12,24 +12,18 @@
 
 1. Clone the source file to ur home directory from github:  
     
-    Type:
-
         # git clone git://github.com/samuelololol/dotfiles.git
 
 2. Select dotfiles, delete(or backup) old ones and softlink to ~/dotfiles  
 
-    Type:
-
-        # rm ~/.gntrc     && ln -s dotfiles/.gntrc ~/.gntrc  
-        # rm ~/.screenrc  && ln -s dotfiles/.screenrc ~/.screenrc  
+        # rm ~/.gntrc     && ln -s dotfiles/.gntrc     ~/.gntrc  
+        # rm ~/.screenrc  && ln -s dotfiles/.screenrc  ~/.screenrc  
         # rm ~/.tmux.conf && ln -s dotfiles/.tmux.conf ~/.tmux.conf  
-        # rm ~/.vimrc     && ln -s dotfiles/.vimrc ~/.vimrc  
-        # rm ~/.vim -rf   && ln -s dotfiles/.vim ~/.vim  
+        # rm ~/.vimrc     && ln -s dotfiles/.vimrc     ~/.vimrc  
+        # rm ~/.vim -rf   && ln -s dotfiles/.vim       ~/.vim  
 
 
 3. Update the sources in dotfiles  
-
-    Type:
 
         # cd dotfiles  
         # git pull
@@ -39,35 +33,34 @@
 
 ### gist-vim
 
-+ requirement:   
++ Requirement:  
 
     _curl_  
 
 ### LanguageTool installation 
 
-+ requirement:  
++ Requirements:  
 
     (gentoo)  
     >\>= _java-jdk_-1.6_04  
     >_ant_  
 
 
-+ Type the following commands
++ Use the following commands
 
         # cd ~/dotfiles  
         # ./build_languagetool.sh
 
 ### ydict installation
 
-+ requirement:  
++ Requirement:  
 
     _python_  
 
-+ Type:  
++ Use the following commands
 
         # cd ~/dotfiles
-        # ./update_ydict.sh
-
+        # ./update_ydict.sh 
 #INFO
 
 
