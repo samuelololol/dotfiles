@@ -8,3 +8,8 @@ for mod in crefvim nerdtree pydiction snipmate supertab gist-vim valgrind surrou
    cd ..
    git add $mod
 done
+cd .vim/snippets
+rm *
+ln -s ../../snipmate/snippets/* .
+ln -s ../../systemc_syntax/snippets/* .
+cd ../..

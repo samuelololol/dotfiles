@@ -27,7 +27,7 @@
 
         # cd dotfiles  
         # git pull
-        # ./update_vim_plugins.sh
+        # ./submod_sync.sh
        
 #NOTICE  
 
