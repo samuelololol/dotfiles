@@ -90,7 +90,7 @@ map <F3> :Tlist<CR>
 nmap <F4> :let @/=""<CR>"
 
 " read the vim doc in ~/.vim/doc
-helptags ~/.vim/doc
+helptags ~/dotfiles/.vim/doc
 
 " LanguageTool
 let g:languagetool_jar='~/dotfiles/LanguageTool/JLanguageTool/dist/LanguageTool.jar'
