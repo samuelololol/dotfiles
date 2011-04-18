@@ -16,3 +16,6 @@
 [submodule "valgrind"]
 	path = valgrind
 	url = git://github.com/vim-scripts/valgrind.vim.git
+[submodule "vim-pathogen"]
+	path = vim-pathogen
+	url = git://github.com/tpope/vim-pathogen.git
