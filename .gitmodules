@@ -1,3 +1,6 @@
 [submodule ".vim/bundle/crefvim"]
 	path = .vim/bundle/crefvim
 	url = git://github.com/vim-scripts/CRefVim.git
+[submodule ".vim/bundle/matchit"]
+	path = .vim/bundle/matchit
+	url = git://github.com/vim-scripts/matchit.zip.git
