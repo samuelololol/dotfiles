@@ -1,0 +1,1 @@
+/home/samuel/dotfiles/LanguageTool/plugin/LanguageTool.vim

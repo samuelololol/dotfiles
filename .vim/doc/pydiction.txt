@@ -1,1 +1,0 @@
-../../pydiction/doc/README.txt

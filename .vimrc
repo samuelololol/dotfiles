@@ -72,8 +72,6 @@ set tenc=utf-8
 
 
 
-
-
 "some key mapping
 "change window
 nmap gw :wincmd w<CR>
@@ -89,12 +87,8 @@ map <F3> :Tlist<CR>
 "clear search result
 nmap <F4> :let @/=""<CR>"
 
-" read the vim doc in ~/.vim/doc
-helptags ~/dotfiles/.vim/doc
-
 " LanguageTool
 let g:languagetool_jar='~/dotfiles/LanguageTool/JLanguageTool/dist/LanguageTool.jar'
-
 
 "pct's statusline
 " 設定狀態列訊息
@@ -112,3 +106,12 @@ set statusline=%4*%<\ %1*[%F]
 set statusline+=%4*\ %5*[%{&encoding}, " encoding
 set statusline+=%{&fileformat}]%m " file format
 set statusline+=%4*%=\ %6*%y%4*\ %3*%l%4*,\ %3*%c%4*\ \<\ %2*%P%4*\ \>
+
+
+" pathogen setting "
+call pathogen#helptags()
+call pathogen#runtime_append_all_bundles()
+
+" neocomplcache setting"
+let g:neocomplcache_enable_at_startup=1
+
