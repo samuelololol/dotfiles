@@ -1,27 +1,3 @@
-[submodule "supertab"]
-	path = supertab
-	url = git://github.com/ervandew/supertab.git
-[submodule "snipmate"]
-	path = snipmate
-	url = git://github.com/msanders/snipmate.vim.git
-[submodule "nerdtree"]
-	path = nerdtree
-	url = git://github.com/scrooloose/nerdtree.git
-[submodule "gist-vim"]
-	path = gist-vim
-	url = git://github.com/mattn/gist-vim.git
-[submodule "valgrind"]
-	path = valgrind
-	url = git://github.com/vim-scripts/valgrind.vim.git
-[submodule "crefvim"]
-	path = crefvim
+[submodule ".vim/bundle/crefvim"]
+	path = .vim/bundle/crefvim
 	url = git://github.com/vim-scripts/CRefVim.git
-[submodule "surround"]
-	path = surround
-	url = git://github.com/vim-scripts/surround.vim.git
-[submodule "pydiction"]
-	path = pydiction
-	url = http://github.com/vim-scripts/Pydiction.git
-[submodule "matchit"]
-	path = matchit
-	url = git://github.com/vim-scripts/matchit.zip.git
