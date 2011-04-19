@@ -88,7 +88,7 @@ map <F3> :Tlist<CR>
 nmap <F4> :let @/=""<CR>"
 
 " LanguageTool
-let g:languagetool_jar='~/dotfiles/LanguageTool/JLanguageTool/dist/LanguageTool.jar'
+let g:languagetool_jar='~/dotfiles/.vim/bundle/LanguageTool/JLanguageTool/dist/LanguageTool.jar'
 
 "pct's statusline
 " 設定狀態列訊息
