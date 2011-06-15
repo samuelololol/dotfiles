@@ -9,4 +9,4 @@ cd ~/dotfiles/.vim/bundle/LanguageTool
 ln -sf ~/JLanguageTool
 cd JLanguageTool
 ant
-eselect java-vm set user sun-jre-bin-1.6 
+#eselect java-vm set user sun-jre-bin-1.6 
