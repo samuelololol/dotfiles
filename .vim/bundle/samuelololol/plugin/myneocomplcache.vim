@@ -11,8 +11,10 @@ endfunction"}}
 " 2. Auto complete to common string and show available variants (if any).
 inoremap <expr><C-l> neocomplcache#complete_common_string()
 
-" 3. Highlighting first candidate.
-let g:neocomplcache_enable_auto_select = 1
+" 3. Highlighting first candidate. 
+"    (disable: use <tab> to select the first match)
+"let g:neocomplcache_enable_auto_select = 1
+
 " 4. <CR>: close popup and save indent.
 inoremap <expr><CR> neocomplcache#smart_close_popup() . "\<CR>"
 inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
