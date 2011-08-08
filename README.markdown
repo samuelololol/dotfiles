@@ -37,7 +37,7 @@
 
     (gentoo)  
     >= _dev-java/sun-jdk_-1.604  
-    _dev-java/_ant_  
+    _dev-java/ant_  
     _dev-vcs/cvs_  
 
 + Use the following commands
