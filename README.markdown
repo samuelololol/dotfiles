@@ -64,6 +64,9 @@ Installed ViM Plugins
 
     C reference support for ViM(Howto is described in [my blog](http://samuelololol.blogspot.com/2010/01/crefvim-c-reference-manual-especially.html))
 
++ [EasyMotion](https://github.com/Lokaltog/vim-easymotion)
+    Vim motions on speed!
+
 + [LanguageTool](http://www.vim.org/scripts/script.php?script_id=3223)  
   
     [LanguageTool](http://www.languagetool.org/) : Grammar checker for English, French, German (etc.) in Vim   
@@ -122,14 +125,21 @@ Installed ViM Plugins
 NOTES
 ===========
 
-* add submodule:  
+            //* add submodule:  
+            //
+            //        $ git submodule add <FULL GIT REPO PATH> <local folder name>  
+            //        $ git submodule update --init
+            //        $ cd <local folder name>  
+            //        $ git pull origin master  
+            //        $ cd ..  
+            //        $ git commit -m'add a new submodule'  
 
-        $ git submodule add <FULL GIT REPO PATH> <local folder name>  
-        $ git submodule update --init
-        $ cd <local folder name>  
-        $ git pull origin master  
-        $ cd ..  
-        $ git commit -m'add a new submodule'  
+            [updated]
+
+            add submodule with single script command:
+
+            ~/dotfiles/ $ ./commands/add_submodule.sh <FULL GIT REPO PATH> \
+                                <local folder name>
 
 
 }}} 
