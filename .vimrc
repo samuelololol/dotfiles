@@ -1,7 +1,3 @@
-"
-" Samuel's .vimrc config file
-"
-"          2010, 09/28, @NSYSU
 "                                                                      ___           ___
 "                                           ___           ___         /\_ \         /\_ \ (R)
 "  sssssssssssssamuelolololololololol      /\_ \         /\_ \     ___\//\ \     ___\//\ \
@@ -11,6 +7,11 @@
 "  \/\____/ \__/.\_\ \_\ \_\ \_\ \____/ \____\/\____\ \____//\____\/___/ \/____/\/___/ \/____/
 "   \/___/ \/__/\/_/\/_/\/_/\/_/\/___/ \/____/\/____/\/___/ \/____/ by samuelololol@gmail.com
 "
+"
+" Samuel's .vimrc config file
+"
+"          2010, 09/28, @NSYSU
+"          2012, MSOnline, Hualien
  
 "關閉vi compatible模式
 set nocompatible
@@ -25,7 +26,6 @@ set tabstop=4
 "how many SPACE when read \t (<TAB>) char
 "colorize the <Tab>
 set listchars=tab:>-
-set list
 
 "indentation-related"
 "Number of spaces to use for each step of (auto)indent.
@@ -90,23 +90,23 @@ nmap <F4> :let @/=""<CR>"
 " LanguageTool
 let g:languagetool_jar='~/dotfiles/.vim/bundle/LanguageTool/JLanguageTool/dist/LanguageTool.jar'
 
-"pct's statusline
+set laststatus=2
+"edit from pct's statusline
 " 設定狀態列訊息
 highlight User1 ctermfg=red
 highlight User2 term=underline cterm=underline ctermfg=green
 highlight User3 term=underline cterm=underline ctermfg=yellow
-"highlight User4 term=underline cterm=underline ctermfg=white
+highlight User4 term=underline cterm=underline ctermfg=white
 highlight User5 ctermfg=cyan
 highlight User6 ctermfg=white
 
 " %1* -> User1's highlight, %2*->User2's highlight
 " =   -> Separation point between left and right aligned items.
 " <   -> Where to truncate line if too long.  Default is at the start.
-set statusline=%4*%<\ %1*[%F]
-set statusline+=%4*\ %5*[%{&encoding}, " encoding
+set statusline=%6*%<\ %1*[%F]
+set statusline+=\ %5*[%{&encoding}, " encoding
 set statusline+=%{&fileformat}]%m " file format
-set statusline+=%4*%=\ %6*%y%4*\ %3*%l%4*,\ %3*%c%4*\ \<\ %2*%P%4*\ \>
-
+set statusline+=%6*%=\ %6*%y%6*\ %3*%l%6*\/%L,\ %3*%c%6*\ \<%2*%P%6*\>
 
 " pathogen setting "
 call pathogen#helptags()
