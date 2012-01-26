@@ -115,3 +115,11 @@ call pathogen#runtime_append_all_bundles()
 " neocomplcache setting"
 let g:neocomplcache_enable_at_startup=1
 
+
+"folding series setting
+"set fdm=marker
+"set fdm=syntax
+"set fdm=indent
+"        set foldcolumn=3
+"        set foldlevel=0     " fold everything deeper than 0
+"        set foldnestmax=1  " dont fold everything deeper than 1
