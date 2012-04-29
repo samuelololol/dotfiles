@@ -22,3 +22,6 @@
 [submodule ".vim/bundle/vim-easymotion"]
 	path = .vim/bundle/vim-easymotion
 	url = git://github.com/Lokaltog/vim-easymotion.git
+[submodule ".vim/bundle/neocomplcache-snippets-complete"]
+	path = .vim/bundle/neocomplcache-snippets-complete
+	url = git://github.com/Shougo/neocomplcache-snippets-complete.git

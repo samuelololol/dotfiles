@@ -1,6 +1,6 @@
 #!/bin/bash
 cd ~/dotfiles/.vim/bundle/
-for mod in crefvim nerdtree matchit neocomplcache surround valgrind vim-pathogen; do
+for mod in crefvim matchit neocomplcache neocomplcache-snippets-complete nerdtree surround valgrind vim-easymotion vim-pathogen; do
    cd $mod
    echo "........"
    echo "module: $mod"
@@ -10,3 +10,6 @@ for mod in crefvim nerdtree matchit neocomplcache surround valgrind vim-pathogen
    git add $mod
 done
 cd ../..
+
+
+
