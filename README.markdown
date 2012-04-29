@@ -64,9 +64,6 @@ Installed ViM Plugins
 
     C reference support for ViM(Howto is described in [my blog](http://samuelololol.blogspot.com/2010/01/crefvim-c-reference-manual-especially.html))
 
-+ [EasyMotion](https://github.com/Lokaltog/vim-easymotion)
-    Vim motions on speed!
-
 + [LanguageTool](http://www.vim.org/scripts/script.php?script_id=3223)  
   
     [LanguageTool](http://www.languagetool.org/) : Grammar checker for English, French, German (etc.) in Vim   
@@ -78,31 +75,35 @@ Installed ViM Plugins
                  -d:pserver:anonymous@languagetool.cvs.sourceforge.net:/cvsroot/languagetool \   
                  co -P JLanguageTool   
 
-+ [matchit](git://github.com/vim-scripts/matchit.zip.git)
++ [matchit](https://github.com/vim-scripts/matchit.zip)
 
     Extended % matching for HTML, LaTeX, and many other languages
 
-+ [neocomplcache](submodule ".vim/bundle/neocomplcache")
++ [neocomplcache](https://github.com/Shougo/neocomplcache)
 
     Ultimate auto-completion system for Vim
 
-+ [nerdtree](http://github.com/scrooloose/nerdtree): 
++ [neocomplcache](https://github.com/Shougo/neocomplcache-snippets-complete)
+
+    neocomplcache complete snippets source
+
++ [nerdtree](https://github.com/scrooloose/nerdtree): 
 
     A tree explorer plugin for navigating the filesystem
 
-+ [surround](git://github.com/vim-scripts/surround.vim.git):
++ [surround](https://github.com/vim-scripts/surround.vim):
 
     Delete/change/add parentheses/quotes/XML-tags/much more with ease
-
-+ [systemc_syntax](http://www.vim.org/scripts/script.php?script_id=835): 
-
-    Syntax file for SystemC
 
 + [valgrind](https://github.com/vim-scripts/valgrind.vim)
 
     Navigate in the output of the memory checker valgrind
 
-+ [vim-pathogen](submodule ".vim/bundle/vim-pathogen")
++ [EasyMotion](https://github.com/Lokaltog/vim-easymotion)
+
+    Vim motions on speed!
+
++ [vim-pathogen](https://github.com/tpope/vim-pathogen)
 
     pathogen.vim: manage your runtimepath
 
@@ -125,21 +126,10 @@ Installed ViM Plugins
 NOTES
 ===========
 
-            //* add submodule:  
-            //
-            //        $ git submodule add <FULL GIT REPO PATH> <local folder name>  
-            //        $ git submodule update --init
-            //        $ cd <local folder name>  
-            //        $ git pull origin master  
-            //        $ cd ..  
-            //        $ git commit -m'add a new submodule'  
-
-            [updated]
-
             add submodule with single script command:
 
             ~/dotfiles/ $ ./commands/add_submodule.sh <FULL GIT REPO PATH> \
-                                <local folder name>
+                                ./.vim/bundle/<local folder name for the plugin>
 
 
 }}} 
