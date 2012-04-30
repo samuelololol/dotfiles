@@ -11,20 +11,25 @@ inoremap {      {}<Left>
 inoremap {<CR>  {<CR>}<Esc>O
 inoremap {{     {   
 inoremap {}     {}  
+
 " cursor in the parentheses
 inoremap (  ()<Left>
+inoremap (<Space>  (<Space><Space>)<Left><Left>
 inoremap (( (
 inoremap () ()
-inoremap <expr> )  strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ") "
+inoremap <expr>)     strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
 
 inoremap " ""<Left>
 inoremap "" ""
 inoremap ' ''<Left>
 inoremap '' ''
+
+
 inoremap [ []<Left>
+inoremap [<Space>  [<Space><Space>]<Left><Left>
 inoremap [[ [
 inoremap [] []
-inoremap <expr> ]  strpart(getline('.'), col('.')-1, 1) == "]" ? "\<Right>" : "]"
+inoremap <expr>]  strpart(getline('.'), col('.')-1, 1) == "]" ? "\<Right>" : "]"
 
 "folding mark, for vim marker fdm
 inoremap {{{ {{{
