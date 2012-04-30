@@ -60,6 +60,10 @@
 
 Installed ViM Plugins
 
++ [auto-pairs](https://github.com/vim-scripts/Auto-Pairs): 
+
+    Insert or delete brackets, parens, quotes in pair.
+
 + [crefvim](http://github.com/vim-scripts/CRefVim): 
 
     C reference support for ViM(Howto is described in [my blog](http://samuelololol.blogspot.com/2010/01/crefvim-c-reference-manual-especially.html))
@@ -112,16 +116,15 @@ Installed ViM Plugins
 
     samuelololol/plugin/
 
-        mybrace.vim          brace utils  
         mycodetoblogger.vim  function of blogger posting
         mycscope.vim         key map for cscope  
         mycsct.vim           ctags/cscope detection and generation  
         mymaptoggle.vim      contain a function used by MoveTo*()  
         mymvtotab.vim        MoveTo*() function used for moving tab  
         myneocomplcache.vim  my neocomplcache settings
-        mysystemc.vim        Sysc() function to enable SystemC syntax  
         myvalgrind.vim       valgrind setting for vim
         myydict.vim          bind key to look up yahoo dictionary 
+        mybrace.vim.bak      brace utils (suspending, using auto-pairs) 
 
 NOTES
 ===========
