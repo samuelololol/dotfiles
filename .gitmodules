@@ -25,3 +25,6 @@
 [submodule ".vim/bundle/neocomplcache-snippets-complete"]
 	path = .vim/bundle/neocomplcache-snippets-complete
 	url = git://github.com/Shougo/neocomplcache-snippets-complete.git
+[submodule ".vim/bundle/auto-pairs"]
+	path = .vim/bundle/auto-pairs
+	url = https://github.com/vim-scripts/Auto-Pairs
