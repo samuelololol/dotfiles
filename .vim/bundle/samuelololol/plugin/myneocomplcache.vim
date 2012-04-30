@@ -17,7 +17,7 @@ inoremap <expr><C-l> neocomplcache#complete_common_string()
 
 " 4. <CR>: close popup and save indent.
 inoremap <expr><CR> neocomplcache#smart_close_popup() . "\<CR>"
-inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
+inoremap <expr><BS> neocomplcache#smart_close_popup() . "\<C-h>"
 
 " snippets feature: 
 " use <CR> to choose the candidates including the expanding behavior
