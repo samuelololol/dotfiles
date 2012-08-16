@@ -1,30 +1,30 @@
 [submodule ".vim/bundle/crefvim"]
 	path = .vim/bundle/crefvim
-	url = git://github.com/vim-scripts/CRefVim.git
+	url = http://github.com/vim-scripts/CRefVim.git
 [submodule ".vim/bundle/matchit"]
 	path = .vim/bundle/matchit
-	url = git://github.com/vim-scripts/matchit.zip.git
+	url = http://github.com/vim-scripts/matchit.zip.git
 [submodule ".vim/bundle/neocomplcache"]
 	path = .vim/bundle/neocomplcache
-	url = git://github.com/Shougo/neocomplcache.git
+	url = http://github.com/Shougo/neocomplcache.git
 [submodule ".vim/bundle/nerdtree"]
 	path = .vim/bundle/nerdtree
-	url = git://github.com/scrooloose/nerdtree.git
+	url = http://github.com/scrooloose/nerdtree.git
 [submodule ".vim/bundle/surround"]
 	path = .vim/bundle/surround
-	url = git://github.com/vim-scripts/surround.vim.git
+	url = http://github.com/vim-scripts/surround.vim.git
 [submodule ".vim/bundle/valgrind"]
 	path = .vim/bundle/valgrind
-	url = git://github.com/vim-scripts/valgrind.vim.git
+	url = http://github.com/vim-scripts/valgrind.vim.git
 [submodule ".vim/bundle/vim-pathogen"]
 	path = .vim/bundle/vim-pathogen
-	url = git://github.com/tpope/vim-pathogen.git
+	url = http://github.com/tpope/vim-pathogen.git
 [submodule ".vim/bundle/vim-easymotion"]
 	path = .vim/bundle/vim-easymotion
-	url = git://github.com/Lokaltog/vim-easymotion.git
+	url = http://github.com/Lokaltog/vim-easymotion.git
 [submodule ".vim/bundle/neocomplcache-snippets-complete"]
 	path = .vim/bundle/neocomplcache-snippets-complete
-	url = git://github.com/Shougo/neocomplcache-snippets-complete.git
+	url = http://github.com/Shougo/neocomplcache-snippets-complete.git
 [submodule ".vim/bundle/auto-pairs"]
 	path = .vim/bundle/auto-pairs
-	url = https://github.com/vim-scripts/Auto-Pairs
+	url = http://github.com/vim-scripts/Auto-Pairs
