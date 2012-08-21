@@ -87,7 +87,7 @@ Installed ViM Plugins
 
     Ultimate auto-completion system for Vim
 
-+ [neocomplcache](https://github.com/Shougo/neocomplcache-snippets-complete)
++ [neocomplcache-snippets-complete](https://github.com/Shougo/neocomplcache-snippets-complete)
 
     neocomplcache complete snippets source
 
