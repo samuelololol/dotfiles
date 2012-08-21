@@ -1,6 +1,18 @@
 #!/bin/bash
 cd ~/dotfiles/.vim/bundle/
-for mod in crefvim matchit neocomplcache neocomplcache-snippets-complete nerdtree surround valgrind vim-easymotion vim-pathogen; do
+modules=(
+auto-pairs
+crefvim
+matchit
+neocomplcache
+neocomplcache-snippets-complete
+nerdtree
+surround
+valgrind
+vim-easymotion
+vim-pathogen
+)
+for mod in ${modules[@]}; do
    cd $mod
    echo "........"
    echo "module: $mod"
@@ -10,6 +22,3 @@ for mod in crefvim matchit neocomplcache neocomplcache-snippets-complete nerdtre
    git add $mod
 done
 cd ../..
-
-
-
