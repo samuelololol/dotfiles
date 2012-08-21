@@ -19,9 +19,15 @@ inoremap <expr><C-l> neocomplcache#complete_common_string()
 inoremap <expr><CR> neocomplcache#smart_close_popup() . "\<CR>"
 inoremap <expr><BS> neocomplcache#smart_close_popup() . "\<C-h>"
 
+
+
+" compitible with auto-pairs plugin"
+let g:AutoPairsMapCR = 0
+
 " snippets feature: 
 " use <CR> to choose the candidates including the expanding behavior
-imap <expr><CR> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? neocomplcache#smart_close_popup() : "\<CR>"
+" the worst case is using auto-paris return function
+imap <expr><CR> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? neocomplcache#smart_close_popup() : "\<CR>\<Plug>AutoPairsReturn"
 
 let g:NeoComplCache_EnableAtStartup = 1
 let g:NeoComplCache_KeywordCompletionStartLength = 1
