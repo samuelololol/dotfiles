@@ -7,6 +7,7 @@ matchit
 neocomplcache
 neocomplcache-snippets-complete
 nerdtree
+quickfix
 surround
 valgrind
 vim-easymotion
