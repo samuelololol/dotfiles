@@ -12,4 +12,3 @@ function! QFixToggle(forced)
     endif
 endfunction
 nnoremap <leader>q :QFix<CR>
-
