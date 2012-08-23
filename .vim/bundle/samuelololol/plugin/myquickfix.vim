@@ -1,5 +1,4 @@
-"quickfix setting from c9s                                                                                                        
-
+"quickfix setting from c9s
 " QUICKFIX WINDOW
 command -bang -nargs=? QFix call QFixToggle(<bang>0)
 function! QFixToggle(forced)
