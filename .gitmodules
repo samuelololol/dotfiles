@@ -28,6 +28,3 @@
 [submodule ".vim/bundle/auto-pairs"]
 	path = .vim/bundle/auto-pairs
 	url = http://github.com/vim-scripts/Auto-Pairs
-[submodule ".vim/bundle/quickfix"]
-	path = .vim/bundle/quickfix
-	url = https://github.com/quickfix/quickfix.git
