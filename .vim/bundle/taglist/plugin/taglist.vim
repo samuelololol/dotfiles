@@ -1,12 +1,3 @@
-let Tlist_Ctags_Cmd='/usr/local/Cellar/ctags/5.8/bin/ctags'
-let g:Tlist_Ctags_Cmd='/usr/local/Cellar/ctags/5.8/bin/ctags'
-
-fu! CtagGen()
-    :execute "!" . g:Tlist_Ctags_Cmd . " -R ."
-endfunction
-
-nmap <silent> :ctg :call CTagGen()
-
 " File: taglist.vim
 " Author: Yegappan Lakshmanan (yegappan AT yahoo DOT com)
 " Version: 4.5
