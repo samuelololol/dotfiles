@@ -28,3 +28,6 @@
 [submodule ".vim/bundle/auto-pairs"]
 	path = .vim/bundle/auto-pairs
 	url = http://github.com/vim-scripts/Auto-Pairs
+[submodule ".vim/bundle/trinity"]
+	path = .vim/bundle/trinity
+	url = https://github.com/vim-scripts/trinity.vim.git
