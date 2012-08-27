@@ -31,3 +31,6 @@
 [submodule ".vim/bundle/trinity"]
 	path = .vim/bundle/trinity
 	url = https://github.com/vim-scripts/trinity.vim.git
+[submodule ".vim/bundle/srcexpl"]
+	path = .vim/bundle/srcexpl
+	url = https://github.com/vim-scripts/SrcExpl.git
