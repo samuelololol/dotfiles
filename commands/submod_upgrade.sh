@@ -7,8 +7,10 @@ matchit
 neocomplcache
 neocomplcache-snippets-complete
 nerdtree
-quickfix
+srcexpl
+sudo
 surround
+trinity
 valgrind
 vim-easymotion
 vim-pathogen
