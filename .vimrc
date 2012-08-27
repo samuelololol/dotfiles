@@ -75,6 +75,7 @@ set tenc=utf-8
 "some key mapping
 "change window
 nmap gw :wincmd w<CR>
+nmap gW :wincmd W<CR>
 
 " NERDTree map to <F2>
 map <F2> :NERDTreeToggle<CR>
