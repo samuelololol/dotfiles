@@ -20,7 +20,7 @@ endif
 "cscope.out file detection
 """""""""""""""
 if has("cscope")
-	set csto=0
+    set csto=1 "search tags before cscope database
 	set cst
 	set nocsverb
 	" add any database in current directory
@@ -35,39 +35,41 @@ endif
 """""""""""""""
 " my ctags and cscope generator for *.c /*.cpp files
 """""""""""""""
-let s:CleanCscop = "!rm -f cscope.files cscope.in.out cscope.out cscope.po.out"
-let s:CleanCtags = "!rm -f tags"
+let s:CleanCscop = "rm -f cscope.files cscope.in.out cscope.out cscope.po.out"
+let s:CleanCtags = "rm -f tags"
 
 function! CSCTGenC(opt)
     if a:opt  == "cscope"
-        exec g:GenCscopeCmd
-        echo "cscope.out generation is done."
+        echom "cscope meta-files generating ..."
+        silent exec "!" . g:GenCscopeCmd
+        echom "cscope.out generation is done."
 
     	set csprg=/usr/bin/cscope
-    	set csto=0
+    	set csto=1 "search tags before cscope database
     	set cst
         set nocsverb
         cs add cscope.out
         set csverb
-        echo "cscope.out is loaded."
+        echom "cscope.out is loaded."
 
     elseif a:opt == "ctags"
-        exec g:GenCtagsCmd
-        echo "tag-file generation is done."
+        echom "ctags meta-files generating ..."
+        silent exec "!" . g:GenCtagsCmd
+        echom "tag-file generation is done."
         set tags+=./tags
-        echo "cscope.out is loaded."
+        echom "cscope.out is loaded."
     elseif a:opt == "clean"
-        exec s:CleanCscop
-        exec s:CleanCtags
+        silent exec "!" . s:CleanCscop
+        silent exec "!" . s:CleanCtags
         echom "clean all ctags-related/cscope-related files."
     elseif a:opt == "cscopeclean"
-        exec s:CleanCscop
-        echo "clean all cscope-related files."
+        silent exec "!" . s:CleanCscop
+        echom "clean all cscope-related files."
     elseif a:opt == "ctagsclean"
-        exec s:CleanCtags
-        echo "clean all ctags-related files."
+        silent exec "!" . s:CleanCtags
+        echom "clean all ctags-related files."
     else
-        echo "Error,usage  :CSCTGenC <ctags/cscope>, tags/cscope.out"
+        echom "Error,usage  :CSCTGenC <ctags/cscope>, tags/cscope.out"
     endif
 endfunction
 command! -nargs=1 CSCTGenC call CSCTGenC(<f-args>)

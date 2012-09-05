@@ -93,7 +93,8 @@ let s:source_explorer_title  = "Source_Explorer"
 function! <SID>Trinity_InitTagList()
 
     " Split to the right side of the screen
-    let g:Tlist_Use_Left_Window = 1
+    "let g:Tlist_Use_Left_Window = 1
+    let g:Tlist_Use_Right_Window = 1
     " Set the window width
     let g:Tlist_WinWidth = 25
     " Sort by the order
@@ -141,7 +142,8 @@ function! <SID>Trinity_InitSourceExplorer()
     let g:SrcExpl_isUpdateTags = 0
     " // Use program 'ctags' with argument '--sort=foldcase -R' to create or       "
     " // update a tags file                                                        "
-    let g:SrcExpl_updateTagsCmd = "ctags --sort=foldcase -R ."
+    "let g:SrcExpl_updateTagsCmd = "ctags --sort=foldcase -R ."
+    let g:SrcExpl_updateTagsCmd = g:GenCtagsCmd
     " // Set "<F10>" key for updating the tags file artificially                   "
     let g:SrcExpl_updateTagsKey = "<F10>"
 
