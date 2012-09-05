@@ -15,6 +15,7 @@ endif
 if has("tags")
     set tags=./tags,tags 
 endif
+
 """""""""""""""
 "cscope.out file detection
 """""""""""""""
@@ -34,39 +35,40 @@ endif
 """""""""""""""
 " my ctags and cscope generator for *.c /*.cpp files
 """""""""""""""
+let s:CleanCscop = "!rm -f cscope.files cscope.in.out cscope.out cscope.po.out"
+let s:CleanCtags = "!rm -f tags"
+
 function! CSCTGenC(opt)
     if a:opt  == "cscope"
-        !find . -name "*.h" -o -name "*.c" -o -name "*.cpp" > cscope.files
-        "!find . -name "*.[ch]" > cscope.files
-        "!find . -name "*.cpp" >> cscope.files
-        "!cscope -bkq -i cscope.files
+        exec g:GenCscopeCmd
         echo "cscope.out generation is done."
 
     	set csprg=/usr/bin/cscope
     	set csto=0
     	set cst
-    	set nocsverb
+        set nocsverb
         cs add cscope.out
-    	set csverb
+        set csverb
         echo "cscope.out is loaded."
 
-        elseif a:opt == "ctags"
-            !ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .
-            echo "tag-file generation is done."
-            set tags+=./tags
-            echo "cscope.out is loaded."
-        elseif a:opt == "clean"
-            !rm -f cscope.files cscope.in.out cscope.out cscope.po.out tags
-            echo "clean all ctags-related/cscope-related files."
-        elseif a:opt == "cscopeclean"
-            !rm -f cscope.files cscope.in.out cscope.out cscope.po.out
-            echo "clean all cscope-related files."
-        elseif a:opt == "ctagsclean"
-            !rm -f tags
-            echo "clean all ctags-related files."
-        else
-            echo "Error,usage  :CSCTGenC <ctags/cscope>, tags/cscope.out"
-        endif
+    elseif a:opt == "ctags"
+        exec g:GenCtagsCmd
+        echo "tag-file generation is done."
+        set tags+=./tags
+        echo "cscope.out is loaded."
+    elseif a:opt == "clean"
+        exec s:CleanCscop
+        exec s:CleanCtags
+        echom "clean all ctags-related/cscope-related files."
+    elseif a:opt == "cscopeclean"
+        exec s:CleanCscop
+        echo "clean all cscope-related files."
+    elseif a:opt == "ctagsclean"
+        exec s:CleanCtags
+        echo "clean all ctags-related files."
+    else
+        echo "Error,usage  :CSCTGenC <ctags/cscope>, tags/cscope.out"
+    endif
 endfunction
 command! -nargs=1 CSCTGenC call CSCTGenC(<f-args>)
 
