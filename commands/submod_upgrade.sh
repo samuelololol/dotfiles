@@ -10,7 +10,6 @@ nerdtree
 srcexpl
 sudo
 surround
-trinity
 valgrind
 vim-easymotion
 vim-pathogen
