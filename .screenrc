@@ -12,7 +12,8 @@
 #   \/___/ \/__/\/_/\/_/\/_/\/_/\/___/ \/____/\/____/\/___/ \/____/ by samuelololol@gmail.com
 #                                                                                                            
 
-
+# for the compatibility with mac
+shell -$SHELL
 
 # no audible bell, just visual
 vbell off
