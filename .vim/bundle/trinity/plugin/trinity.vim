@@ -96,7 +96,7 @@ function! <SID>Trinity_InitTagList()
     "let g:Tlist_Use_Left_Window = 1
     let g:Tlist_Use_Right_Window = 1
     " Set the window width
-    let g:Tlist_WinWidth = 25
+    let g:Tlist_WinWidth = 30
     " Sort by the order
     let g:Tlist_Sort_Type = "order"
     " Do not display the help info
@@ -467,7 +467,10 @@ function! <SID>Trinity_Toggle()
         let s:nerd_tree_switch = 1
         let s:Trinity_switch = 1
     endif
-
+    "samuel
+    
+    NERDTreeClose
+    let s:nerd_tree_switch = 0
     call <SID>Trinity_UpdateWindow()
 
 endfunction " }}}
