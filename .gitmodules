@@ -37,3 +37,6 @@
 [submodule ".vim/bundle/tagbar"]
 	path = .vim/bundle/tagbar
 	url = http://github.com/majutsushi/tagbar.git
+[submodule ".vim/bundle/doxygentoolkit"]
+	path = .vim/bundle/doxygentoolkit
+	url = http://github.com/vim-scripts/DoxygenToolkit.vim.git
