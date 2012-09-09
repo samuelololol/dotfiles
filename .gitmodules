@@ -34,3 +34,6 @@
 [submodule ".vim/bundle/sudo"]
 	path = .vim/bundle/sudo
 	url = https://github.com/vim-scripts/sudo.vim.git
+[submodule ".vim/bundle/tagbar"]
+	path = .vim/bundle/tagbar
+	url = http://github.com/majutsushi/tagbar.git

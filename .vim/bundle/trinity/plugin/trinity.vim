@@ -97,6 +97,7 @@ function! <SID>Trinity_InitTagList()
     let g:Tlist_Use_Right_Window = 1
     " Set the window width
     let g:Tlist_WinWidth = 30
+    let g:tagbar_width = 30
     " Sort by the order
     let g:Tlist_Sort_Type = "order"
     " Do not display the help info
@@ -401,16 +402,19 @@ function! <SID>Trinity_ToggleTagList()
     if s:Trinity_switch == 0
         if s:tag_list_switch == 0
             call <SID>Trinity_InitTagList()
-            Tlist
+            "Tlist
+            TagbarToggle
             let s:tag_list_switch = 1
         endif
     else
         if s:tag_list_switch == 1
-            TlistClose
+            "TlistClose
+            TagbarClose
             let s:tag_list_switch = 0
         else
             call <SID>Trinity_InitTagList()
-            Tlist
+            "Tlist
+            TagbarToggle
             let s:tag_list_switch = 1
         endif
     endif
@@ -442,7 +446,8 @@ function! <SID>Trinity_Toggle()
     endif
     if s:Trinity_switch == 1
         if s:tag_list_switch == 1
-            TlistClose
+            "TlistClose
+            TagbarClose
             let s:tag_list_switch = 0
         endif
         if s:source_explorer_switch == 1
@@ -457,7 +462,8 @@ function! <SID>Trinity_Toggle()
         let s:Trinity_tabPage = 0
     else
         call <SID>Trinity_InitTagList()
-        Tlist
+        "Tlist
+        TagbarToggle
         let s:tag_list_switch = 1
         call <SID>Trinity_InitSourceExplorer()
         SrcExpl
