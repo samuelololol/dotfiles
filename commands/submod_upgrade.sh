@@ -3,13 +3,14 @@ cd ~/dotfiles/.vim/bundle/
 modules=(
 auto-pairs
 crefvim
+doxygentoolkit
 matchit
 neocomplcache
 neocomplcache-snippets-complete
 nerdtree
-srcexpl
 sudo
 surround
+tagbar
 valgrind
 vim-easymotion
 vim-pathogen

@@ -1,4 +1,4 @@
-nmap <Leader>i <C-W>j:call g:SrcExpl_Jump()<CR> 
+nmap gs <C-W>j:call g:SrcExpl_Jump()<CR> 
 function! g:SrcExpl_UpdateTags()
     " Go to the current work directory
     " silent! exe "cd " . expand('%:p:h')
@@ -62,9 +62,5 @@ function! g:SrcExpl_UpdateTags()
            silent! exe "cd " . l:tmp
         endif
     endif
-
     return 0
-
 endfunction " }}}
-
-

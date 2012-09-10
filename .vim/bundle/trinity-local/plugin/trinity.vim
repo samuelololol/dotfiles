@@ -138,7 +138,7 @@ function! <SID>Trinity_InitSourceExplorer()
     " // Enable/Disable the local definition searching, and note that this is not  "
     " // guaranteed to work, the Source Explorer doesn't check the syntax for now. "
     " // It only searches for a match with the keyword according to command 'gd'   "
-    let g:SrcExpl_searchLocalDef = 1
+    let g:SrcExpl_searchLocalDef = 0
     " // Let the Source Explorer update the tags file when opening                 "
     let g:SrcExpl_isUpdateTags = 0
     " // Use program 'ctags' with argument '--sort=foldcase -R' to create or       "

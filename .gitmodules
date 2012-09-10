@@ -28,9 +28,6 @@
 [submodule ".vim/bundle/auto-pairs"]
 	path = .vim/bundle/auto-pairs
 	url = http://github.com/vim-scripts/Auto-Pairs
-[submodule ".vim/bundle/srcexpl"]
-	path = .vim/bundle/srcexpl
-	url = https://github.com/vim-scripts/SrcExpl.git
 [submodule ".vim/bundle/sudo"]
 	path = .vim/bundle/sudo
 	url = https://github.com/vim-scripts/sudo.vim.git
