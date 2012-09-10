@@ -58,10 +58,16 @@ bind ^a
 # define Ctrl+ left/right arrow to change between screens
 termcapinfo xterm "ks=\E[?1l\E=:ku=\E[A:kd=\E[B:kl=\E[D:kr=\E[C:kh=\E[5~:kH=\E[F"
 
+# terminal setting 
+term xterm
+utf8 on          # display encoding = utf8
+defencoding utf8 # internal encoding = utf8
+#encoding Big5
+#defencoding Big5
+
 # putty bindings
 bindkey "^[OC" next
 bindkey "^[OD" prev
-
 bindkey "^[[1;5C" next
 bindkey "^[[1;5D" prev
 
@@ -78,9 +84,11 @@ bindkey -k k9 kill    #F9
 bindkey -k k; screen  #F10
 bindkey -k F1 prev    #F11
 bindkey -k F2 next    #F12
-#encoding Big5
-#defencoding Big5
 
-term xterm
-utf8 on          # display encoding = utf8
-defencoding utf8 # internal encoding = utf8
+# for my Mac
+bindkey -k ku stuff ^[[A
+bindkey -k kd stuff ^[[B
+bindkey -k kr stuff ^[[C
+bindkey -k kl stuff ^[[D
+bindkey -k khome stuff ^[[1~
+bindkey -k kend stuff ^[[4~
