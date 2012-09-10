@@ -72,22 +72,6 @@ set tenc=utf-8
 
 
 
-"some key mapping
-"change window
-nmap gw :wincmd w<CR>
-nmap gW :wincmd W<CR>
-
-" NERDTree map to <F2>
-map <F2> :NERDTreeToggle<CR>
-
-"TagList"
-let Tlist_GainFocus_On_ToggleOpen = 1
-let Tlist_Close_On_Select = 1
-map <F3> :Tlist<CR>
-
-"clear search result
-nmap <F4> :let @/=""<CR>"
-
 " LanguageTool
 let g:languagetool_jar='~/dotfiles/.vim/bundle/LanguageTool/JLanguageTool/dist/LanguageTool.jar'
 
@@ -115,10 +99,8 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#infect()
 runtime ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
 
-
 " neocomplcache setting"
 let g:neocomplcache_enable_at_startup=1
-
 
 " filetype support
 filetype on

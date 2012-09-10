@@ -1,4 +1,23 @@
 """""""""""""""
+" Map key to toggle opt
+"
+"""""""""""""""
+function! MapToggle(key, opt)
+  let cmd = ':set '.a:opt.'! \| set '.a:opt."?\<CR>"
+  exec 'nnoremap '.a:key.' '.cmd
+  exec 'inoremap '.a:key." \<C-O>".cmd
+endfunction
+command! -nargs=+ MapToggle call MapToggle(<f-args>)
+
+" set F5 F6 by MapToggle-function in mymaptoggle.vim
+au BufNew MapToggle <F6> scrollbind
+au BufNew MapToggle <F7> nopaste
+" set F5 F6 by MapToggle-function in mymaptoggle.vim
+MapToggle <F6> scrollbind
+MapToggle <F7> nopaste
+
+
+"""""""""""""""
 " MoveTo* functions
 "
 """""""""""""""
@@ -19,7 +38,7 @@ function! MoveToPrevTab()
     if l:tab_nr == tabpagenr('$')
       tabprev
     endif
-    sp
+    vsp
   else
     close!
     exe "0tabnew"
@@ -45,7 +64,7 @@ function! MoveToNextTab()
     if l:tab_nr == tabpagenr('$')
       tabnext
     endif
-    sp
+    vsp
   else
     close!
     tabnew
@@ -54,5 +73,3 @@ function! MoveToNextTab()
   exe "b".l:cur_buf
 endfunc
 
-nmap gmt :call MoveToNextTab() <CR>
-nmap gmT :call MoveToPrevTab() <CR>

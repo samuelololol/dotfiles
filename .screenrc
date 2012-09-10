@@ -90,5 +90,3 @@ bindkey -k ku stuff ^[[A
 bindkey -k kd stuff ^[[B
 bindkey -k kr stuff ^[[C
 bindkey -k kl stuff ^[[D
-bindkey -k khome stuff ^[[1~
-bindkey -k kend stuff ^[[4~
