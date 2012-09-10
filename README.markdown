@@ -64,9 +64,13 @@ Installed ViM Plugins
 
     Insert or delete brackets, parens, quotes in pair.
 
-+ [crefvim](http://github.com/vim-scripts/CRefVim): 
++ [crefvim](http://github.com/vim-scripts/CRefVim)
 
     C reference support for ViM(Howto is described in [my blog](http://samuelololol.blogspot.com/2010/01/crefvim-c-reference-manual-especially.html))
+
++ [doxygentoolkit](https://github.com/vim-scripts/DoxygenToolkit.vim)
+
+    Simplify Doxygen documentation in C, C++, Python.
 
 + [LanguageTool](http://www.vim.org/scripts/script.php?script_id=3223)  
   
@@ -99,6 +103,14 @@ Installed ViM Plugins
 
     Delete/change/add parentheses/quotes/XML-tags/much more with ease
 
++ [sudo](https://github.com/vim-scripts/sudo.vim)
+
+    Allows one to edit a file with prevledges from an unprivledged session.
+
++ [tagbar](https://github.com/majutsushi/tagbar)
+    
+    Vim plugin that displays tags in a window, ordered by class etc.
+
 + [valgrind](https://github.com/vim-scripts/valgrind.vim)
 
     Navigate in the output of the memory checker valgrind
@@ -110,6 +122,26 @@ Installed ViM Plugins
 + [vim-pathogen](https://github.com/tpope/vim-pathogen)
 
     pathogen.vim: manage your runtimepath
+
+# FORKED PLUGIN
+### (with tuning)
+
++ [taglist-local](https://github.com/vim-scripts/taglist.vim)
+
+    Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc)
+    (Switch the Taglist Position to right and save locally as the support for ViM)
+
++ [trinity-local](https://github.com/vim-scripts/trinity.vim)
+
+    Build the trinity of srcexpl, taglist, NERD_tree to be a good IDE. 
+    (replace the Taglist function with Tagbar, switch the position of NERDTree 
+     and Taglist/Tagbar and adjust the Taglist/Tagbar window width)
+
++ [srcexpl-local](https://github.com/vim-scripts/SrcExpl)
+
+    A Source code Explorer which works like the context window of "Source Insight". 
+    (Disable the direct preview of one tag result)
+
 
 <!-- {{{ 
 * my custom vim script  
