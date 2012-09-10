@@ -97,6 +97,7 @@ function! <SID>Trinity_InitTagList()
     let g:Tlist_Use_Right_Window = 1
     " Set the window width
     let g:Tlist_WinWidth = 30
+    " setting tagbar width
     let g:tagbar_width = 30
     " Sort by the order
     let g:Tlist_Sort_Type = "order"
@@ -138,6 +139,7 @@ function! <SID>Trinity_InitSourceExplorer()
     " // Enable/Disable the local definition searching, and note that this is not  "
     " // guaranteed to work, the Source Explorer doesn't check the syntax for now. "
     " // It only searches for a match with the keyword according to command 'gd'   "
+    " samuel, disable local search
     let g:SrcExpl_searchLocalDef = 0
     " // Let the Source Explorer update the tags file when opening                 "
     let g:SrcExpl_isUpdateTags = 0
@@ -403,17 +405,20 @@ function! <SID>Trinity_ToggleTagList()
         if s:tag_list_switch == 0
             call <SID>Trinity_InitTagList()
             "Tlist
+            "samuel, use Tagbar
             TagbarToggle
             let s:tag_list_switch = 1
         endif
     else
         if s:tag_list_switch == 1
             "TlistClose
+            "samuel, use Tagbar
             TagbarClose
             let s:tag_list_switch = 0
         else
             call <SID>Trinity_InitTagList()
             "Tlist
+            "samuel, use Tagbar
             TagbarToggle
             let s:tag_list_switch = 1
         endif
@@ -447,6 +452,7 @@ function! <SID>Trinity_Toggle()
     if s:Trinity_switch == 1
         if s:tag_list_switch == 1
             "TlistClose
+            "samuel, use Tagbar
             TagbarClose
             let s:tag_list_switch = 0
         endif
@@ -463,6 +469,7 @@ function! <SID>Trinity_Toggle()
     else
         call <SID>Trinity_InitTagList()
         "Tlist
+        "samuel, use Tagbar
         TagbarToggle
         let s:tag_list_switch = 1
         call <SID>Trinity_InitSourceExplorer()

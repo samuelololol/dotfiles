@@ -1,6 +1,11 @@
+"samuel, map gs to switch to SrcExpl window
 nmap gs <C-W>j:call g:SrcExpl_Jump()<CR> 
+
+
+
 function! g:SrcExpl_UpdateTags()
     " Go to the current work directory
+    " samuel, disable going into file path
     " silent! exe "cd " . expand('%:p:h')
     " Get the amount of all files named 'tags'
     let l:tmp = len(tagfiles())
