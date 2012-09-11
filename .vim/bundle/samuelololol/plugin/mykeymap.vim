@@ -9,16 +9,19 @@ nmap gmT :call MoveToPrevTab() <CR>
 
 "------------------------------------------------------
 
-" NERDTree map to <F2>
-map <F2> :NERDTreeToggle<CR>
-"TagList"
-let Tlist_GainFocus_On_ToggleOpen = 1
-let Tlist_Close_On_Select = 1
-map <F3> :Tlist<CR>
+"<F2> open NERDTree 
+nmap <F2> :NERDTreeToggle<CR>
+
+"<F3> open TagList
+nmap <F3> :Tlist<CR>
 
 "clear search result
 "nmap <F4> :let @/=""<CR>"
 
-"Tagbar
-map <F4> :TagbarToggle<CR>
-"<F5> <F6> setting is in mykeymapfunction.vim
+"<F4> open Tagbar
+nmap <F4> :TagbarToggle<CR>
+
+"<F5> Reflesh file
+nmap <F5> :edit <CR>:echom "Update File"<CR>
+
+"<F6>, <F7> setting is in mykeymapfunction.vim
