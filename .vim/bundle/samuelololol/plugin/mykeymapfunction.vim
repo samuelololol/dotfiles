@@ -9,14 +9,6 @@ function! MapToggle(key, opt)
 endfunction
 command! -nargs=+ MapToggle call MapToggle(<f-args>)
 
-" set F5 F6 by MapToggle-function in mymaptoggle.vim
-au BufNew MapToggle <F6> scrollbind
-au BufNew MapToggle <F7> nopaste
-" set F5 F6 by MapToggle-function in mymaptoggle.vim
-MapToggle <F6> scrollbind
-MapToggle <F7> nopaste
-
-
 """""""""""""""
 " MoveTo* functions
 "
@@ -72,4 +64,3 @@ function! MoveToNextTab()
   "opening current buffer in new window
   exe "b".l:cur_buf
 endfunc
-

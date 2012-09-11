@@ -480,10 +480,10 @@ function! <SID>Trinity_Toggle()
         let s:nerd_tree_switch = 1
         let s:Trinity_switch = 1
     endif
+
     "samuel
-    
-    NERDTreeClose
-    let s:nerd_tree_switch = 0
+    "NERDTreeClose
+    "let s:nerd_tree_switch = 0
     call <SID>Trinity_UpdateWindow()
 
 endfunction " }}}
