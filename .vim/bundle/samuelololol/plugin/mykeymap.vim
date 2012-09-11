@@ -24,9 +24,9 @@ nmap <F3> :Tlist<CR>
 "<F4> open Tagbar
 nmap <F4> :TagbarToggle<CR>
 
-"<F5> Reflesh file
+"<F5> Refresh file
 nmap <F5> :edit <CR>:echom "Update File"<CR>
-nmap <C-\>r :edit <CR>:echom "Update File"<CR>G
+nmap <C-\><C-r> :edit <CR>:echom "Update File"<CR>G
 
 " set F5 F6 by MapToggle-function in mymaptoggle.vim
 au BufNew MapToggle <F6> scrollbind
