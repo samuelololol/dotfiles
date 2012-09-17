@@ -131,17 +131,26 @@ Installed ViM Plugins
     Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc)
     (Switch the Taglist Position to right and save locally as the support for ViM)
 
+        edit: embedded taglist in vim folder
+
 + [trinity-local](https://github.com/vim-scripts/trinity.vim)
 
     Build the trinity of srcexpl, taglist, NERD_tree to be a good IDE. 
     (replace the Taglist function with Tagbar, switch the position of NERDTree 
      and Taglist/Tagbar and adjust the Taglist/Tagbar window width)
 
+        edit: 
+            replace taglist with tagbar
+            disable local searching
+
 + [srcexpl-local](https://github.com/vim-scripts/SrcExpl)
 
     A Source code Explorer which works like the context window of "Source Insight". 
     (Disable the direct preview of one tag result)
 
+        edit:
+            disable local searching
+            disable the preview declaration
 
 <!-- {{{ 
 * my custom vim script  
@@ -160,12 +169,10 @@ Installed ViM Plugins
 
 NOTES
 ===========
-
             add submodule with single script command:
 
             ~/dotfiles/ $ ./commands/add_submodule.sh <FULL GIT REPO PATH> \
                                 ./.vim/bundle/<local folder name for the plugin>
-
 
 }}} 
 vim:fdm=marker
