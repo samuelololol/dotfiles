@@ -131,7 +131,8 @@ Installed ViM Plugins
     Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc)
     (Switch the Taglist Position to right and save locally as the support for ViM)
 
-        edit: embedded taglist in vim folder
+        edit: 
+            embedded taglist in vim folder
 
 + [trinity-local](https://github.com/vim-scripts/trinity.vim)
 
@@ -152,6 +153,62 @@ Installed ViM Plugins
             disable local searching
             disable the preview declaration
 
+# Vim Personal Features
+   
++ Cscope/ctags meta files generating command
+
+        :CSCTgenC cscope  "generating cscope.out and processing the add into vim
+        :CSCTgenC ctags   "generation ctags for taglist/tagbar
+        :CSCTgenC clean   "remove cscope/ctags files
+    
++ Switch Window
+
+        gw/gW
+
++ Move tab to next as an window
+
+        gmt/gmT
+
++ Key-binding
+
+        NERDTree:           <F2>
+        Taglist:            <F3>
+        Tagbar:             <F4>
+        Update file:        <F5> (update and go the bottom of the file <C-\><C-R>)
+        Scroll bind/unbind: <F6>
+        Set paste/nopaste:  <F7>
+        Update NERDTree list: <Leader><r>
+        Open/Close QuickFix:  <Leader><q>
+        Yahoo Dictionary: <C-K> (cursor on the word, or virtual mode selected)
+
+
+# Screen Personal Features
+
++ Key-binding
+
+        window-kill    <F9>
+        window-create  <F10>
+        prev-window    <F11>
+        next-window    <F12>
+
+# tmux Personal Features
+
++ Key-binding
+
+        prefix key       <C-a>
+        kill-pane        <F9>
+        new-window       <F10>
+        previous-window  <F11>
+        next-window      <F12>
+
+        split pane            <C-a>s
+        split pane vertically <C-a>v
+
+        copy mode  <C-[>
+        select     v
+        copy(yank) y
+        paste      <C-]>
+
 <!-- {{{ 
 * my custom vim script  
 
@@ -169,10 +226,18 @@ Installed ViM Plugins
 
 NOTES
 ===========
-            add submodule with single script command:
+            1. add submodule with single script command:
 
-            ~/dotfiles/ $ ./commands/add_submodule.sh <FULL GIT REPO PATH> \
+                ~/dotfiles/ $ ./commands/add_submodule.sh <FULL GIT REPO PATH> \
                                 ./.vim/bundle/<local folder name for the plugin>
+
+
+            2. delete submodule 
+
+                Delete the relevant section from the .gitmodules file.
+                Delete the relevant section from .git/config.
+                Run git rm --cached path_to_submodule (no trailing slash).
+                Commit and delete the now untracked submodule files.
 
 }}} 
 vim:fdm=marker
