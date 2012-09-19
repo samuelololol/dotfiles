@@ -27,7 +27,8 @@ let g:AutoPairsMapCR = 0
 " snippets feature: 
 " use <CR> to choose the candidates including the expanding behavior
 " the worst case is using auto-paris return function
-imap <expr><CR> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? neocomplcache#smart_close_popup() : "\<CR>\<Plug>AutoPairsReturn"
+"imap <expr><CR> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? neocomplcache#smart_close_popup() : "\<CR>\<Plug>AutoPairsReturn"
+imap <expr><CR> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? neocomplcache#smart_close_popup() : "\<CR>"
 
 let g:NeoComplCache_EnableAtStartup = 1
 let g:NeoComplCache_KeywordCompletionStartLength = 1

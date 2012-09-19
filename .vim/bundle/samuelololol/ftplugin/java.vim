@@ -1,4 +1,4 @@
-setlocal foldcolumn=3
+"setlocal foldcolumn=3
 "setlocal omnifunc=javacomplete
 
 " java Cscope/Ctags meta files generating command
