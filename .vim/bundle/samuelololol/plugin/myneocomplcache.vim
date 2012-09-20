@@ -16,7 +16,7 @@ inoremap <expr><C-l> neocomplcache#complete_common_string()
 "let g:neocomplcache_enable_auto_select = 1
 
 " 4. <CR>: close popup and save indent.
-inoremap <expr><CR> neocomplcache#smart_close_popup() . "\<CR>"
+"inoremap <expr><CR> neocomplcache#smart_close_popup() . "\<CR>"
 inoremap <expr><BS> neocomplcache#smart_close_popup() . "\<C-h>"
 
 
@@ -28,13 +28,14 @@ let g:AutoPairsMapCR = 0
 " use <CR> to choose the candidates including the expanding behavior
 " the worst case is using auto-paris return function
 "imap <expr><CR> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? neocomplcache#smart_close_popup() : "\<CR>\<Plug>AutoPairsReturn"
-imap <expr><CR> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? neocomplcache#smart_close_popup() : "\<CR>"
+imap <expr><CR> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_jump)" : pumvisible() ? neocomplcache#smart_close_popup() : "\<CR>"
 
 let g:NeoComplCache_EnableAtStartup = 1
 let g:NeoComplCache_KeywordCompletionStartLength = 1
 let g:NeoComplCache_MinKeywordLength = 3
 let g:NeoComplCache_MinSyntaxLength = 3
 let g:NeoComplCache_SmartCase = 1
+let g:neocomplcache_enable_camel_case_completion = 1
 
 
 " Set minimum syntax keyword length.

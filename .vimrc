@@ -60,6 +60,7 @@ set nospell
 if $TERM == 'screen'
   set term=xterm
 endif
+set t_Co=256
 
 "encoding
 " 檔案編碼,檔案編碼清單 (file encoding)(file encoding list)
