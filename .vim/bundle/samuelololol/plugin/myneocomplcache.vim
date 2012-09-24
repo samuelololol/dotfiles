@@ -27,7 +27,13 @@ let g:AutoPairsMapCR = 0
 " snippets feature: 
 " use <CR> to choose the candidates including the expanding behavior
 " the worst case is using auto-paris return function
-"imap <expr><CR> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? neocomplcache#smart_close_popup() : "\<CR>\<Plug>AutoPairsReturn"
+
+
+"1. neocomplcache author recommended version for <TAB>
+"imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_jump)" : pumvisible() ? "\<C-n>" : "\<TAB>"
+"2. auto-pairs author recommended version"
+imap <expr><CR> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? neocomplcache#smart_close_popup() : "\<CR>\<Plug>AutoPairsReturn"
+"3. my version for <CR>
 imap <expr><CR> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_jump)" : pumvisible() ? neocomplcache#smart_close_popup() : "\<CR>"
 
 let g:NeoComplCache_EnableAtStartup = 1
