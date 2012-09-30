@@ -62,6 +62,8 @@
 
 ### zsh plugin: oh-my-zsh
 
+    Theme: https://github.com/robbyrussell/oh-my-zsh/wiki/themes 
+
 #INFO
 
 Installed ViM Plugins
