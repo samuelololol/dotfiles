@@ -6,3 +6,9 @@ function! Addpyheader()
 endfunction
 "au BufNewFile *.py call Addpyheader()
 call Addpyheader()
+
+let g:GenCscopeCmdC = "find . -name \"*.py\" > cscope.files && cscope -bkq -i cscope.files"
+let g:GenCtagsCmdC = "ctags -R --c-kinds=+p --fields=+iaS --extra=+q --language-force=Python"
+
+let g:GenCscopeCmd = g:GenCscopeCmdC
+let g:GenCtagsCmd = g:GenCtagsCmdC
