@@ -37,3 +37,6 @@
 [submodule ".vim/bundle/doxygentoolkit"]
 	path = .vim/bundle/doxygentoolkit
 	url = http://github.com/vim-scripts/DoxygenToolkit.vim.git
+[submodule ".zsh"]
+	path = .zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git

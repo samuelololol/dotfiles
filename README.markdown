@@ -22,6 +22,10 @@
         # rm ~/.vimrc     && ln -s dotfiles/.vimrc     ~/.vimrc  
         # rm ~/.vim -rf   && ln -s dotfiles/.vim       ~/.vim  
 
+        zsh
+        # rm ~/.zshrc     && ln -s dotfiles/.zshrc     ~/.zshrc
+        # rm ~/.zsh -rf   && ln -s dotfiles/.zsh       ~/.zsh
+
 
 3. Update the sources in dotfiles  
 
@@ -55,6 +59,8 @@
 
         # cd ~/dotfiles
         # ./commands/update_ydict.sh 
+
+### zsh plugin: oh-my-zsh
 
 #INFO
 
