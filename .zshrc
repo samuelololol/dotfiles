@@ -17,3 +17,4 @@ alias l='ll'
 alias la='l -a'
 alias lh='l -h'
 alias sl='ls'
+export LC_CTYPE=zh_TW.utf8
