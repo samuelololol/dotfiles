@@ -40,3 +40,6 @@
 [submodule ".zsh"]
 	path = .zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule ".vim/bundle/tasklist"]
+	path = .vim/bundle/tasklist
+	url = https://github.com/vim-scripts/TaskList.vim.git
