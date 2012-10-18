@@ -1,4 +1,10 @@
 #!/bin/bash
+cd ~/dotfiles/.zsh
+echo "oh-my-zsh"
+git fetch
+git pull origin master
+cd ..
+git add .zsh
 cd ~/dotfiles/.vim/bundle/
 modules=(
 auto-pairs
