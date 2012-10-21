@@ -1,3 +1,4 @@
+export PATH=$PATH:/usr/local/bin
 ZSH=$HOME/dotfiles/.zsh
 #export ZSH_THEME="miloshadzic"
 #export ZSH_THEME="norm"
@@ -17,4 +18,5 @@ alias l='ll'
 alias la='l -a'
 alias lh='l -h'
 alias sl='ls'
+alias tmux='tmux -2'
 export LC_CTYPE=zh_TW.utf8
