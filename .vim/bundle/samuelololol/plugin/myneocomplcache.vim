@@ -53,6 +53,6 @@ let g:neocomplcache_min_syntax_length = 4
 " 6:green-blue, 7: white, 8: black, 9: red
 highlight   clear
 highlight   Pmenu         ctermfg=7 ctermbg=4
-highlight   PmenuSel      ctermfg=0 ctermbg=3
+highlight   PmenuSel      ctermfg=7 ctermbg=3
 highlight   PmenuSbar     ctermfg=7 ctermbg=0
 highlight   PmenuThumb    ctermfg=0 ctermbg=7

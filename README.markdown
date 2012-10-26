@@ -203,19 +203,23 @@ Installed ViM Plugins
 
 + Key-binding
 
-        prefix key       <C-a>
-        kill-pane        <F9>
-        new-window       <F10>
-        previous-window  <F11>
-        next-window      <F12>
+        prefix key             <C-a>
+        kill-pane              <F9>
+        new-window             <F10>
+        previous-window        <F11>
+        next-window            <F12>
 
-        split pane            <C-a>s
-        split pane vertically <C-a>v
+        split pane             <C-a>s
+        split pane vertically  <C-a>v
 
-        copy mode  <C-[>
-        select     v
-        copy(yank) y
-        paste      <C-]>
+        copy mode              <C-[>
+        select                 v
+        copy(yank)             y
+        paste                  <C-]>
+
+        mouse mode:
+        ON                     <C-a> m   (xtrem scroll mode, convenient for tmux-system copy behavior)
+        OFF                    <C-a> M   (enable the X-system native copy/paste behavior)
 
 <!-- {{{ 
 * my custom vim script  
