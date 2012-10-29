@@ -12,11 +12,11 @@ crefvim
 doxygentoolkit
 matchit
 neocomplcache
-neocomplcache-snippets-complete
 nerdtree
 sudo
 surround
 tagbar
+tasklist
 valgrind
 vim-easymotion
 vim-pathogen
