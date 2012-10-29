@@ -40,3 +40,6 @@
 [submodule ".vim/bundle/tasklist"]
 	path = .vim/bundle/tasklist
 	url = https://github.com/vim-scripts/TaskList.vim.git
+[submodule ".vim/bundle/neosnippet"]
+	path = .vim/bundle/neosnippet
+	url = https://github.com/Shougo/neosnippet

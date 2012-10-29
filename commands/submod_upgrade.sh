@@ -12,6 +12,7 @@ crefvim
 doxygentoolkit
 matchit
 neocomplcache
+neosnippet
 nerdtree
 sudo
 surround
