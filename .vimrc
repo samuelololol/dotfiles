@@ -48,8 +48,16 @@ syntax on
 " setting backspace work
 set backspace=indent,eol,start
 
-"comment color
-highlight Comment ctermfg=darkcyan
+" comment color(original)
+"highlight Comment ctermfg=darkcyan
+
+" directly set the background(new, but bad)
+"set background=dark
+
+" colorscheme way
+"colorscheme desert
+colorscheme delek
+
 
 "spell check
 setlocal spell spelllang=en_us
@@ -115,3 +123,14 @@ filetype indent on
 "        set foldcolumn=3
 "        set foldlevel=0     " fold everything deeper than 0
 "        set foldnestmax=1  " dont fold everything deeper than 1
+"
+
+"reference from: http://nvie.com/posts/how-i-boosted-my-vim
+set history=1000         " remember more commands and search history
+set undolevels=1000      " use many muchos levels of undo
+set wildignore=*.swp,*.bak,*.pyc,*.class,*.o
+set title                " change the terminal's title
+set visualbell           " don't beep
+set noerrorbells         " don't beep
+set nobackup             " don't backup
+set noswapfile           " don't backup
