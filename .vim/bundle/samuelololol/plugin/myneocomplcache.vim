@@ -33,7 +33,8 @@ let g:AutoPairsMapCR = 0
 "2. auto-pairs author recommended version"
 "imap <expr><CR> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? neocomplcache#smart_close_popup() : "\<CR>\<Plug>AutoPairsReturn"
 "3. my version for <CR>
-imap <expr><CR> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_jump)" : pumvisible() ? neocomplcache#smart_close_popup() : "\<CR>"
+"imap <expr><CR> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_jump)" : pumvisible() ? neocomplcache#smart_close_popup() : "\<CR>"
+imap <expr><CR> neosnippet#expandable() ? "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? neocomplcache#smart_close_popup() : "\<CR>"
 
 let g:NeoComplCache_EnableAtStartup = 1
 let g:NeoComplCache_KeywordCompletionStartLength = 1
@@ -51,8 +52,15 @@ let g:neocomplcache_min_syntax_length = 4
 " 0:
 " 2:green, 3:yello, 4:blue, 5:purple,
 " 6:green-blue, 7: white, 8: black, 9: red
+
 highlight   clear
 highlight   Pmenu         ctermfg=7 ctermbg=4
 highlight   PmenuSel      ctermfg=7 ctermbg=3
 highlight   PmenuSbar     ctermfg=7 ctermbg=0
 highlight   PmenuThumb    ctermfg=0 ctermbg=7
+
+
+" new feature for conceal
+if has('conceal')
+    set conceallevel=2 concealcursor=i
+endif
