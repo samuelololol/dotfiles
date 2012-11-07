@@ -11,9 +11,6 @@ nmap gmt :call MoveToNextTab() <CR>
 nmap gmT :call MoveToPrevTab() <CR>
 
 "----------------------------------------------------------------------
-"<leader>; switch line number mode
-map <leader>; :call ToggleLineNumbers()<CR>
-
 "normal mode <F2> open NERDTree 
 nmap <F2> :NERDTreeToggle<CR>
 

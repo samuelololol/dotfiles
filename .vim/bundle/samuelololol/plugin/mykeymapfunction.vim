@@ -10,11 +10,7 @@ endfunction
 command! -nargs=+ MapToggle call MapToggle(<f-args>)
 
 
-" Autocmds to switch number mode based on Vim Mode
-autocmd InsertEnter * :set number
-autocmd InsertLeave * :set relativenumber
-
-" function switch number mode
+""" function switch number mode
 function! ToggleLineNumbers()
   if &number == 1
     set relativenumber
@@ -22,6 +18,14 @@ function! ToggleLineNumbers()
     set number
   end
 endfunction
+
+""<leader>; switch line number mode
+"map <leader>; :call ToggleLineNumbers()<CR>
+"" Autocmds to switch number mode based on Vim Mode
+"autocmd InsertEnter * :set number
+"autocmd InsertLeave * :set relativenumber
+
+
 
 
 """""""""""""""
