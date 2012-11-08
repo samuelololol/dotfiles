@@ -26,6 +26,9 @@
         # rm ~/.zshrc     && ln -s dotfiles/.zshrc     ~/.zshrc
         # rm ~/.zsh -rf   && ln -s dotfiles/.zsh       ~/.zsh
 
+*In case you want to save your original Vim setting, you can move the .vim/ to .vim/ as below
+
+        mv ~/.vim ~/dotfiles/.vim/extfdr
 
 3. Update the sources in dotfiles  
 
