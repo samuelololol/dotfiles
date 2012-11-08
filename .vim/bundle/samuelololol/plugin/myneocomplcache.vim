@@ -47,19 +47,6 @@ let g:neocomplcache_enable_camel_case_completion = 1
 " Set minimum syntax keyword length.
 let g:neocomplcache_min_syntax_length = 4
 
-
-" set color of pop-up menu"
-" 0:
-" 2:green, 3:yello, 4:blue, 5:purple,
-" 6:green-blue, 7: white, 8: black, 9: red
-
-"highlight   clear
-"highlight   Pmenu         ctermfg=7 ctermbg=4
-"highlight   PmenuSel      ctermfg=7 ctermbg=3
-"highlight   PmenuSbar     ctermfg=7 ctermbg=0
-"highlight   PmenuThumb    ctermfg=0 ctermbg=7
-
-
 " new feature for conceal
 if has('conceal')
     set conceallevel=2 concealcursor=i
