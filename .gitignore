@@ -2,3 +2,4 @@ tags
 *.zip
 .vim/doc/tags
 .vim/.netrwhist
+.vim/extfdr/*
