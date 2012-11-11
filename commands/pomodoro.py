@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import time
 import sys
+import os
 
 barlen = 20
 def percf(inp):
@@ -30,6 +31,8 @@ def display(inp):
         rtn = ''.join([rtn,']'])
     else:
         rtn = ''.join(' Take a Break! ')
+        os.system('tmux display "You Should Take A Break!        \
+                  !Σ(  °д°lll)"')
     return rtn
 
 def count25(min):
