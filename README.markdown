@@ -254,6 +254,23 @@ NOTES
                 Run git rm --cached path_to_submodule (no trailing slash).
                 Commit and delete the now untracked submodule files.
 
+            3. add git tag
+                
+               add tag:
+                    git tag -a <tag> <commit sha1>
+
+               upload tag:
+                    single tag: git push origin <tag>
+                    multiple:   git push origin --tags
+
+            4. delete tag
+
+               local:
+                    git tag -d <tag>
+               remote:
+                    git push origin :ref/tags/<mytag>
+
+
 }}} 
 vim:fdm=marker
 -->
