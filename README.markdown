@@ -203,7 +203,7 @@ Installed ViM Plugins
         next-window    <F12>
 
 # tmux Personal Features
-
+![dotfiles][1]
 + Key-binding
 
         prefix key             <C-a>
@@ -223,6 +223,9 @@ Installed ViM Plugins
         mouse mode:
         ON                     <C-a> m   (xtrem scroll mode, convenient for tmux-system copy behavior)
         OFF                    <C-a> M   (enable the X-system native copy/paste behavior)
+
+
+[1]: https://raw.github.com/samuelololol/dotfiles/master/img/tmux-statusbar-window-titles.png
 
 <!-- {{{ 
 * my custom vim script  
