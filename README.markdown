@@ -225,7 +225,7 @@ Installed ViM Plugins
         OFF                    <C-a> M   (enable the X-system native copy/paste behavior)
 
 
-[1]: https://raw.github.com/samuelololol/dotfiles/master/img/tmux-statusbar-window-titles.png
+[1]: https://raw.github.com/samuelololol/dotfiles/master/.img/tmux-statusbar-window-titles.png
 
 <!-- {{{ 
 * my custom vim script  
@@ -249,7 +249,6 @@ NOTES
                 ~/dotfiles/ $ ./commands/add_submodule.sh <FULL GIT REPO PATH> \
                                 ./.vim/bundle/<local folder name for the plugin>
 
-
             2. delete submodule 
 
                 Delete the relevant section from the .gitmodules file.
@@ -272,8 +271,6 @@ NOTES
                     git tag -d <tag>
                remote:
                     git push origin :ref/tags/<mytag>
-
-
 }}} 
 vim:fdm=marker
 -->

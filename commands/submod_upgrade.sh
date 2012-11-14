@@ -9,6 +9,7 @@ cd ~/dotfiles/.vim/bundle/
 modules=(
 auto-pairs
 crefvim
+ctrlp.vim
 doxygentoolkit
 matchit
 neocomplcache
