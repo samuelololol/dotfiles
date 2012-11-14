@@ -9,74 +9,77 @@
                                                                                                           
 # Samuel's Dot Files
 
+This is the repository of some setting files for some useful tools(screen, tmux, vim, zsh, ...).
 
 ## PREREQUISITES
 
-### git
++ git
 >for installing this repository
 
-### svn
++ svn
 >for _ydict_
 
-### zsh
-### screen
-### tmux 
++ zsh
++ screen
++ tmux 
 >\>tmux-1.7
 
-### Vim
++ Vim
 >\>Vim-7.3
 
 ##HOW TO INSTALL
 
-1. Clone the source file to ur home directory from github:  
-    
-        # git clone https://github.com/samuelololol/dotfiles.git
+### First: Clone the source file
+>commands:    
 
-2. Install the prefer topics
+    # git clone https://github.com/samuelololol/dotfiles.git
 
-    ###screen/tmux
+### Second: Install the preferred topics
+
++ screen/tmux
 
     >Put `export TERM=xterm-256color` in ~/.bashrc to support 256color in screen/tmux
 
         # rm ~/.screenrc  && ln -s dotfiles/.screenrc  ~/.screenrc  
         # rm ~/.tmux.conf && ln -s dotfiles/.tmux.conf ~/.tmux.conf  
 
-    ###Vim
++ Vim
 
     >In case you want to save your original Vim setting, you can move the original .vim/ as below
 
         # mv ~/.vim ~/dotfiles/.vim/extfdr
 
-    >Install 
+    >commands:
 
         # rm ~/.vimrc   && ln -s dotfiles/.vimrc ~/.vimrc  
         # rm ~/.vim -rf && ln -s dotfiles/.vim   ~/.vim  
 
-    ###zsh
++ zsh
+
+    >commands:
 
         # rm ~/.zshrc   && ln -s dotfiles/.zshrc ~/.zshrc
         # rm ~/.zsh -rf && ln -s dotfiles/.zsh   ~/.zsh
 
-    ###ydict (Yahoo Dictionary on console):
++ ydict (Yahoo Dictionary on console):
 
     >_svn_ is required
 
         # cd ~/dotfiles
         # ./commands/update_ydict.sh 
 
-    ###Others
++ Others
     >my gnt setting file for finch
 
         # rm ~/.gntrc && ln -s dotfiles/.gntrc ~/.gntrc  
 
+### Final: Update the sources in the path of dotfiles/ 
+>commands:
 
-
-3. Update the sources in dotfiles  
-
-        # cd dotfiles  
-        # git pull
-        # ./commands/submod_sync.sh
-       
+    # cd dotfiles  
+    # git pull
+    # ./commands/submod_sync.sh
+   
 ##Vim PLUGIN INFO
 
 Installed ViM Plugins
@@ -219,73 +222,77 @@ Installed ViM Plugins
         2. put the cursor under a word and press <C-k>
 
 ##OTHER FEATURES:
-### zsh
->[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
++ zsh
 
-A community-driven framework for managing your zsh configuration. 
-Includes 40+ optional plugins (rails, git, OSX, hub, capistrano, 
-brew, ant, macports, etc), over 80 terminal themes to spice up your 
-morning, and an auto-update tool so that makes it easy to keep up 
-with the latest updates from the community.
+    >[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
->[Theme](https://github.com/robbyrussell/oh-my-zsh/wiki/themes): 
-[https://github.com/robbyrussell/oh-my-zsh/wiki/themes](https://github.com/robbyrussell/oh-my-zsh/wiki/themes)
+    A community-driven framework for managing your zsh configuration. 
+    Includes 40+ optional plugins (rails, git, OSX, hub, capistrano, 
+    brew, ant, macports, etc), over 80 terminal themes to spice up your 
+    morning, and an auto-update tool so that makes it easy to keep up 
+    with the latest updates from the community.
+
+    >[Theme](https://github.com/robbyrussell/oh-my-zsh/wiki/themes): 
+    [https://github.com/robbyrussell/oh-my-zsh/wiki/themes](https://github.com/robbyrussell/oh-my-zsh/wiki/themes)
 
 
-### screen
++ screen
 
-#### Key-binding
+    >**Key-binding**
 
->**window behavior**
+    + **window behavior**
 
-    window-kill    <F9>
-    window-create  <F10>
-    prev-window    <F11>
-    next-window    <F12>
+            window-kill    <F9>
+            window-create  <F10>
+            prev-window    <F11>
+            next-window    <F12>
 
->**content copy**
+    + **content copy**
 
-    copy mode              <C-a>[
-    select                 <space>
-    copy(yank)             <space>
-    paste                  <C-a>]
+            copy mode              <C-a>[
+            select                 <space>
+            copy(yank)             <space>
+            paste                  <C-a>]
 
-### tmux
++ tmux
 ![dotfiles][1]
-####Key-binding
+    >Key-binding
 
->**window/pane behavior**
+    + **window/pane behavior**
 
-    prefix key             <C-a>
-    kill-pane              <F9>
-    new-window             <F10>
-    previous-window        <F11>
-    next-window            <F12>
->**pane split**
+            prefix key             <C-a>
+            kill-pane              <F9>
+            new-window             <F10>
+            previous-window        <F11>
+            next-window            <F12>
+
+    + **pane split**
     
-    split pane             <C-a>s
-    split pane vertically  <C-a>v
->**content copy**
+            split pane             <C-a>s
+            split pane vertically  <C-a>v
 
-    copy mode              <C-a>[
-    select                 v
-    copy(yank)             y
-    paste                  <C-a>]
->**mouse mode**
+    + **content copy**
 
-    ON                     <C-a> m   (xtrem scroll mode, convenient for tmux-system copy behavior)
-    OFF                    <C-a> M   (enable the X-system native copy/paste behavior)
+            copy mode              <C-a>[
+            select                 v
+            copy(yank)             y
+            paste                  <C-a>]
 
-### LanguageTool installation 
+    + **mouse mode**
 
-+ Requirements:  
+            ON                     <C-a> m   (xtrem scroll mode, convenient for tmux-system copy behavior)
+            OFF                    <C-a> M   (enable the X-system native copy/paste behavior)
 
-    (gentoo)  
-    >= _dev-java/sun-jdk_-1.604  
-    _dev-java/ant_  
-    _dev-vcs/cvs_  
++ LanguageTool installation 
 
-+ Use the following commands
+    > Requirements:  
+
+        (gentoo)  
+        >= _dev-java/sun-jdk_-1.604  
+        _dev-java/ant_  
+        _dev-vcs/cvs_  
+
+    > Use the following commands
 
         # cd ~/dotfiles  
         # ./commands/build_languagetool.sh
