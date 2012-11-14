@@ -8,25 +8,23 @@
      \/___/ \/__/\/_/\/_/\/_/\/_/\/___/ \/____/\/____/\/___/ \/____/ by samuelololol@gmail.com
                                                                                                           
 # Samuel's Dot Files
+
+
 ## PREREQUISITES
 
-* git
->for install this repository
+### git
+>for installing this repository
 
-* svn
+### svn
 >for _ydict_
 
-* zsh
-* LanguageTool
->optional, if you want to use it
+### zsh
+### screen
+### tmux 
+>\>tmux-1.7
 
-* screen
-* tmux 
-
-    >\>tmux-1.7
-
-* Vim
-        >\>Vim-7.3
+### Vim
+>\>Vim-7.3
 
 ##HOW TO INSTALL
 
@@ -36,30 +34,40 @@
 
 2. Install the prefer topics
 
-    >screen/tmux
+    ###screen/tmux
 
-    Put `export TERM=xterm-256color` in ~/.bashrc to support 256color in screen/tmux
+    >Put `export TERM=xterm-256color` in ~/.bashrc to support 256color in screen/tmux
 
         # rm ~/.screenrc  && ln -s dotfiles/.screenrc  ~/.screenrc  
         # rm ~/.tmux.conf && ln -s dotfiles/.tmux.conf ~/.tmux.conf  
-    >Vim
 
-        # rm ~/.vimrc     && ln -s dotfiles/.vimrc     ~/.vimrc  
-        # rm ~/.vim -rf   && ln -s dotfiles/.vim       ~/.vim  
-    In case you want to save your original Vim setting, you can move the original .vim/ as below
+    ###Vim
+
+    >In case you want to save your original Vim setting, you can move the original .vim/ as below
 
         # mv ~/.vim ~/dotfiles/.vim/extfdr
-    >zsh
 
-        # rm ~/.zshrc     && ln -s dotfiles/.zshrc     ~/.zshrc
-        # rm ~/.zsh -rf   && ln -s dotfiles/.zsh       ~/.zsh
-    >ydict (Yahoo Dictionary on console):
+    >Install 
+
+        # rm ~/.vimrc   && ln -s dotfiles/.vimrc ~/.vimrc  
+        # rm ~/.vim -rf && ln -s dotfiles/.vim   ~/.vim  
+
+    ###zsh
+
+        # rm ~/.zshrc   && ln -s dotfiles/.zshrc ~/.zshrc
+        # rm ~/.zsh -rf && ln -s dotfiles/.zsh   ~/.zsh
+
+    ###ydict (Yahoo Dictionary on console):
+
+    >_svn_ is required
 
         # cd ~/dotfiles
         # ./commands/update_ydict.sh 
+
+    ###Others
     >my gnt setting file for finch
 
-        # rm ~/.gntrc     && ln -s dotfiles/.gntrc     ~/.gntrc  
+        # rm ~/.gntrc && ln -s dotfiles/.gntrc ~/.gntrc  
 
 
 
@@ -69,26 +77,6 @@
         # git pull
         # ./commands/submod_sync.sh
        
-##FEATURES
-
-### LanguageTool installation 
-
-+ Requirements:  
-
-    (gentoo)  
-    >= _dev-java/sun-jdk_-1.604  
-    _dev-java/ant_  
-    _dev-vcs/cvs_  
-
-+ Use the following commands
-
-        # cd ~/dotfiles  
-        # ./commands/build_languagetool.sh
-
-### zsh plugin: oh-my-zsh
-
-    Theme: https://github.com/robbyrussell/oh-my-zsh/wiki/themes 
-
 ##Vim PLUGIN INFO
 
 Installed ViM Plugins
@@ -169,7 +157,7 @@ Installed ViM Plugins
     pathogen.vim: manage your runtimepath
 
 ## FORKED PLUGIN
-### (with tuning)
+### (with some noob-tweak)
 
 + [taglist-local](https://github.com/vim-scripts/taglist.vim)
 
@@ -223,37 +211,86 @@ Installed ViM Plugins
         Open/Close QuickFix:  <Leader><q>
         Yahoo Dictionary: <C-K> (cursor on the word, or virtual mode selected)
 
++ English/Chinese Dictionary Translateion
 
-# Screen Personal Features
+    >_ydict_ is required
 
-+ Key-binding
+        1. Select a pharse in virtaul-mode and press <C-k> or
+        2. put the cursor under a word and press <C-k>
 
-        window-kill    <F9>
-        window-create  <F10>
-        prev-window    <F11>
-        next-window    <F12>
+##OTHER FEATURES:
+### zsh
+>[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
-# tmux Personal Features
+A community-driven framework for managing your zsh configuration. 
+Includes 40+ optional plugins (rails, git, OSX, hub, capistrano, 
+brew, ant, macports, etc), over 80 terminal themes to spice up your 
+morning, and an auto-update tool so that makes it easy to keep up 
+with the latest updates from the community.
+
+>[Theme](https://github.com/robbyrussell/oh-my-zsh/wiki/themes): 
+[https://github.com/robbyrussell/oh-my-zsh/wiki/themes](https://github.com/robbyrussell/oh-my-zsh/wiki/themes)
+
+
+### screen
+
+#### Key-binding
+
+>**window behavior**
+
+    window-kill    <F9>
+    window-create  <F10>
+    prev-window    <F11>
+    next-window    <F12>
+
+>**content copy**
+
+    copy mode              <C-a>[
+    select                 <space>
+    copy(yank)             <space>
+    paste                  <C-a>]
+
+### tmux
 ![dotfiles][1]
-+ Key-binding
+####Key-binding
 
-        prefix key             <C-a>
-        kill-pane              <F9>
-        new-window             <F10>
-        previous-window        <F11>
-        next-window            <F12>
+>**window/pane behavior**
 
-        split pane             <C-a>s
-        split pane vertically  <C-a>v
+    prefix key             <C-a>
+    kill-pane              <F9>
+    new-window             <F10>
+    previous-window        <F11>
+    next-window            <F12>
+>**pane split**
+    
+    split pane             <C-a>s
+    split pane vertically  <C-a>v
+>**content copy**
 
-        copy mode              <C-[>
-        select                 v
-        copy(yank)             y
-        paste                  <C-]>
+    copy mode              <C-a>[
+    select                 v
+    copy(yank)             y
+    paste                  <C-a>]
+>**mouse mode**
 
-        mouse mode:
-        ON                     <C-a> m   (xtrem scroll mode, convenient for tmux-system copy behavior)
-        OFF                    <C-a> M   (enable the X-system native copy/paste behavior)
+    ON                     <C-a> m   (xtrem scroll mode, convenient for tmux-system copy behavior)
+    OFF                    <C-a> M   (enable the X-system native copy/paste behavior)
+
+### LanguageTool installation 
+
++ Requirements:  
+
+    (gentoo)  
+    >= _dev-java/sun-jdk_-1.604  
+    _dev-java/ant_  
+    _dev-vcs/cvs_  
+
++ Use the following commands
+
+        # cd ~/dotfiles  
+        # ./commands/build_languagetool.sh
+
+
 
 
 [1]: https://raw.github.com/samuelololol/dotfiles/master/.img/tmux-statusbar-window-titles.png
