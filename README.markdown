@@ -7,28 +7,61 @@
     \/\____/ \__/.\_\ \_\ \_\ \_\ \____/ \____\/\____\ \____//\____\/___/ \/____/\/___/ \/____/
      \/___/ \/__/\/_/\/_/\/_/\/_/\/___/ \/____/\/____/\/___/ \/____/ by samuelololol@gmail.com
                                                                                                           
+# Samuel's Dot Files
+## PREREQUISITES
 
-#HOW TO INSTALL
+* git
+>for install this repository
+
+* svn
+>for _ydict_
+
+* zsh
+* LanguageTool
+>optional, if you want to use it
+
+* screen
+* tmux 
+
+    >\>tmux-1.7
+
+* Vim
+        >\>Vim-7.3
+
+##HOW TO INSTALL
 
 1. Clone the source file to ur home directory from github:  
     
-        # git clone git://github.com/samuelololol/dotfiles.git
+        # git clone https://github.com/samuelololol/dotfiles.git
 
-2. Select dotfiles, delete(or backup) old ones and softlink to ~/dotfiles  
+2. Install the prefer topics
 
-        # rm ~/.gntrc     && ln -s dotfiles/.gntrc     ~/.gntrc  
+    >screen/tmux
+
+    Put `export TERM=xterm-256color` in ~/.bashrc to support 256color in screen/tmux
+
         # rm ~/.screenrc  && ln -s dotfiles/.screenrc  ~/.screenrc  
         # rm ~/.tmux.conf && ln -s dotfiles/.tmux.conf ~/.tmux.conf  
+    >Vim
+
         # rm ~/.vimrc     && ln -s dotfiles/.vimrc     ~/.vimrc  
         # rm ~/.vim -rf   && ln -s dotfiles/.vim       ~/.vim  
+    In case you want to save your original Vim setting, you can move the original .vim/ as below
 
-        zsh
+        # mv ~/.vim ~/dotfiles/.vim/extfdr
+    >zsh
+
         # rm ~/.zshrc     && ln -s dotfiles/.zshrc     ~/.zshrc
         # rm ~/.zsh -rf   && ln -s dotfiles/.zsh       ~/.zsh
+    >ydict (Yahoo Dictionary on console):
 
-*In case you want to save your original Vim setting, you can move the .vim/ to .vim/ as below
+        # cd ~/dotfiles
+        # ./commands/update_ydict.sh 
+    >my gnt setting file for finch
 
-        mv ~/.vim ~/dotfiles/.vim/extfdr
+        # rm ~/.gntrc     && ln -s dotfiles/.gntrc     ~/.gntrc  
+
+
 
 3. Update the sources in dotfiles  
 
@@ -36,7 +69,7 @@
         # git pull
         # ./commands/submod_sync.sh
        
-#NOTICE  
+##FEATURES
 
 ### LanguageTool installation 
 
@@ -52,22 +85,11 @@
         # cd ~/dotfiles  
         # ./commands/build_languagetool.sh
 
-### ydict installation
-
-+ Requirement:  
-
-    _python_  
-
-+ Use the following commands
-
-        # cd ~/dotfiles
-        # ./commands/update_ydict.sh 
-
 ### zsh plugin: oh-my-zsh
 
     Theme: https://github.com/robbyrussell/oh-my-zsh/wiki/themes 
 
-#INFO
+##Vim PLUGIN INFO
 
 Installed ViM Plugins
 
@@ -78,6 +100,10 @@ Installed ViM Plugins
 + [crefvim](http://github.com/vim-scripts/CRefVim)
 
     C reference support for ViM(Howto is described in [my blog](http://samuelololol.blogspot.com/2010/01/crefvim-c-reference-manual-especially.html))
+
++ [ctrlp](https://github.com/kien/ctrlp.vim)
+
+    Fuzzy file, buffer, mru, tag, etc finder.
 
 + [doxygentoolkit](https://github.com/vim-scripts/DoxygenToolkit.vim)
 
@@ -102,25 +128,33 @@ Installed ViM Plugins
 
     Ultimate auto-completion system for Vim
 
-+ [neocomplcache-snippets-complete](https://github.com/Shougo/neocomplcache-snippets-complete)
++ [neosnippet](https://github.com/Shougo/neosnippet)
 
-    neocomplcache complete snippets source
+    neo-snippet plugin contains neocomplcache snippets source
 
 + [nerdtree](https://github.com/scrooloose/nerdtree): 
 
     A tree explorer plugin for navigating the filesystem
 
-+ [surround](https://github.com/vim-scripts/surround.vim):
-
-    Delete/change/add parentheses/quotes/XML-tags/much more with ease
-
 + [sudo](https://github.com/vim-scripts/sudo.vim)
 
     Allows one to edit a file with prevledges from an unprivledged session.
 
++ [surround](https://github.com/vim-scripts/surround.vim):
+
+    Delete/change/add parentheses/quotes/XML-tags/much more with ease
+
 + [tagbar](https://github.com/majutsushi/tagbar)
     
     Vim plugin that displays tags in a window, ordered by class etc.
+
++ [tasklist](https://github.com/vim-scripts/TaskList.vim)
+
+    Eclipse like task list
+
++ [trinity](ihttps://github.com/wesleyche/Trinity)
+
+    A (G)Vim plugin which build the trinity of Source Explorer, TagList and NERD tree to be an IDE for software development
 
 + [valgrind](https://github.com/vim-scripts/valgrind.vim)
 
@@ -134,7 +168,7 @@ Installed ViM Plugins
 
     pathogen.vim: manage your runtimepath
 
-# FORKED PLUGIN
+## FORKED PLUGIN
 ### (with tuning)
 
 + [taglist-local](https://github.com/vim-scripts/taglist.vim)
@@ -143,14 +177,11 @@ Installed ViM Plugins
     (Switch the Taglist Position to right and save locally as the support for ViM)
 
         edit: 
-            embedded taglist in vim folder
+            embedded taglist in Vim folder
 
-+ [trinity-local](https://github.com/vim-scripts/trinity.vim)
++ [trinity-local](https://github.com/wesleyche/Trinity)
 
-    Build the trinity of srcexpl, taglist, NERD_tree to be a good IDE. 
-    (replace the Taglist function with Tagbar, switch the position of NERDTree 
-     and Taglist/Tagbar and adjust the Taglist/Tagbar window width)
-
+    A (G)Vim plugin which build the trinity of Source Explorer, TagList and NERD tree to be an IDE for software development.
         edit: 
             replace taglist with tagbar
             disable local searching
@@ -164,11 +195,11 @@ Installed ViM Plugins
             disable local searching
             disable the preview declaration
 
-# Vim Personal Features
+## Vim Personal Features
    
 + Cscope/ctags meta files generating command
 
-        :CSCTgenC cscope  "generating cscope.out and processing the add into vim
+        :CSCTgenC cscope  "generating cscope.out and processing the add into Vim
         :CSCTgenC ctags   "generation ctags for taglist/tagbar
         :CSCTgenC clean   "remove cscope/ctags files
     
@@ -228,7 +259,7 @@ Installed ViM Plugins
 [1]: https://raw.github.com/samuelololol/dotfiles/master/.img/tmux-statusbar-window-titles.png
 
 <!-- {{{ 
-* my custom vim script  
+* my custom Vim script  
 
     samuelololol/plugin/
 
@@ -238,9 +269,10 @@ Installed ViM Plugins
         mymaptoggle.vim      contain a function used by MoveTo*()  
         mymvtotab.vim        MoveTo*() function used for moving tab  
         myneocomplcache.vim  my neocomplcache settings
-        myvalgrind.vim       valgrind setting for vim
+        myvalgrind.vim       valgrind setting for Vim
         myydict.vim          bind key to look up yahoo dictionary 
         mybrace.vim.bak      brace utils (suspending, using auto-pairs) 
+        ...
 
 NOTES
 ===========

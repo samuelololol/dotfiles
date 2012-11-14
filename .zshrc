@@ -18,5 +18,8 @@ alias l='ll'
 alias la='l -a'
 alias lh='l -h'
 alias sl='ls'
-alias tmux='tmux -2'
 export LC_CTYPE=zh_TW.utf8
+
+# terminal color issue
+export TERM=xterm-256color
+alias tmux='tmux -2'

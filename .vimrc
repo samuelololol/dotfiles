@@ -65,9 +65,11 @@ set nospell
 " set spell
 
 "terminal setting
-if $TERM == 'screen'
-  set term=xterm
-endif
+"if $TERM == 'screen'
+"  set term=xterm
+"endif
+"setting terminal as xterm-256color
+set term=xterm-256color
 set t_Co=256
 
 "encoding
