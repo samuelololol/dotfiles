@@ -10,8 +10,9 @@
 "
 " Samuel's .vimrc config file
 "
-"          2010, 09/28, @NSYSU
-"          2012, MSOnline, Hualien
+"          2010, 09/28 @NSYSU
+"          2012, MSOnline @Hualien
+"          2012, 08/06 @Taipei
  
 "關閉vi compatible模式
 set nocompatible
@@ -69,7 +70,7 @@ set nospell
 "  set term=xterm
 "endif
 "setting terminal as xterm-256color
-set term=xterm-256color
+set term=screen-256color
 set t_Co=256
 
 "encoding

@@ -60,7 +60,7 @@ termcapinfo xterm "ks=\E[?1l\E=:ku=\E[A:kd=\E[B:kl=\E[D:kr=\E[C:kh=\E[5~:kH=\E[F
 
 # terminal setting 
 #term xterm
-term xterm-256color
+term screen-256color
 utf8 on          # display encoding = utf8
 defencoding utf8 # internal encoding = utf8
 #encoding Big5

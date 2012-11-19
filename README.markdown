@@ -37,12 +37,24 @@ This is the repository of some setting files for some useful tools(screen, tmux,
 ### Second: Install the preferred topics
 
 + screen/tmux
-
+<!-- {{{ 
     >Put `export TERM=xterm-256color` in ~/.bashrc to support 256color in screen/tmux
+-->
+
+    >add the following settings to your default shell rc-file(~/.bashrc or ~/.zshrc)
+    to enable 256color setting
+
+        ...
+        export TERM=xterm
+        #enable 256color for terminal multiplexs
+        alias tmux='tmux -2'
+        alias screen='TERM=xterm-256color screen'
+        ...
+
+    >soft-link the setting files
 
         # rm ~/.screenrc  && ln -s dotfiles/.screenrc  ~/.screenrc  
         # rm ~/.tmux.conf && ln -s dotfiles/.tmux.conf ~/.tmux.conf  
-
 + Vim
 
     >In case you want to save your original Vim setting, you can move the original .vim/ as below
