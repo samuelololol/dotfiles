@@ -105,11 +105,14 @@ set statusline+=\ %5*[%{&encoding}, " encoding
 set statusline+=%{&fileformat}]%m " file format
 set statusline+=%6*%=\ %6*%y%6*\ %3*%l%6*\/%L,\ %3*%c%6*\ \<%2*%P%6*\>
 
-" pathogen setting "
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
-call pathogen#infect()
+"" pathogen setting "
+"call pathogen#helptags()
+"call pathogen#runtime_append_all_bundles()
+"call pathogen#infect()
+execute pathogen#infect()
+Helptags
 runtime ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
+
 
 " neocomplcache setting"
 let g:neocomplcache_enable_at_startup=1

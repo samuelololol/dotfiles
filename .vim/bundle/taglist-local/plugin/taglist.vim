@@ -941,7 +941,9 @@ function! s:Tlist_FileType_Init(ftype)
         let ctags_flags = ctags_flags . flag
     endwhile
 
-    let s:tlist_{a:ftype}_ctags_args = '--language-force=' . ctags_ftype .
+    "comment by samuel
+    "let s:tlist_{a:ftype}_ctags_args = '--language-force=' . ctags_ftype .
+    let s:tlist_{a:ftype}_ctags_args = '--langdef=' . ctags_ftype .
                             \ ' --' . ctags_ftype . '-types=' . ctags_flags
     let s:tlist_{a:ftype}_count = cnt
     let s:tlist_{a:ftype}_ctags_flags = ctags_flags
