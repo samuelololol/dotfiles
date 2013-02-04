@@ -25,7 +25,12 @@ export ZSH_THEME="jreese"
 # --------------------------------------------
 plugins=(git vim github svn brew osx)
 
+
 source $ZSH/oh-my-zsh.sh
+#website:   http://mimosa-pudica.net/zsh-incremental.html
+#file link: http://mimosa-pudica.net/src/incr-0.2.zsh
+source ~/dotfiles/incr-0.2.zsh
+
 
 # alias
 alias ll='ls -l'
@@ -40,4 +45,3 @@ export TERM=screen-256color
 #export TERM=xterm
 alias tmux='tmux -2'
 alias screen='TERM=xterm-256color screen'
-#123
