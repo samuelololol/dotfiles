@@ -1,51 +1,68 @@
 [submodule ".vim/bundle/crefvim"]
 	path = .vim/bundle/crefvim
 	url = http://github.com/vim-scripts/CRefVim.git
+    ignore = dirty
 [submodule ".vim/bundle/matchit"]
 	path = .vim/bundle/matchit
 	url = http://github.com/vim-scripts/matchit.zip.git
+    ignore = dirty
 [submodule ".vim/bundle/neocomplcache"]
 	path = .vim/bundle/neocomplcache
 	url = http://github.com/Shougo/neocomplcache.git
+    ignore = dirty
 [submodule ".vim/bundle/nerdtree"]
 	path = .vim/bundle/nerdtree
 	url = http://github.com/scrooloose/nerdtree.git
+    ignore = dirty
 [submodule ".vim/bundle/surround"]
 	path = .vim/bundle/surround
 	url = http://github.com/vim-scripts/surround.vim.git
+    ignore = dirty
 [submodule ".vim/bundle/valgrind"]
 	path = .vim/bundle/valgrind
 	url = http://github.com/vim-scripts/valgrind.vim.git
+    ignore = dirty
 [submodule ".vim/bundle/vim-pathogen"]
 	path = .vim/bundle/vim-pathogen
 	url = http://github.com/tpope/vim-pathogen.git
+    ignore = dirty
 [submodule ".vim/bundle/vim-easymotion"]
 	path = .vim/bundle/vim-easymotion
 	url = http://github.com/Lokaltog/vim-easymotion.git
+    ignore = dirty
 [submodule ".vim/bundle/auto-pairs"]
 	path = .vim/bundle/auto-pairs
 	url = http://github.com/vim-scripts/Auto-Pairs
+    ignore = dirty
 [submodule ".vim/bundle/sudo"]
 	path = .vim/bundle/sudo
 	url = https://github.com/vim-scripts/sudo.vim.git
+    ignore = dirty
 [submodule ".vim/bundle/tagbar"]
 	path = .vim/bundle/tagbar
 	url = http://github.com/majutsushi/tagbar.git
+    ignore = dirty
 [submodule ".vim/bundle/doxygentoolkit"]
 	path = .vim/bundle/doxygentoolkit
 	url = http://github.com/vim-scripts/DoxygenToolkit.vim.git
+    ignore = dirty
 [submodule ".zsh"]
 	path = .zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
+    ignore = dirty
 [submodule ".vim/bundle/tasklist"]
 	path = .vim/bundle/tasklist
 	url = https://github.com/vim-scripts/TaskList.vim.git
+    ignore = dirty
 [submodule ".vim/bundle/neosnippet"]
 	path = .vim/bundle/neosnippet
 	url = https://github.com/Shougo/neosnippet
+    ignore = dirty
 [submodule ".vim/bundle/ctrlp.vim"]
 	path = .vim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
+    ignore = dirty
 [submodule ".vim/bundle/cocoa"]
 	path = .vim/bundle/cocoa
 	url = https://github.com/msanders/cocoa.vim.git
+    ignore = dirty
