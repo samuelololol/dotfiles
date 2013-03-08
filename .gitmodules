@@ -66,3 +66,7 @@
 	path = .vim/bundle/cocoa
 	url = https://github.com/msanders/cocoa.vim.git
     ignore = dirty
+[submodule ".vim/bundle/vim-gitgutter"]
+	path = .vim/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+    ignore = dirty
