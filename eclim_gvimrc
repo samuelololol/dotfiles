@@ -1,8 +1,0 @@
-set nocompatible
-set runtimepath=~/dotfiles/eclim,$VIMRUNTIME
-
-" pathogen setting "
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
-call pathogen#infect()
-runtime ~/dotfiles/eclim/bundle/vim-pathogen/autoload/pathogen.vim
