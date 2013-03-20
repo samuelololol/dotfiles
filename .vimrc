@@ -113,10 +113,6 @@ execute pathogen#infect()
 Helptags
 runtime ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
 
-
-" neocomplcache setting"
-let g:neocomplcache_enable_at_startup=1
-
 " filetype support
 filetype on
 filetype plugin on

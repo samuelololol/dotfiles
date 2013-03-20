@@ -12,16 +12,14 @@ crefvim
 ctrlp.vim
 doxygentoolkit
 matchit
-neocomplcache
-neosnippet
 nerdtree
-sudo
 surround
 tagbar
 tasklist
 valgrind
 vim-easymotion
 vim-pathogen
+YouCompleteMe
 )
 for mod in ${modules[@]}; do
    cd $mod

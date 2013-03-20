@@ -127,21 +127,9 @@ Installed ViM Plugins
 
     Extended % matching for HTML, LaTeX, and many other languages
 
-+ [neocomplcache](https://github.com/Shougo/neocomplcache)
-
-    Ultimate auto-completion system for Vim
-
-+ [neosnippet](https://github.com/Shougo/neosnippet)
-
-    neo-snippet plugin contains neocomplcache snippets source
-
 + [nerdtree](https://github.com/scrooloose/nerdtree): 
 
     A tree explorer plugin for navigating the filesystem
-
-+ [sudo](https://github.com/vim-scripts/sudo.vim)
-
-    Allows one to edit a file with prevledges from an unprivledged session.
 
 + [surround](https://github.com/vim-scripts/surround.vim):
 
@@ -170,6 +158,10 @@ Installed ViM Plugins
 + [vim-pathogen](https://github.com/tpope/vim-pathogen)
 
     pathogen.vim: manage your runtimepath
+
++ [YouCompleteMe](https://github.com/Valloric/YouCompleteMe.git)
+
+    A code-completion engine for Vim
 
 ## FORKED PLUGIN
 ### (with some noob-tweak)
@@ -324,7 +316,6 @@ Installed ViM Plugins
         mycsct.vim           ctags/cscope detection and generation  
         mymaptoggle.vim      contain a function used by MoveTo*()  
         mymvtotab.vim        MoveTo*() function used for moving tab  
-        myneocomplcache.vim  my neocomplcache settings
         myvalgrind.vim       valgrind setting for Vim
         myydict.vim          bind key to look up yahoo dictionary 
         mybrace.vim.bak      brace utils (suspending, using auto-pairs) 

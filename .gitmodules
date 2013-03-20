@@ -6,10 +6,6 @@
 	path = .vim/bundle/matchit
 	url = http://github.com/vim-scripts/matchit.zip.git
     ignore = dirty
-[submodule ".vim/bundle/neocomplcache"]
-	path = .vim/bundle/neocomplcache
-	url = http://github.com/Shougo/neocomplcache.git
-    ignore = dirty
 [submodule ".vim/bundle/nerdtree"]
 	path = .vim/bundle/nerdtree
 	url = http://github.com/scrooloose/nerdtree.git
@@ -34,10 +30,6 @@
 	path = .vim/bundle/auto-pairs
 	url = http://github.com/vim-scripts/Auto-Pairs
     ignore = dirty
-[submodule ".vim/bundle/sudo"]
-	path = .vim/bundle/sudo
-	url = https://github.com/vim-scripts/sudo.vim.git
-    ignore = dirty
 [submodule ".vim/bundle/tagbar"]
 	path = .vim/bundle/tagbar
 	url = http://github.com/majutsushi/tagbar.git
@@ -54,10 +46,6 @@
 	path = .vim/bundle/tasklist
 	url = https://github.com/vim-scripts/TaskList.vim.git
     ignore = dirty
-[submodule ".vim/bundle/neosnippet"]
-	path = .vim/bundle/neosnippet
-	url = https://github.com/Shougo/neosnippet
-    ignore = dirty
 [submodule ".vim/bundle/ctrlp.vim"]
 	path = .vim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
@@ -69,4 +57,8 @@
 [submodule ".vim/bundle/vim-gitgutter"]
 	path = .vim/bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+    ignore = dirty
+[submodule ".vim/bundle/YouCompleteMe"]
+	path = .vim/bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
     ignore = dirty
