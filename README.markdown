@@ -9,7 +9,7 @@
                                                                                                           
 # Samuel's Dot Files
 
-This is the repository of some setting files for some useful tools(screen, tmux, vim, zsh, ...).
+This is the repository of some setting files and plugins for some useful tools(screen, tmux, vim, zsh, ...).
 
 ## PREREQUISITES
 
@@ -85,6 +85,7 @@ This is the repository of some setting files for some useful tools(screen, tmux,
 
         # rm ~/.gntrc && ln -s dotfiles/.gntrc ~/.gntrc  
 
+
 ### Final: Update the sources in the path of dotfiles/ 
 >commands:
 
@@ -94,7 +95,12 @@ This is the repository of some setting files for some useful tools(screen, tmux,
    
 ##Vim PLUGIN INFO
 
-Installed ViM Plugins
+###Compile YouCompleteMe plugin of ViM
+
+    # cd && cd dotfiles
+    # ./commands/build_ycm.sh
+
+###Other Installed ViM Plugins in the repository
 
 + [auto-pairs](https://github.com/vim-scripts/Auto-Pairs): 
 
