@@ -21,11 +21,11 @@ set nocompatible
 "
 "translate the <tab> to <space> with the counts: tabstop
 "(counts of space for pressing tab)
-"unset:   :set noet
+"unset=>   :set noet
 set expandtab
-set tabstop=4
 "how many SPACE when read \t (<TAB>) char
 "colorize the <Tab>
+set tabstop=4
 set listchars=tab:>-
 
 "indentation-related"
@@ -35,11 +35,18 @@ set shiftwidth=4
 
 "explaination for <BackSpace> and <Tab> when u in insert mode editing
 set softtabstop=4
+
+"if 'smarttab' is on,
+"    At beginning <Tab> key inserts indentation according to 'shiftwidth'
+"    elsewhere, to 'tabstop' and 'softtabstop'
 set smarttab
 
+"'smartindent' should not be used with 'cindent'
 set smartindent
+"copy the indentation from the previous line
 set autoindent
-set cindent
+        "setting in c.vim and cpp.vim
+        "set cindent 
 
 " show line number
 set nu

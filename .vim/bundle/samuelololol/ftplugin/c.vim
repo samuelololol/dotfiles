@@ -1,3 +1,4 @@
+set cindent
 set foldmethod=indent
 "set foldcolumn=3
 set foldlevel=3     " fold everything deeper than 0

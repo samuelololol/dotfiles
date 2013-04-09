@@ -41,7 +41,7 @@ alias sl='ls'
 export LC_CTYPE=zh_TW.utf8
 
 # terminal color issue
-export TERM=screen-256color
+#export TERM=screen-256color
 #export TERM=xterm
-alias tmux='tmux -2'
+alias tmux='TERM=screen-256color tmux -2'
 alias screen='TERM=xterm-256color screen'
