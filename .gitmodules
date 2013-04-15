@@ -40,29 +40,25 @@
     ignore = dirty
 [submodule ".zsh"]
 	path = .zsh
-	url = https://github.com/robbyrussell/oh-my-zsh.git
+	url = http://github.com/robbyrussell/oh-my-zsh.git
     ignore = dirty
 [submodule ".vim/bundle/tasklist"]
 	path = .vim/bundle/tasklist
-	url = https://github.com/vim-scripts/TaskList.vim.git
+	url = http://github.com/vim-scripts/TaskList.vim.git
     ignore = dirty
 [submodule ".vim/bundle/ctrlp.vim"]
 	path = .vim/bundle/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim.git
-    ignore = dirty
-[submodule ".vim/bundle/cocoa"]
-	path = .vim/bundle/cocoa
-	url = https://github.com/msanders/cocoa.vim.git
+	url = http://github.com/kien/ctrlp.vim.git
     ignore = dirty
 [submodule ".vim/bundle/vim-gitgutter"]
 	path = .vim/bundle/vim-gitgutter
-	url = https://github.com/airblade/vim-gitgutter.git
+	url = http://github.com/airblade/vim-gitgutter.git
     ignore = dirty
 [submodule ".vim/bundle/YouCompleteMe"]
 	path = .vim/bundle/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
+	url = http://github.com/Valloric/YouCompleteMe.git
     ignore = dirty
 [submodule ".vim/bundle/zencoding-vim"]
 	path = .vim/bundle/zencoding-vim
-	url = https://github.com/mattn/zencoding-vim.git
+	url = http://github.com/mattn/zencoding-vim.git
     ignore = dirty

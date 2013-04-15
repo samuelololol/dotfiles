@@ -6,48 +6,35 @@
     /\__, `\\ \L\.\_/\ \/\ \/\ \ \ \_\ \\  __/ \_\ \_/\ \L\ \\_\ \\ \____//\____\ \____//\____\
     \/\____/ \__/.\_\ \_\ \_\ \_\ \____/ \____\/\____\ \____//\____\/___/ \/____/\/___/ \/____/
      \/___/ \/__/\/_/\/_/\/_/\/_/\/___/ \/____/\/____/\/___/ \/____/ by samuelololol@gmail.com
-                                                                                                          
-# Samuel's Dot Files
 
-This is the repository of some setting files and plugins for some useful tools(screen, tmux, vim, zsh, ...).
+#Samuel's Dot Files
 
-## PREREQUISITES
+This is an repository of the setting files and plugins for some useful tools(screen, tmux, vim, zsh, ...).
 
-+ git
->for installing this repository
+# PREREQUISITES: 
 
-+ svn
->for _ydict_
+* git 
+* svn
+* zsh
+* screen
+* tmux
+* vim
 
-+ zsh
-+ screen
-+ tmux 
->\>tmux-1.7
 
-+ Vim
->\>Vim-7.3
+# HOW TO INSTALL?
 
-##HOW TO INSTALL
+### 1. Clone the repository
+### 2. Install the preferred topics
 
-### First: Clone the source file
->commands:    
-
-    # git clone https://github.com/samuelololol/dotfiles.git
-
-### Second: Install the preferred topics
-
-+ screen/tmux
-<!-- {{{ 
-    >Put `export TERM=xterm-256color` in ~/.bashrc to support 256color in screen/tmux
--->
+* >#screen/tmux
 
     >add the following settings to your default shell rc-file(~/.bashrc or ~/.zshrc)
-    to enable 256color setting
+    to enable 256color settings
 
         ...
         export TERM=xterm
         #enable 256color for terminal multiplexs
-        alias tmux='tmux -2'
+        alias tmux='TERM=xterm-256color tmux -2'
         alias screen='TERM=xterm-256color screen'
         ...
 
@@ -55,7 +42,8 @@ This is the repository of some setting files and plugins for some useful tools(s
 
         # rm ~/.screenrc  && ln -s dotfiles/.screenrc  ~/.screenrc  
         # rm ~/.tmux.conf && ln -s dotfiles/.tmux.conf ~/.tmux.conf  
-+ Vim
+
+* >#Vim
 
     >In case you want to save your original Vim setting, you can move the original .vim/ as below
 
@@ -66,130 +54,155 @@ This is the repository of some setting files and plugins for some useful tools(s
         # rm ~/.vimrc   && ln -s dotfiles/.vimrc ~/.vimrc  
         # rm ~/.vim -rf && ln -s dotfiles/.vim   ~/.vim  
 
-+ zsh
+* ># zsh
 
     >commands:
 
         # rm ~/.zshrc   && ln -s dotfiles/.zshrc ~/.zshrc
         # rm ~/.zsh -rf && ln -s dotfiles/.zsh   ~/.zsh
 
-+ ydict (Yahoo Dictionary on console):
+* ># ydict (Yahoo Dictionary on console):
 
     >_svn_ is required
 
         # cd ~/dotfiles
         # ./commands/update_ydict.sh 
 
-+ Others
+* ># Others
+
     >my gnt setting file for finch
 
         # rm ~/.gntrc && ln -s dotfiles/.gntrc ~/.gntrc  
 
 
-### Final: Update the sources in the path of dotfiles/ 
->commands:
+### 3. Sync files
 
-    # cd dotfiles  
-    # git pull
-    # ./commands/submod_sync.sh
-   
+* >### Pull the submodules' files
+
+        # cd dotfiles  
+        # git pull
+        # ./commands/submod_sync.sh
+
+
 ##Vim PLUGIN INFO
 
-###Compile YouCompleteMe plugin of ViM
+* ># YouCompleteMe plugin
 
-    # cd && cd dotfiles
-    # ./commands/build_ycm.sh
+    >Complie the source
+
+        # cd && cd dotfiles
+        # ./commands/build_ycm.sh
 
 ###Other Installed ViM Plugins in the repository
 
-+ [auto-pairs](https://github.com/vim-scripts/Auto-Pairs): 
++ >#[auto-pairs](https://github.com/vim-scripts/Auto-Pairs): 
 
-    Insert or delete brackets, parens, quotes in pair.
+    >Insert or delete brackets, parens, quotes in pair.
 
-+ [crefvim](http://github.com/vim-scripts/CRefVim)
++ >#[crefvim](http://github.com/vim-scripts/CRefVim)
 
-    C reference support for ViM(Howto is described in [my blog](http://samuelololol.blogspot.com/2010/01/crefvim-c-reference-manual-especially.html))
+    >C reference support for ViM(Howto is described in [my blog](http://samuelololol.blogspot.com/2010/01/crefvim-c-reference-manual-especially.html))
 
-+ [ctrlp](https://github.com/kien/ctrlp.vim)
++ >#[ctrlp](https://github.com/kien/ctrlp.vim)
 
-    Fuzzy file, buffer, mru, tag, etc finder.
+    >Fuzzy file, buffer, mru, tag, etc finder.
 
-+ [doxygentoolkit](https://github.com/vim-scripts/DoxygenToolkit.vim)
++ >#[doxygentoolkit](https://github.com/vim-scripts/DoxygenToolkit.vim)
 
-    Simplify Doxygen documentation in C, C++, Python.
+    >Simplify Doxygen documentation in C, C++, Python.
 
-+ [LanguageTool](http://www.vim.org/scripts/script.php?script_id=3223)  
+<!--
++ >#[LanguageTool](http://www.vim.org/scripts/script.php?script_id=3223)  
   
-    [LanguageTool](http://www.languagetool.org/) : Grammar checker for English, French, German (etc.) in Vim   
+    >[LanguageTool](http://www.languagetool.org/) : Grammar checker for English, French, German (etc.) in Vim   
     (require _java-jdk_ support)  
     Project Homepage: [http://www.languagetool.org/](http://www.languagetool.org/)  
     Project CVS:   
 
-                 cvs -z3 \   
-                 -d:pserver:anonymous@languagetool.cvs.sourceforge.net:/cvsroot/languagetool \   
-                 co -P JLanguageTool   
+        cvs -z3 \   
+        -d:pserver:anonymous@languagetool.cvs.sourceforge.net:/cvsroot/languagetool \   
+        co -P JLanguageTool   
+-->
++ >#[matchit](https://github.com/vim-scripts/matchit.zip)
 
-+ [matchit](https://github.com/vim-scripts/matchit.zip)
+    >Extended % matching for HTML, LaTeX, and many other languages
 
-    Extended % matching for HTML, LaTeX, and many other languages
++ >#[nerdtree](https://github.com/scrooloose/nerdtree): 
 
-+ [nerdtree](https://github.com/scrooloose/nerdtree): 
+    >A tree explorer plugin for navigating the filesystem
 
-    A tree explorer plugin for navigating the filesystem
+<!--
++ >#[python-vim-instant-markdown](https://github.com/isnowfy/python-vim-instant-markdown)
 
-+ [surround](https://github.com/vim-scripts/surround.vim):
+    >fork from isnowfy, updated code and folder structure to support pathogen
 
-    Delete/change/add parentheses/quotes/XML-tags/much more with ease
+        Two python packages required: `pygments` and `markdown`
+-->
++ >#[surround](https://github.com/vim-scripts/surround.vim):
 
-+ [tagbar](https://github.com/majutsushi/tagbar)
+    >Delete/change/add parentheses/quotes/XML-tags/much more with ease
+
++ >#[tagbar](https://github.com/majutsushi/tagbar)
     
-    Vim plugin that displays tags in a window, ordered by class etc.
+    >Vim plugin that displays tags in a window, ordered by class etc.
 
-+ [tasklist](https://github.com/vim-scripts/TaskList.vim)
++ >#[tasklist](https://github.com/vim-scripts/TaskList.vim)
 
-    Eclipse like task list
+    >Eclipse like task list
 
-+ [trinity](ihttps://github.com/wesleyche/Trinity)
++ >#[trinity](ihttps://github.com/wesleyche/Trinity)
 
-    A (G)Vim plugin which build the trinity of Source Explorer, TagList and NERD tree to be an IDE for software development
+    >A (G)Vim plugin which build the trinity of Source Explorer, TagList and NERD tree to be an IDE for software development
 
-+ [valgrind](https://github.com/vim-scripts/valgrind.vim)
++ >#[valgrind](https://github.com/vim-scripts/valgrind.vim)
 
-    Navigate in the output of the memory checker valgrind
+    >Navigate in the output of the memory checker valgrind
 
-+ [EasyMotion](https://github.com/Lokaltog/vim-easymotion)
++ >#[EasyMotion](https://github.com/Lokaltog/vim-easymotion)
 
-    Vim motions on speed!
+    >Vim motions on speed!
 
-+ [vim-pathogen](https://github.com/tpope/vim-pathogen)
++ >#[vim-pathogen](https://github.com/tpope/vim-pathogen)
 
-    pathogen.vim: manage your runtimepath
+    >pathogen.vim: manage your runtimepath
 
-+ [YouCompleteMe](https://github.com/Valloric/YouCompleteMe.git)
++ >#[YouCompleteMe](https://github.com/Valloric/YouCompleteMe.git)
 
-    A code-completion engine for Vim
+    >A code-completion engine for Vim
+
+        Many tools and languages required: 
+
+          g++0x support
+          boost
+          pyton
+          ...(etc)
+
++ >#[zencoding-vim](https://github.com/mattn/zencoding-vim)
+
+    >zencoding-vim is vim script support for expanding abbreviation like zen-coding(emmet)
 
 ## FORKED PLUGIN
 ### (with some noob-tweak)
 
-+ [taglist-local](https://github.com/vim-scripts/taglist.vim)
++ >#[taglist-local](https://github.com/vim-scripts/taglist.vim)
 
-    Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc)
+    >Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc)
     (Switch the Taglist Position to right and save locally as the support for ViM)
 
         edit: 
             embedded taglist in Vim folder
 
-+ [trinity-local](https://github.com/wesleyche/Trinity)
++ >#[trinity-local](https://github.com/wesleyche/Trinity)
 
-    A (G)Vim plugin which build the trinity of Source Explorer, TagList and NERD tree to be an IDE for software development.
+    >A (G)Vim plugin which build the trinity of Source Explorer, TagList and NERD tree to be an IDE for software development.
+
         edit: 
             replace taglist with tagbar
             disable local searching
 
-+ [srcexpl-local](https://github.com/vim-scripts/SrcExpl)
++ >#[srcexpl-local](https://github.com/vim-scripts/SrcExpl)
 
-    A Source code Explorer which works like the context window of "Source Insight". 
+    >A Source code Explorer which works like the context window of "Source Insight". 
     (Disable the direct preview of one tag result)
 
         edit:
@@ -198,21 +211,25 @@ This is the repository of some setting files and plugins for some useful tools(s
 
 ## Vim Personal Features
    
-+ Cscope/ctags meta files generating command
++ >#Cscope/ctags
+
+    >generating meta files for Cscpoe/ctags
 
         :CSCTgenC cscope  "generating cscope.out and processing the add into Vim
         :CSCTgenC ctags   "generation ctags for taglist/tagbar
         :CSCTgenC clean   "remove cscope/ctags files
     
-+ Switch Window
++ >#Switch Window
 
-        gw/gW
+        gw: "next window"
+        gW: "last window"
 
-+ Move tab to next as an window
++ >#Move tab to next as an window
 
-        gmt/gmT
+        gmt: "move window to next tab"
+        gmT: "move window to last tab"
 
-+ Key-binding
++ >#Key-binding
 
         NERDTree:           <F2>
         Taglist:            <F3>
@@ -224,7 +241,7 @@ This is the repository of some setting files and plugins for some useful tools(s
         Open/Close QuickFix:  <Leader><q>
         Yahoo Dictionary: <C-K> (cursor on the word, or virtual mode selected)
 
-+ English/Chinese Dictionary Translateion
++ >#English/Chinese Dictionary Translateion
 
     >_ydict_ is required
 
@@ -232,67 +249,70 @@ This is the repository of some setting files and plugins for some useful tools(s
         2. put the cursor under a word and press <C-k>
 
 ##OTHER FEATURES:
-+ zsh
++ >#zsh
 
     >[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
-    A community-driven framework for managing your zsh configuration. 
-    Includes 40+ optional plugins (rails, git, OSX, hub, capistrano, 
-    brew, ant, macports, etc), over 80 terminal themes to spice up your 
-    morning, and an auto-update tool so that makes it easy to keep up 
-    with the latest updates from the community.
+          A community-driven framework for managing your zsh configuration. 
+        Includes 40+ optional plugins (rails, git, OSX, hub, capistrano, 
+        brew, ant, macports, etc), over 80 terminal themes to spice up your 
+        morning, and an auto-update tool so that makes it easy to keep up 
+        with the latest updates from the community.
 
     >[Theme](https://github.com/robbyrussell/oh-my-zsh/wiki/themes): 
     [https://github.com/robbyrussell/oh-my-zsh/wiki/themes](https://github.com/robbyrussell/oh-my-zsh/wiki/themes)
 
 
-+ screen
++ >#screen
 
     >**Key-binding**
 
-    + **window behavior**
+    **window behavior**
 
             window-kill    <F9>
             window-create  <F10>
             prev-window    <F11>
             next-window    <F12>
 
-    + **content copy**
+    **content copy**
 
             copy mode              <C-a>[
             select                 <space>
             copy(yank)             <space>
             paste                  <C-a>]
 
-+ tmux
-![dotfiles][1]
++ >#tmux
+
+    >![dotfiles][1]
+
     >Key-binding
 
-    + **window/pane behavior**
+    **window/pane behavior**
 
-            prefix key             <C-a>
-            kill-pane              <F9>
-            new-window             <F10>
-            previous-window        <F11>
-            next-window            <F12>
+            prefix key       <C-a>
+            kill-pane        <F9>
+            new-window       <F10>
+            previous-window  <F11>
+            next-window      <F12>
 
-    + **pane split**
+    **pane split**
     
             split pane             <C-a>s
             split pane vertically  <C-a>v
 
-    + **content copy**
+    **content copy**
 
-            copy mode              <C-a>[
-            select                 v
-            copy(yank)             y
-            paste                  <C-a>]
+            copy mode        <C-a>[
+            select           v
+            copy(yank)       y
+            paste            <C-a>]
 
-    + **mouse mode**
+    **mouse mode**
 
-            ON                     <C-a> m   (xtrem scroll mode, convenient for tmux-system copy behavior)
-            OFF                    <C-a> M   (enable the X-system native copy/paste behavior)
+            ON               <C-a> m   (xtrem scroll mode, convenient for tmux-system copy behavior)
+            OFF              <C-a> M   (enable the X-system native copy/paste behavior)
 
+<!--
 + LanguageTool installation 
 
     > Requirements:  
@@ -306,10 +326,7 @@ This is the repository of some setting files and plugins for some useful tools(s
 
         # cd ~/dotfiles  
         # ./commands/build_languagetool.sh
-
-
-
-
+-->
 [1]: https://raw.github.com/samuelololol/dotfiles/master/.img/tmux-statusbar-window-titles.png
 
 <!-- {{{ 
