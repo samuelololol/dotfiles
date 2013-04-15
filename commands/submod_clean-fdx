@@ -1,8 +1,7 @@
 #!/bin/bash
 cd ~/dotfiles/.zsh
 echo "oh-my-zsh"
-git fetch
-git pull origin master
+git clean -fdx
 cd ..
 git add .zsh
 cd ~/dotfiles/.vim/bundle/
