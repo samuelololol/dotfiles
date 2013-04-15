@@ -19,7 +19,6 @@ tasklist
 valgrind
 vim-easymotion
 vim-pathogen
-YouCompleteMe
 )
 for mod in ${modules[@]}; do
    cd $mod
@@ -30,4 +29,11 @@ for mod in ${modules[@]}; do
    cd ..
    git add $mod
 done
+cd YouCompleteMe
+echo "module: YouCompleteMe"
+git clean -fdx
+git fetch
+git pull origin master
+cd ..
+git add YouCompleteMe
 cd ../..
