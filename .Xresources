@@ -1,0 +1,9 @@
+xterm*Background: grey5
+xterm*Foreground: LightGoldenrodYellow
+xterm*scrollBar:  false
+#xterm*font:    *-terminus-*-*-*-14-*
+xterm*FaceName:   Terminus
+xterm*FontSize:   12
+
+#xterm -fg LightGoldenrodYellow -bg grey5 -fa Terminus -fs 12
+
