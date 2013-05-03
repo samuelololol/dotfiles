@@ -53,8 +53,8 @@ def count50(min):
 
 def main():
     min = int(time.ctime().split()[3].split(':')[1])
-    #unit = count50(min)   # [work,break] = [50,10]
-    unit = count25(min)   # [work,break] = [25,5]
+    unit = count50(min)   # [work,break] = [50,10]
+    #unit = count25(min)   # [work,break] = [25,5]
     if len(sys.argv) != 1:
         if sys.argv[1] == 'perc':
             print percf(unit)
