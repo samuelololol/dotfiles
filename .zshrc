@@ -45,3 +45,6 @@ export LC_CTYPE=zh_TW.utf8
 #export TERM=xterm
 alias tmux='DISPLAY=:0.0 TERM=screen-256color tmux -2'
 alias screen='DISPLAY=:0.0 TERM=xterm-256color screen'
+
+# for pythonbrew
+[[ -s "$HOME/.pythonbrew/etc/bashrc"  ]] && source "$HOME/.pythonbrew/etc/bashrc"
