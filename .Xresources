@@ -3,9 +3,12 @@ xterm*Foreground: LightGoldenrodYellow
 xterm*scrollBar:  false
 #xterm*font:    *-terminus-*-*-*-14-*
 xterm*FaceName:   Terminus
+xterm*FaceSize:   12
+#xterm*FaceName:   Awesome
 xterm*FaceNameDoublesize: WenQuanYi 
 xterm*FontSize:   7
 xterm*altSendsEscape: true
 xterm*metaSendsEscape: true
+
 
 #xterm -fg LightGoldenrodYellow -bg grey5 -fa Terminus -fs 12

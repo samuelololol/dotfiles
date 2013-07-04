@@ -48,3 +48,6 @@ alias screen='DISPLAY=:0.0 TERM=xterm-256color screen'
 
 # for pythonbrew
 [[ -s "$HOME/.pythonbrew/etc/bashrc"  ]] && source "$HOME/.pythonbrew/etc/bashrc"
+
+# for virtualenvwrapper
+[[ -s "/usr/bin/virtualenvwrapper.sh"  ]] && source "/usr/bin/virtualenvwrapper.sh" 
