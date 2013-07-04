@@ -143,3 +143,9 @@ set visualbell           " don't beep
 set noerrorbells         " don't beep
 set nobackup             " don't backup
 set noswapfile           " don't backup
+
+
+"確保 Vim 能在中文字符之間折行而不要求空格的存在
+"並且在大部分情況下可以正確地處理中文重新格式化
+set formatoptions+=tmM
+set textwidth=80
