@@ -1,4 +1,6 @@
 set colorcolumn=72
+set textwidth=72
+
 function! Addpyheader()
     if getfsize(@%) <= 0
         execute "norm i#!/usr/bin/env python\n# -*- coding: utf-8 -*-\n"
