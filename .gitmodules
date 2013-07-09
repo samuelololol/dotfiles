@@ -62,3 +62,6 @@
 	path = .vim/bundle/zencoding-vim
 	url = http://github.com/mattn/zencoding-vim.git
     ignore = dirty
+[submodule ".vim/bundle/presenting"]
+	path = .vim/bundle/presenting
+	url = https://github.com/sotte/presenting.vim.git
