@@ -13,6 +13,7 @@ ctrlp.vim
 doxygentoolkit
 matchit
 nerdtree
+presenting
 surround
 tagbar
 tasklist

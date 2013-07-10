@@ -64,4 +64,5 @@
     ignore = dirty
 [submodule ".vim/bundle/presenting"]
 	path = .vim/bundle/presenting
-	url = https://github.com/sotte/presenting.vim.git
+	url = http://github.com/sotte/presenting.vim.git
+    ignore = dirty
