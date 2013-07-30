@@ -38,13 +38,14 @@ alias l='ll'
 alias la='l -a'
 alias lh='l -h'
 alias sl='ls'
-export LC_CTYPE=zh_TW.utf8
+export LC_CTYPE="zh_TW.UTF-8"
 
 # terminal color issue
 #export TERM=screen-256color
 #export TERM=xterm
 alias tmux='DISPLAY=:0.0 TERM=screen-256color tmux -2'
 alias screen='DISPLAY=:0.0 TERM=xterm-256color screen'
+
 
 # for pythonbrew
 [[ -s "$HOME/.pythonbrew/etc/bashrc"  ]] && source "$HOME/.pythonbrew/etc/bashrc"
