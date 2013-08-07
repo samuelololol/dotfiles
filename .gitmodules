@@ -62,3 +62,7 @@
 	path = .vim/bundle/presenting
 	url = http://github.com/sotte/presenting.vim.git
     ignore = dirty
+[submodule ".vim/bundle/javascript-libraries-syntax"]
+	path = .vim/bundle/javascript-libraries-syntax
+	url = https://github.com/othree/javascript-libraries-syntax.vim
+    ignore = dirty
