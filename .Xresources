@@ -4,6 +4,7 @@ xterm*scrollBar:  false
 #xterm*font:    *-terminus-*-*-*-14-*
 xterm*FaceName:   Terminus
 xterm*FaceSize:   12
+#xterm*FaceSize:   40
 #xterm*FaceName:   Awesome
 xterm*FaceNameDoublesize: WenQuanYi 
 xterm*FontSize:   7
