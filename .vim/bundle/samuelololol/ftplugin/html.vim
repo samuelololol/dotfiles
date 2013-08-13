@@ -5,6 +5,6 @@ let g:ycm_complete_in_strings = 1
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
 let g:ycm_collect_identifiers_from_tags_files = 1
 
-let g:GenCtagsCmdC = "ctags -R --list-kinds=JavaScript"
+let g:GenCtagsCmdC = "ctags -R --list-kinds=HTML"
 let g:GenCtagsCmd = g:GenCtagsCmdC
 
