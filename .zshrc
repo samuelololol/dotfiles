@@ -1,7 +1,7 @@
 #
 # Samuel's .zshrc config file
 #
-#          2012, 08/06 @Taipei
+#          2013, 08/14 @Taipei
 #                                                                      ___           ___
 #                                           ___           ___         /\_ \         /\_ \ (R)
 #  sssssssssssssamuelolololololololol      /\_ \         /\_ \     ___\//\ \     ___\//\ \
@@ -21,7 +21,7 @@ ZSH=$HOME/dotfiles/.zsh
 #export ZSH_THEME="dogenpunk"
 export ZSH_THEME="jreese"
 
-# settings
+# zsh plugin settings
 # --------------------------------------------
 plugins=(git vim github svn brew osx)
 
@@ -32,7 +32,7 @@ source $ZSH/oh-my-zsh.sh
 #source ~/dotfiles/incr-0.2.zsh
 
 
-# alias
+# alias commands
 alias ll='ls -l'
 alias l='ll'
 alias la='l -a'
@@ -47,8 +47,11 @@ alias tmux='DISPLAY=:0.0 TERM=screen-256color tmux -2'
 alias screen='DISPLAY=:0.0 TERM=xterm-256color screen'
 
 
-# for pythonbrew
+# pythonbrew
 [[ -s "$HOME/.pythonbrew/etc/bashrc"  ]] && source "$HOME/.pythonbrew/etc/bashrc"
+[[ -s "$HOME/.pythonbrew/etc/bashrc"  ]] && alias pbw='pythonbrew'
+[[ -s "$HOME/.pythonbrew/etc/bashrc"  ]] && alias pnv='pbw venv'
 
-# for virtualenvwrapper
+# virtualenvwrapper
 [[ -s "/usr/bin/virtualenvwrapper.sh"  ]] && source "/usr/bin/virtualenvwrapper.sh" 
+
