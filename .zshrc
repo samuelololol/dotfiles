@@ -56,6 +56,8 @@ alias screen='DISPLAY=:0.0 TERM=xterm-256color screen'
 [[ -s "/usr/bin/virtualenvwrapper.sh"  ]] && source "/usr/bin/virtualenvwrapper.sh" 
 
 # nvm
+[[ -s "$HOME/.nvm/nvm.sh"  ]] && source "$HOME/.nvm/nvm.sh" 
+
 # nvm setting on mba
 [[ -s "$HOME/Development/git/nvm/nvm.sh"  ]] && source "$HOME/Development/git/nvm/nvm.sh"
 
