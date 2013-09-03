@@ -1,0 +1,9 @@
+#TODO: use pyenv instead!
+# pythonbrew
+[[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
+[[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && alias pbw='pythonbrew'
+[[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && alias pnv='pbw venv'
+
+# virtualenvwrapper
+# [[ -s "/usr/bin/virtualenvwrapper.sh"  ]] && source "/usr/bin/virtualenvwrapper.sh" 
+

@@ -46,18 +46,7 @@ export LC_CTYPE="zh_TW.UTF-8"
 alias tmux='DISPLAY=:0.0 TERM=screen-256color tmux -2'
 alias screen='DISPLAY=:0.0 TERM=xterm-256color screen'
 
+source $HOME/dotfiles/.mypyrc
+source $HOME/dotfiles/.mynoderc
 
-# pythonbrew
-[[ -s "$HOME/.pythonbrew/etc/bashrc"  ]] && source "$HOME/.pythonbrew/etc/bashrc"
-[[ -s "$HOME/.pythonbrew/etc/bashrc"  ]] && alias pbw='pythonbrew'
-[[ -s "$HOME/.pythonbrew/etc/bashrc"  ]] && alias pnv='pbw venv'
-
-# virtualenvwrapper
-[[ -s "/usr/bin/virtualenvwrapper.sh"  ]] && source "/usr/bin/virtualenvwrapper.sh" 
-
-# nvm
-[[ -s "$HOME/.nvm/nvm.sh"  ]] && source "$HOME/.nvm/nvm.sh" 
-
-# nvm setting on mba
-[[ -s "$HOME/Development/git/nvm/nvm.sh"  ]] && source "$HOME/Development/git/nvm/nvm.sh"
-
+[[ -s "$HOME/dotfiles/.myenvvar"  ]] && source "$HOME/dotfiles/.myenvvar" 
