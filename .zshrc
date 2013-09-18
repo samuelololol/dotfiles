@@ -13,7 +13,7 @@
 #                                                                                                            
 
 
-export PATH=$PATH:/usr/local/bin
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 ZSH=$HOME/dotfiles/.zsh
 #export ZSH_THEME="miloshadzic"
 #export ZSH_THEME="norm"
