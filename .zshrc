@@ -23,7 +23,7 @@ export ZSH_THEME="jreese"
 
 # zsh plugin settings
 # --------------------------------------------
-plugins=(git vim github svn brew osx)
+plugins=(git vim github svn brew osx npm nvm node yum tmux)
 
 
 source $ZSH/oh-my-zsh.sh
