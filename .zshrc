@@ -46,7 +46,7 @@ export LC_CTYPE="zh_TW.UTF-8"
 alias tmux='DISPLAY=:0.0 TERM=screen-256color tmux -2'
 alias screen='DISPLAY=:0.0 TERM=xterm-256color screen'
 
-source $HOME/dotfiles/.mypyrc
-source $HOME/dotfiles/.mynoderc
+source $HOME/dotfiles/mypyrc
+source $HOME/dotfiles/mynoderc
 
 [[ -s "$HOME/dotfiles/.myenvvar"  ]] && source "$HOME/dotfiles/.myenvvar" 

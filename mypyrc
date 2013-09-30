@@ -5,5 +5,5 @@
 [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && alias pnv='pbw venv'
 
 # virtualenvwrapper
-# [[ -s "/usr/bin/virtualenvwrapper.sh"  ]] && source "/usr/bin/virtualenvwrapper.sh" 
+[[ -s "/usr/bin/virtualenvwrapper.sh"  ]] && source "/usr/bin/virtualenvwrapper.sh" 
 

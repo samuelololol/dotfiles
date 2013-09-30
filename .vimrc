@@ -17,108 +17,15 @@
 "關閉vi compatible模式
 set nocompatible
 
-"tab-related"
-"
-"translate the <tab> to <space> with the counts: tabstop
-"(counts of space for pressing tab)
-"unset=>   :set noet
-set expandtab
-"how many SPACE when read \t (<TAB>) char
-"colorize the <Tab>
-set tabstop=4
-set listchars=tab:>-
-
-"indentation-related"
-"Number of spaces to use for each step of (auto)indent.
-"(counts of space for indentation)
-set shiftwidth=4
-
-"explaination for <BackSpace> and <Tab> when u in insert mode editing
-set softtabstop=4
-
-"if 'smarttab' is on,
-"    At beginning <Tab> key inserts indentation according to 'shiftwidth'
-"    elsewhere, to 'tabstop' and 'softtabstop'
-set smarttab
-
-"'smartindent' should not be used with 'cindent'
-set smartindent
-"copy the indentation from the previous line
-set autoindent
-        "setting in c.vim and cpp.vim
-        "set cindent 
-
 " show line number
 set nu
 set cursorline
 syntax on
 
-" setting backspace work
-set backspace=indent,eol,start
-
-" comment color(original)
-"highlight Comment ctermfg=darkcyan
-
-" directly set the background(new, but bad)
-"set background=dark
-
-" colorscheme way
-"colorscheme desert
-colorscheme delek
-
-
 "spell check
 setlocal spell spelllang=en_us
 set nospell
 " set spell
-
-"terminal setting
-"if $TERM == 'screen'
-"  set term=xterm
-"endif
-"setting terminal as xterm-256color
-set term=screen-256color
-set t_Co=256
-
-"encoding
-" 檔案編碼,檔案編碼清單 (file encoding)(file encoding list)
-set fenc=utf-8 
-set fencs=utf-8,big5,gbk,euc-jp,utf-16le
-" 內部編碼      (encoding inside Vim)
-set enc=utf-8 
-" Terminal編碼  (terminal encoding)
-set tenc=utf-8
-
-
-
-" LanguageTool
-let g:languagetool_jar='~/dotfiles/.vim/bundle/LanguageTool/JLanguageTool/dist/LanguageTool.jar'
-
-set laststatus=2
-"edit from pct's statusline
-" 設定狀態列訊息
-highlight User1 ctermfg=red
-highlight User2 term=underline cterm=underline ctermfg=green
-highlight User3 term=underline cterm=underline ctermfg=yellow
-highlight User4 term=underline cterm=underline ctermfg=white
-highlight User5 ctermfg=cyan
-highlight User6 ctermfg=white
-
-" %1* -> User1's highlight, %2*->User2's highlight
-" =   -> Separation point between left and right aligned items.
-" <   -> Where to truncate line if too long.  Default is at the start.
-set statusline=%6*%<\ %1*[%F]
-set statusline+=\ %5*[%{&encoding}, " encoding
-set statusline+=%{&fileformat}]%m " file format
-set statusline+=%6*%=\ %6*%y%6*\ %3*%l%6*\/%L,\ %3*%c%6*\ \<%2*%P%6*\>
-
-"" pathogen setting "
-"call pathogen#helptags()
-"call pathogen#runtime_append_all_bundles()
-"call pathogen#infect()
-execute pathogen#infect()
-Helptags
-runtime ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
 
 " filetype support
 filetype on
@@ -144,8 +51,19 @@ set noerrorbells         " don't beep
 set nobackup             " don't backup
 set noswapfile           " don't backup
 
-
 "確保 Vim 能在中文字符之間折行而不要求空格的存在
 "並且在大部分情況下可以正確地處理中文重新格式化
 set formatoptions+=tmM
 set textwidth=80
+
+"" pathogen setting "
+"call pathogen#helptags()
+"call pathogen#runtime_append_all_bundles()
+"call pathogen#infect()
+execute pathogen#infect()
+Helptags
+runtime ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
+
+" LanguageTool
+let g:languagetool_jar='~/dotfiles/.vim/bundle/LanguageTool/JLanguageTool/dist/LanguageTool.jar'
+
