@@ -14,3 +14,27 @@ let g:GenCtagsCmdC = "ctags -R --c-kinds=+p --fields=+iaS --extra=+q --language-
 
 let g:GenCscopeCmd = g:GenCscopeCmdC
 let g:GenCtagsCmd = g:GenCtagsCmdC
+
+"                    ___
+" Documentation     /III\
+" With             /{= =}\__
+" Sphinx           |_\-/_|  \
+"                 |-| |-|{ |
+"                 /-_--_'-nn/
+"                nnn/  nnn|}
+"                
+"
+"
+
+
+"knight
+"
+"                      Now I am ready for that dragon!
+"                      I have a horse and armour!
+"             ,      ,  /
+"        ____/~\    ~O
+"    ,;~( )_  )'' /~()'-{---
+"       )/  |(     /~)
+"       ~    ~     ~ ~
+
+
