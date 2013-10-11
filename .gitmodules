@@ -64,9 +64,12 @@
     ignore = dirty
 [submodule ".vim/bundle/javascript-libraries-syntax"]
 	path = .vim/bundle/javascript-libraries-syntax
-	url = https://github.com/othree/javascript-libraries-syntax.vim
+	url = http://github.com/othree/javascript-libraries-syntax.vim
     ignore = dirty
 [submodule ".vim/bundle/vim-multiple-cursors"]
 	path = .vim/bundle/vim-multiple-cursors
-	url = https://github.com/terryma/vim-multiple-cursors.git
+	url = http://github.com/terryma/vim-multiple-cursors.git
     ignore = dirty
+[submodule ".vim/bundle/vim-easy-align"]
+	path = .vim/bundle/vim-easy-align
+	url = http://github.com/junegunn/vim-easy-align

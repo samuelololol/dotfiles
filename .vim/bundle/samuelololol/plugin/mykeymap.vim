@@ -33,3 +33,6 @@ au BufNew MapToggle <F7> nopaste
 " set F5 F6 by MapToggle-function in mymaptoggle.vim
 MapToggle <F6> scrollbind
 MapToggle <F7> nopaste
+
+" EasyAlign
+vnoremap <silent> <Enter> :EasyAlign<Enter>
