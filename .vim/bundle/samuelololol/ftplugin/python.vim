@@ -1,9 +1,14 @@
-set colorcolumn=72
-set textwidth=72
+set colorcolumn=80
+set textwidth=80
 
 function! Addpyheader()
     if getfsize(@%) <= 0
         execute "norm i#!/usr/bin/env python\n# -*- coding: utf-8 -*-\n"
+        execute "norm i__date__= '" . strftime("%b %d, %Y") "'\n"
+        execute "norm i__author__= '" . $USER . "'\n\n"
+        execute "norm i\n"
+        execute "norm idef main():\n\tpass\n\n"
+        execute "norm iif __name__ == '__main__':\nmain()"
     endif
 endfunction
 "au BufNewFile *.py call Addpyheader()
