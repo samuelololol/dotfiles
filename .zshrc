@@ -52,4 +52,8 @@ alias screen='DISPLAY=:0.0 TERM=xterm-256color screen'
 source $HOME/dotfiles/samuel_py_rc
 source $HOME/dotfiles/samuel_node_rc
 
+# keymap
+# https://wiki.archlinux.org/index.php/Zsh#Key_bindings
+
+
 [[ -s "$HOME/dotfiles/.myenvvar"  ]] && source "$HOME/dotfiles/.myenvvar" 
