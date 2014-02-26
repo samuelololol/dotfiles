@@ -76,6 +76,5 @@ Rxvt*color7:     #efefef
 Rxvt*color15:    #efefef
 
 Rxvt*transparent: true
-Rxvt*shading: 15
-
+Rxvt*shading: 20
 

@@ -58,4 +58,4 @@ source $HOME/dotfiles/samuel_ruby_rc
 
 
 [[ -s "$HOME/dotfiles/.myenvvar"  ]] && source "$HOME/dotfiles/.myenvvar"
-
+[[ -s "/usr/bin/screenfetch"]] && screenfetch
