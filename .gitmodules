@@ -74,3 +74,7 @@
 	path = .vim/bundle/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align
     ignore = dirty
+[submodule ".vim/bundle/tern_for_vim"]
+	path = .vim/bundle/tern_for_vim
+	url = https://github.com/marijnh/tern_for_vim
+    ignore = dirty
