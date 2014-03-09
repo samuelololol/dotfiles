@@ -19,6 +19,7 @@ This is an repository of the setting files and plugins for some useful tools(scr
 * screen
 * tmux
 * vim
+* nodejs (JavaScript libraries: _jshint, tern_)
 
 
 # HOW TO INSTALL?
