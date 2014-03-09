@@ -112,6 +112,16 @@ This is an repository of the setting files and plugins for some useful tools(scr
 
     >Simplify Doxygen documentation in C, C++, Python.
 
++ >#[javascript-libraries-syntax](https://github.com/othree/javascript-libraries-syntax.vim)
+
+    >Syntax file for JavaScript libraries. Supports JavaScript libraris I am
+    using (patches welcome).  Should works well with other JavaScript syntax file.
+    [SyntaxComplete][] also works well on all supported languages. 
+
++ >#[jshint2](https://github.com/Shutnik/jshint2.vim)
+
+    >Lightweight, customizable and functional Vim plugin for JSHint integration.
+
 <!--
 + >#[LanguageTool](http://www.vim.org/scripts/script.php?script_id=3223)  
   
@@ -151,6 +161,10 @@ This is an repository of the setting files and plugins for some useful tools(scr
 
     >Eclipse like task list
 
++ >#[tern\_for\_vim](https://github.com/marijnh/tern_for_vim)
+
+    >This is a Vim plugin that provides Tern-based JavaScript editing support.
+
 + >#[trinity](ihttps://github.com/wesleyche/Trinity)
 
     >A (G)Vim plugin which build the trinity of Source Explorer, TagList and NERD tree to be an IDE for software development
@@ -162,6 +176,18 @@ This is an repository of the setting files and plugins for some useful tools(scr
 + >#[EasyMotion](https://github.com/Lokaltog/vim-easymotion)
 
     >Vim motions on speed!
+
++ >#[vim-easy-align](https://github.com/junegunn/vim-easy-align)
+
+    >A simple, easy-to-use Vim alignment plugin.
+
++ >#[vim-gitgutter](https://github.com/airblade/vim-gitgutter)
+
+    >A Vim plugin which shows a git diff in the gutter (sign column) and stages/reverts hunks.
+
++ >#[vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
+
+    >True Sublime Text style multiple selections for Vim.
 
 + >#[vim-pathogen](https://github.com/tpope/vim-pathogen)
 
