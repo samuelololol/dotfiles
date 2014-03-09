@@ -6,7 +6,5 @@ let jshint2_clode = 0
 let jshint2_confirm = 0
 let jshint2_color = 1
 let jshint_error = 1
-let jshint_height = 20
-
-echom jshint2_command
+let jshint_height = 5
 
