@@ -78,3 +78,6 @@
 	path = .vim/bundle/tern_for_vim
 	url = https://github.com/marijnh/tern_for_vim
     ignore = dirty
+[submodule ".vim/bundle/jshint2.vim"]
+	path = .vim/bundle/jshint2.vim
+	url = https://github.com/Shutnik/jshint2.vim
