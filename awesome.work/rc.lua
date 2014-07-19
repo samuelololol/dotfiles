@@ -106,7 +106,7 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 -- beautiful.init("/usr/share/awesome/themes/default/theme.lua")
-beautiful.init("/usr/share/awesome/themes/zenburn/theme.lua")
+beautiful.init("/home/samuel/dotfiles/awesome.work/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 -- terminal = "xterm"
@@ -138,7 +138,7 @@ local layouts =
 -- {{{ Wallpaper
 if beautiful.wallpaper then
     for s = 1, screen.count() do
-        gears.wallpaper.maximized(beautiful.wallpaper, s, true)
+        gears.wallpaper.maximized(beautiful.wallpaper[s], s, true)
     end
 end
 -- }}}
@@ -341,7 +341,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey }, "p", function() menubar.show() end),
 
     -- Custom by samuel
-    awful.key({ modkey,           }, "F11", function () awful.util.spawn("transset 0.85") end)
+    awful.key({ modkey,           }, "F11", function () awful.util.spawn("transset 0.9") end)
 )
 
 clientkeys = awful.util.table.join(
