@@ -64,14 +64,14 @@ default_outline_color DarkGrey
 # Text alignment, other possible values are commented
 #alignment top_left
 #alignment top_right
-alignment bottom_left
-#alignment bottom_right
+#alignment bottom_left
+alignment bottom_right
 
 # Gap between borders of screen and text
 #gap_x 250
 #gap_y 30
 gap_x 15
-gap_y 5
+gap_y 25
 
 
 # Subtract file system buffers from used memory?
