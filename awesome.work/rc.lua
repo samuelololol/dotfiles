@@ -14,6 +14,7 @@ local vicious = require("vicious")
 
 awful.util.spawn_with_shell("xcompmgr -cF&")
 awful.util.spawn("conky -c /home/samuel/dotfiles/.conkyrc.work &")
+awful.util.spawn_with_shell("xscreensaver -no-splash")
 
 -- samuel: cpu usage
 -- ###########################################
@@ -341,7 +342,8 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey }, "p", function() menubar.show() end),
 
     -- Custom by samuel
-    awful.key({ modkey,           }, "F11", function () awful.util.spawn("transset 0.9") end)
+    awful.key({ modkey,           }, "F11", function () awful.util.spawn("transset 0.9") end),
+    awful.key({ modkey, },           "F12", function () awful.util.spawn("xscreensaver-command -lock") end)
 )
 
 clientkeys = awful.util.table.join(
@@ -513,4 +515,5 @@ end)
 
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
+
 -- }}}
