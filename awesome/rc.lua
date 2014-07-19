@@ -13,23 +13,23 @@ local menubar = require("menubar")
 local vicious = require("vicious")
 
 awful.util.spawn_with_shell("xcompmgr -cF&")
-awful.util.spawn("conky &")
+awful.util.spawn("conky -c /home/samuel/dotfiles/.conkyrc &")
 
 -- samuel: cpu usage
 -- ###########################################
--- Initialize widget
-cpuwidget = awful.widget.graph()
--- Graph properties
-cpuwidget:set_width(50)
-cpuwidget:set_background_color("#494B4F")
-cpuwidget:set_color({type= "linear",
-                     from= {0, 0},
-                     to= {10, 0},
-                     stops= {{0, "#FF5656"}, {0.5, "#88A175"}, {1, "#AECF96" }}
-                    })
--- Register widget
-vicious.register(cpuwidget, vicious.widgets.cpu, "$1")
--- ###########################################
+-- -- Initialize widget
+-- cpuwidget = awful.widget.graph()
+-- -- Graph properties
+-- cpuwidget:set_width(50)
+-- cpuwidget:set_background_color("#494B4F")
+-- cpuwidget:set_color({type= "linear",
+--                      from= {0, 0},
+--                      to= {10, 0},
+--                      stops= {{0, "#FF5656"}, {0.5, "#88A175"}, {1, "#AECF96" }}
+--                     })
+-- -- Register widget
+-- vicious.register(cpuwidget, vicious.widgets.cpu, "$1")
+-- -- ###########################################
 
 
 
@@ -47,22 +47,22 @@ vicious.register(cpuwidget, vicious.widgets.cpu, "$1")
 
 -- samuel: mem usage(Progressbar)
 -- ###########################################
--- Initialize widget
-memwidget = awful.widget.progressbar()
--- Progressbar properties
-memwidget:set_width(40)
--- memwidget:set_height(10)
-memwidget:set_vertical(true)
-memwidget:set_background_color("#494B4F")
-memwidget:set_border_color(nil)
-memwidget:set_color({type= "linear",
-                     from= {0, 0},
-                     to= {10,0},
-                     stops= {{0, "#AECF96"}, {0.5, "#88A175"}, {1, "#FF5656"}}
-                    })
--- Register widget
-vicious.register(memwidget, vicious.widgets.mem, "$1", 13)
--- ###########################################
+-- -- Initialize widget
+-- memwidget = awful.widget.progressbar()
+-- -- Progressbar properties
+-- memwidget:set_width(40)
+-- -- memwidget:set_height(10)
+-- memwidget:set_vertical(true)
+-- memwidget:set_background_color("#494B4F")
+-- memwidget:set_border_color(nil)
+-- memwidget:set_color({type= "linear",
+--                      from= {0, 0},
+--                      to= {10,0},
+--                      stops= {{0, "#AECF96"}, {0.5, "#88A175"}, {1, "#FF5656"}}
+--                     })
+-- -- Register widget
+-- vicious.register(memwidget, vicious.widgets.mem, "$1", 13)
+-- -- ###########################################
 
 
 
@@ -256,9 +256,9 @@ for s = 1, screen.count() do
     -- Widgets that are aligned to the right
     local right_layout = wibox.layout.fixed.horizontal()
     if s == 1 then right_layout:add(wibox.widget.systray()) end
-    right_layout:add(cpuwidget)
+    -- right_layout:add(cpuwidget)
     right_layout:add(mytextclock)
-    right_layout:add(memwidget)
+    -- right_layout:add(memwidget)
     right_layout:add(mylayoutbox[s])
 
     -- Now bring it all together (with the tasklist in the middle)

@@ -70,8 +70,8 @@ alignment bottom_left
 # Gap between borders of screen and text
 #gap_x 250
 #gap_y 30
-gap_x 50
-gap_y 30
+gap_x 15
+gap_y 5
 
 
 # Subtract file system buffers from used memory?
@@ -93,8 +93,7 @@ ${color #98c2c7}CPU:$color $freq_g GHz $cpu% $color
 ${color #78af78}${cpugraph 78af78 a3a3a3}
 ${color #42AE4A}Core 1 Temp: ${color lightgrey}${execi 8 sensors | grep -A 1 'Core 0' | cut -c18-25 | head -n 1| sed '/^$/d'} ${color #42AE4A}Core 2 Temp: ${color lightgrey}${execi 8 sensors | grep -A 1 'Core 1' | cut -c18-25| sed '/^$/d'}$color
 
-${color #ffcb48}WIRELESS$color
-${wireless_essid wlan0} ${wireless_mode} ${wireless_bitrate wlan0} ${wireless_link_qual}
+${color #ffcb48}WIRELESS$color(${wireless_essid wlan0}) ${wireless_mode} ${wireless_bitrate wlan0} ${wireless_link_qual}
 ${wireless_link_bar wlan0}
 ${color #98c2c7}NAME             PID       CPU%      MEM%
 ${color #e5e5e5}${top name 1} ${top pid 1}   ${top cpu 1}    ${top mem 1}
