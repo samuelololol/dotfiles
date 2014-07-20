@@ -9,11 +9,11 @@ def cap(s,l):
 
 def main():
     try:
-        #x = urllib2.urlopen('http://gits-sac.appspot.com/vimplugins')
-        #y = json.loads(x.read())
-        url = 'http://samuel.rareodds.com/api/v1/vimplugins'
-        x = urllib2.urlopen(url, timeout=5)
-        y = json.loads(x.read())['items']
+        x = urllib2.urlopen('http://gits-sac.appspot.com/vimplugins')
+        y = json.loads(x.read())
+        #url = 'http://samuel.rareodds.com/api/v1/vimplugins'
+        #x = urllib2.urlopen(url, timeout=5)
+        #y = json.loads(x.read())['items']
         random.seed(time.time())
         z = y[random.randint(0,len(y))]
         print '%s' %(cap(z[0]+' : '+z[1],50))

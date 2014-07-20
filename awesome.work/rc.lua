@@ -15,6 +15,7 @@ local vicious = require("vicious")
 awful.util.spawn_with_shell("xcompmgr -cF&")
 awful.util.spawn("conky -c /home/samuel/dotfiles/.conkyrc.work &")
 awful.util.spawn_with_shell("qsynergy")
+awful.util.spawn_with_shell("volumeicon")
 awful.util.spawn_with_shell("xscreensaver -no-splash")
 
 -- samuel: cpu usage
