@@ -425,8 +425,7 @@ root.keys(globalkeys)
 awful.rules.rules = {
     -- All clients will match this rule.
     { rule = { },
-      --properties = { border_width = beautiful.border_width,
-      properties = { border_width = "0",
+      properties = { border_width = beautiful.border_width,
                      border_color = beautiful.border_normal,
                      focus = awful.client.focus.filter,
                      raise = true,
@@ -438,6 +437,13 @@ awful.rules.rules = {
       properties = { floating = true } },
     { rule = { class = "gimp" },
       properties = { floating = true } },
+    { rule = { class = "Conky" },
+      properties = { sticky = true,
+                     border_width = "0" } },
+    { rule = { class = "URxvt" },
+      callback = function (c)
+          awful.util.spawn( "transset -n urxvt 0.85" ) end },
+      properties = {width = 100, height = 100},
     -- Set Firefox to always map on tags number 2 of screen 1.
     -- { rule = { class = "Firefox" },
     --   properties = { tag = tags[1][2] } },
@@ -516,12 +522,14 @@ end)
 client.connect_signal("focus",
   function(c)
     c.border_color = beautiful.border_focus;
-    c.opacity = 1.0
+    -- c.opacity = 1.0;
+    -- c.above = true
   end)
 
 client.connect_signal("unfocus",
   function(c)
     c.border_color = beautiful.border_normal;
-    c.opacity = 0.9
+    -- c.opacity = 0.9;
+    -- c.above = false
   end)
 -- }}}
