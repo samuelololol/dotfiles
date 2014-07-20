@@ -14,6 +14,7 @@ local vicious = require("vicious")
 
 awful.util.spawn_with_shell("xcompmgr -cF&")
 awful.util.spawn("conky -c /home/samuel/dotfiles/.conkyrc.work &")
+awful.util.spawn_with_shell("qsynergy")
 awful.util.spawn_with_shell("xscreensaver -no-splash")
 
 -- samuel: cpu usage
@@ -425,8 +426,7 @@ root.keys(globalkeys)
 awful.rules.rules = {
     -- All clients will match this rule.
     { rule = { },
-      --properties = { border_width = beautiful.border_width,
-      properties = { border_width = "0",
+      properties = { border_width = beautiful.border_width,
                      border_color = beautiful.border_normal,
                      focus = awful.client.focus.filter,
                      raise = true,
@@ -438,6 +438,9 @@ awful.rules.rules = {
       properties = { floating = true } },
     { rule = { class = "gimp" },
       properties = { floating = true } },
+    { rule = { class = "Conky" },
+      properties = { border_width = "0",
+                     sticky = true } },
     -- Set Firefox to always map on tags number 2 of screen 1.
     -- { rule = { class = "Firefox" },
     --   properties = { tag = tags[1][2] } },

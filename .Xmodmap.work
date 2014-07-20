@@ -1,0 +1,39 @@
+!
+! Swap Caps_Lock and Control_L
+!
+!method1: exchange
+remove Lock = Caps_Lock
+remove Control = Control_L
+keysym Control_L = Caps_Lock
+keysym Caps_Lock = Control_L
+add Lock = Caps_Lock
+add Control = Control_L
+
+!
+! Swap LAlt and LWIN
+!
+!method1: exchange
+remove mod1 = Alt_L
+remove mod4 = Super_L
+keysym Super_L = Alt_L
+keysym Alt_L = Super_L
+add mod1 = Alt_L
+add mod4 = Super_L
+
+!method2: remove
+!remove mod4 = Alt_L
+!remove mod1 = Super_L
+
+!$ xmodmap -pm
+!xmodmap:  up to 4 keys per modifier, (keycodes in parentheses):
+!
+!shift       Shift_L (0x32),  Shift_R (0x3e)
+!lock        Caps_Lock (0x25)
+!control     Control_L (0x42),  Control_R (0x69)
+!mod1        Alt_R (0x6c),  Alt_L (0x85),  Alt_L (0xcc),  Meta_L (0xcd)
+!mod2        Num_Lock (0x4d)
+!mod3      
+!mod4        Super_R (0x86),  Super_L (0xce),  Hyper_L (0xcf)
+!mod5        ISO_Level3_Shift (0x5c),  Mode_switch (0xcb)
+!
+

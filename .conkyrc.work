@@ -62,9 +62,9 @@ default_shade_color black
 default_outline_color DarkGrey
 
 # Text alignment, other possible values are commented
-alignment top_left
+#alignment top_left
 #alignment top_right
-#alignment bottom_left
+alignment bottom_left
 #alignment bottom_right
 
 # Gap between borders of screen and text
@@ -85,7 +85,6 @@ uppercase no
 TEXT
 ${color #ffcb48}$nodename$color on $machine$color
 ${color #828282}$sysname
-${color #98c2c7}Batt:$color${battery}
 
 ${color #ffcb48}PROCESSING$color
 ${color #98c2c7}CPU:$color $freq_g GHz $cpu% $color
@@ -112,5 +111,5 @@ ${color #78af78}${swapbar 6}$color
 ${color #98c2c7}/:$color       ${fs_free_perc /}%  $fs_free  
 ${color #78af78}${fs_bar 6 /}$color
 
-${color #98c2c7}Upload:$color  ${upspeed eth0}kb/s
-${color #98c2c7}Download:$color  ${downspeed eth0}kb/s
+${color #98c2c7}Upload:$color    ${upspeed eth0}/s
+${color #98c2c7}Download:$color  ${downspeed eth0}/s

@@ -9,7 +9,7 @@
 -- {{{ Main
 theme = {}
 -- 3.5
-theme.wallpaper = "/home/samuel/dotfiles/awesome/rotsteinpass.jpg"
+theme.wallpaper = "/home/samuel/dotfiles/awesome_wallpaper/rotsteinpass.jpg"
 -- 3.4
 -- theme.wallpaper_cmd = {"feh --bg-max --no-xinerama /home/samuel/dotfiles/awesome.work/free.png"}
 -- }}}

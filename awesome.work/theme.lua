@@ -10,10 +10,10 @@
 theme = {}
 -- 3.5
 theme.wallpaper = {}
-theme.wallpaper[1] = "/home/samuel/dotfiles/awesome.work/free1.png"
-theme.wallpaper[2] = "/home/samuel/dotfiles/awesome.work/free2.png"
+theme.wallpaper[1] = "/home/samuel/dotfiles/awesome_wallpaper/free1.png"
+theme.wallpaper[2] = "/home/samuel/dotfiles/awesome_wallpaper/rotsteinpass.jpg"
 -- 3.4
--- theme.wallpaper_cmd = { "feh --bg-max --no-xinerama /home/samuel/dotfiles/awesome.work/free.png" }
+-- theme.wallpaper_cmd = { "feh --bg-max --no-xinerama /home/samuel/dotfiles/awesome_wallpaper/free.png" }
 -- }}}
 
 -- {{{ Styles
