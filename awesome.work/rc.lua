@@ -127,7 +127,6 @@ modkey = "Mod4"
 -- Table of layouts to cover with awful.layout.inc, order matters.
 local layouts =
 {
-    awful.layout.suit.floating,
     awful.layout.suit.tile,
     awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
@@ -135,6 +134,7 @@ local layouts =
     awful.layout.suit.fair,
     awful.layout.suit.fair.horizontal,
     awful.layout.suit.max.fullscreen,
+    awful.layout.suit.floating,
 }
 -- }}}
 
@@ -442,6 +442,9 @@ awful.rules.rules = {
     { rule = { class = "Conky" },
       properties = { border_width = "0",
                      sticky = true } },
+    { rule = { class = "URxvt" },
+      callback = function (c)
+          awful.util.spawn( "transset -n urxvt 0.85" ) end },
     -- Set Firefox to always map on tags number 2 of screen 1.
     -- { rule = { class = "Firefox" },
     --   properties = { tag = tags[1][2] } },
