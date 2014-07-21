@@ -443,7 +443,6 @@ awful.rules.rules = {
     { rule = { class = "URxvt" },
       callback = function (c)
           awful.util.spawn( "transset -n urxvt 0.85" ) end },
-      properties = {width = 100, height = 100},
     -- Set Firefox to always map on tags number 2 of screen 1.
     -- { rule = { class = "Firefox" },
     --   properties = { tag = tags[1][2] } },
