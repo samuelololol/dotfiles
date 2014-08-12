@@ -8,8 +8,9 @@ xterm*FaceName:   Terminus
 xterm*FaceSize:   12
 #xterm*FaceSize:   40
 #xterm*FaceName:   Awesome
-xterm*FaceNameDoublesize: WenQuanYi 
-xterm*FontSize:   7
+#xterm*FaceNameDoublesize: WenQuanYi 
+xterm*FaceNameDoublesize: Noto Sans T Chinese:light
+xterm*FontSize:   10
 xterm*altSendsEscape: true
 xterm*metaSendsEscape: true
 #xterm -fg LightGoldenrodYellow -bg grey5 -fa Terminus -fs 12
@@ -19,63 +20,64 @@ xterm*metaSendsEscape: true
 #============================================================
 #More Setting about urxvt: 
 #   https://wiki.archlinux.org/index.php/rxvt-unicode
+#   http://wiki.archbang.org/index.php?title=Rxvt-Unicode_Terminal
 #   http://www.askapache.com/linux/rxvt-xresources.html
 #   http://awesome.naquadah.org/wiki/Urxvt
 
 #utils
-Rxvt.perl-lib: /usr/lib/urxvt/perl/
-Rxvt.perl-ext-common: default,matcher
-Rxvt.url-launcher: /usr/bin/chromium
-Rxvt.matcher.button: 1
-Rxvt*colorUL: yellow
-Rxvt*saveLines: 0
+URxvt.perl-lib: /usr/lib/urxvt/perl/
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/chromium
+URxvt.matcher.button: 1
+URxvt*colorUL: yellow
+URxvt*saveLines: 0
 
 #keymap
 URxvt*keysym.Home: \033[1~
 URxvt*keysym.End: \033[4~
 
-#Rxvt*font: xft:Terminus:size=120:antialias=True
-#Rxvt*boldfont: xft:Terminus:size=120:antialias=True
+#URxvt*font: xft:Terminus:size=120:antialias=True
+#URxvt*boldfont: xft:Terminus:size=120:antialias=True
 
 
 #Appearence
-Rxvt*visualBell: false
-Rxvt*scrollBar:  false
-Rxvt*font:       xft:dina:size=12
-Rxvt*boldFont:   xft:dina:bold:size=12
-Rxvt*italicFont: xft:dina:italic:size=12
-Rxvt*font:       xft:dina:bolditalic:size=12
+URxvt*visualBell: false
+URxvt*scrollBar:  false
+URxvt*font:       xft:dina:size=12,xft:size=14:Noto Sans T Chinese:light
+URxvt*boldFont:   xft:dina:bold:size=12,xft:size=14:Noto Sans T Chinese:bold
+URxvt*italicFont: xft:dina:italic:size=12,xft:size=14:Noto Sans T Chinese:italic
+#URxvt*font:       xft:dina:bolditalic:size=12
 
 !# color settings: 
 !#   http://sdkmvx.wordpress.com/2008/08/13/rxvt-unicode-terminal-colors
-Rxvt*background: #0f0f0f
-Rxvt*foreground: #c8c8c8
+URxvt*background: #0f0f0f
+URxvt*foreground: #c8c8c8
 !black
-Rxvt*color0:     #251f1f
-Rxvt*color8:     #5e5e5e
+URxvt*color0:     #251f1f
+URxvt*color8:     #5e5e5e
 !red
-Rxvt*color1:     #eb4509
-Rxvt*color9:     #eb4509
+URxvt*color1:     #eb4509
+URxvt*color9:     #eb4509
 !green
-Rxvt*color2:     #94e76b
-Rxvt*color10:    #95e76b
+URxvt*color2:     #94e76b
+URxvt*color10:    #95e76b
 !yellow
-Rxvt*color3:     #ffac18
-Rxvt*color11:    #ffac18
+URxvt*color3:     #ffac18
+URxvt*color11:    #ffac18
 !blue
-Rxvt*color4:     #46aede
-Rxvt*color12:    #46aede
+URxvt*color4:     #46aede
+URxvt*color12:    #46aede
 !magenta
-Rxvt*color5:     #e32c57
-Rxvt*color13:    #e32c57
+URxvt*color5:     #e32c57
+URxvt*color13:    #e32c57
 !cyan
-Rxvt*color6:     #d6dbac
-Rxvt*color14:    #d6dbac
+URxvt*color6:     #d6dbac
+URxvt*color14:    #d6dbac
 !white
-Rxvt*color7:     #efefef
-Rxvt*color15:    #efefef
+URxvt*color7:     #efefef
+URxvt*color15:    #efefef
 
-!Rxvt*transparent: true
-Rxvt*transparent: false
-Rxvt*shading: 20
+!URxvt*transparent: true
+URxvt*transparent: false
+URxvt*shading: 20
 
