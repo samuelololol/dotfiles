@@ -9,7 +9,10 @@
 -- {{{ Main
 theme = {}
 -- 3.5
-theme.wallpaper = "/home/samuel/dotfiles/awesome_wallpaper/rotsteinpass.jpg"
+-- theme.wallpaper = "/home/samuel/dotfiles/awesome_wallpaper/rotsteinpass.jpg"
+theme.wallpaper = {}
+theme.wallpaper[1] = "/home/samuel/dotfiles/awesome_wallpaper/free1.png"
+theme.wallpaper[2] = "/home/samuel/dotfiles/awesome_wallpaper/sunset.png"
 -- 3.4
 -- theme.wallpaper_cmd = {"feh --bg-max --no-xinerama /home/samuel/dotfiles/awesome.work/free.png"}
 -- }}}

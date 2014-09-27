@@ -13,7 +13,9 @@ local menubar = require("menubar")
 local vicious = require("vicious")
 
 awful.util.spawn_with_shell("xcompmgr -cF &")
+awful.util.spawn("pkill conky")
 awful.util.spawn("conky -c /home/samuel/dotfiles/.conkyrc &")
+awful.util.spawn_with_shell("volumeicon")
 awful.util.spawn_with_shell("xscreensaver -no-splash")
 
 -- samuel: cpu usage
@@ -125,7 +127,6 @@ modkey = "Mod4"
 -- Table of layouts to cover with awful.layout.inc, order matters.
 local layouts =
 {
-    awful.layout.suit.floating,
     awful.layout.suit.tile,
     awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
@@ -133,13 +134,14 @@ local layouts =
     awful.layout.suit.fair,
     awful.layout.suit.fair.horizontal,
     awful.layout.suit.max.fullscreen,
+    awful.layout.suit.floating,
 }
 -- }}}
 
 -- {{{ Wallpaper
 if beautiful.wallpaper then
     for s = 1, screen.count() do
-        gears.wallpaper.maximized(beautiful.wallpaper, s, true)
+        gears.wallpaper.maximized(beautiful.wallpaper[s], s, true)
     end
 end
 -- }}}
