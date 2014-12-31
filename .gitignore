@@ -4,3 +4,4 @@ tags
 .vim/.netrwhist
 .vim/extfdr*
 .myenvvar
+.ctags
