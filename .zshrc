@@ -24,7 +24,7 @@ export ZSH_THEME="jreese"
 # zsh plugin settings
 # --------------------------------------------
 #plugins=(git vim github svn brew osx npm nvm node yum tmux virtualenv virtualenvwrapper)
-plugins=(git vim github svn brew osx npm nvm node yum tmux)
+plugins=(git vim github svn brew osx npm nvm node yum tmux docker)
 
 [[ -s "/usr/bin/virtualenvwrapper.sh"  ]] && plugins=(git vim github svn brew osx npm nvm node yum tmux)
 
