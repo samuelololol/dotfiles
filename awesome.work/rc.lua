@@ -16,8 +16,7 @@ awful.util.spawn_with_shell("xcompmgr -cF&")
 awful.util.spawn("pkill volumeicon")
 awful.util.spawn("pkill xscreensaver")
 awful.util.spawn("pkill conky")
-awful.util.spawn("pkill conky")
-awful.util.spawn("pkill conky")
+awful.util.spawn("pkill qsynergy")
 awful.util.spawn("conky -c /home/samuel/dotfiles/.conkyrc.work &")
 awful.util.spawn("conky -c /home/samuel/dotfiles/.conkyrc.clock &")
 awful.util.spawn_with_shell("volumeicon")
@@ -350,7 +349,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey }, "p", function() menubar.show() end),
 
     -- Custom by samuel
-    awful.key({ modkey,           }, "F11", function () awful.util.spawn("transset 0.9") end),
+    awful.key({ modkey,           }, "F11", function () awful.util.spawn("transset 0.8") end),
     awful.key({ modkey, },           "F12", function () awful.util.spawn("xscreensaver-command -lock") end)
 )
 

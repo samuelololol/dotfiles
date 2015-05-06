@@ -70,7 +70,9 @@ alignment bottom_left
 # Gap between borders of screen and text
 #gap_x 250
 #gap_y 30
-gap_x 1350
+#gap_x 1350
+#gap_x 3010 #right bottom
+gap_x 1730
 gap_y 30
 
 

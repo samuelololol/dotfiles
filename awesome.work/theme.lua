@@ -10,8 +10,14 @@
 theme = {}
 -- 3.5
 theme.wallpaper = {}
-theme.wallpaper[1] = "/home/samuel/dotfiles/awesome_wallpaper/interstellar.jpg"
-theme.wallpaper[2] = "/home/samuel/dotfiles/awesome_wallpaper/interstellar-daftpunk-1680x1050.jpg"
+theme.wallpaper[1] = "/home/samuel/dotfiles/awesome_wallpaper/skytree.jpg"
+theme.wallpaper[2] = "/home/samuel/dotfiles/awesome_wallpaper/slumdunk.JPG"
+-- theme.wallpaper[1] = "/home/samuel/dotfiles/awesome_wallpaper/skytree.jpg"
+-- theme.wallpaper[2] = "/home/samuel/dotfiles/awesome_wallpaper/interstellar_truck.jpg"
+-- theme.wallpaper[1] = "/home/samuel/dotfiles/awesome_wallpaper/interstellar.jpg"
+-- theme.wallpaper[2] = "/home/samuel/dotfiles/awesome_wallpaper/interstellar_truck.jpg"
+-- theme.wallpaper[1] = "/home/samuel/dotfiles/awesome_wallpaper/interstellar.jpg"
+-- theme.wallpaper[2] = "/home/samuel/dotfiles/awesome_wallpaper/interstellar-daftpunk-1680x1050.jpg"
 -- theme.wallpaper[1] = "/home/samuel/dotfiles/awesome_wallpaper/winedesktop_right.png"
 -- theme.wallpaper[2] = "/home/samuel/dotfiles/awesome_wallpaper/winedesktop_left.png"
 -- theme.wallpaper[1] = "/home/samuel/dotfiles/awesome_wallpaper/rotsteinpass.jpg"

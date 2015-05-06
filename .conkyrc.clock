@@ -10,7 +10,7 @@ use_xft yes
 
 # Xft font when Xft is enabled
 #xftfont Bitstream Vera Sans Mono-10
-xftfont Noto Sans Japanese:pixelsize=100
+#xftfont Noto Sans Japanese:pixelsize=100
 #xftfont Andale Mono-9
 #xftfont Clean-8
 #xftfont cubicfive10:pixelsize=8
@@ -75,8 +75,8 @@ alignment top_left
 # Gap between borders of screen and text
 #gap_x 250
 #gap_y 30
-gap_x 10
-gap_y 600
+gap_x 800
+gap_y 680
 
 
 # Subtract file system buffers from used memory?
@@ -88,4 +88,5 @@ uppercase no
 # stuff after 'TEXT' will be formatted on screen
 
 TEXT
-${font Noto Sans Japanese:size=100}${color #B6C8DA}${time %H:%M}
+${font Noto Sans Japanese:size=30}${color #f2dba9}${time %a %e %b, %G  %H:%M}
+#${font Noto Sans Japanese:size=100}${color #f2dba9}${time %H:%M}
