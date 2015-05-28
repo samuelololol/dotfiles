@@ -49,24 +49,24 @@ pcm.rme96Dmixed {
 pcm.both {
     type route;
     slave.pcm {
-    type multi
+        type multi
         slaves.a {
-        pcm "rme96Dmixed"
-        channels 2
+            pcm "rme96Dmixed"
+            channels 2
         }
-    slaves.b {
-        pcm "intelDmixed"
-        channels 2
-    }
-    bindings.0.slave a
-    bindings.0.channel 0
-    bindings.1.slave a
-    bindings.1.channel 1
+        slaves.b {
+            pcm "intelDmixed"
+            channels 2
+        }
+        bindings.0.slave a
+        bindings.0.channel 0
+        bindings.1.slave a
+        bindings.1.channel 1
 
-    bindings.2.slave b
-    bindings.2.channel 0
-    bindings.3.slave b
-    bindings.3.channel 1
+        bindings.2.slave b
+        bindings.2.channel 0
+        bindings.3.slave b
+        bindings.3.channel 1
     }
     ttable.0.0 1
     ttable.1.1 1
@@ -80,7 +80,6 @@ pcm.both {
 #        pcm "both"
 #    }
 #}
-
 
 pcm.pulse {
 type pulse
