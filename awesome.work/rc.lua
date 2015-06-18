@@ -12,7 +12,7 @@ local naughty = require("naughty")
 local menubar = require("menubar")
 local vicious = require("vicious")
 
-awful.util.spawn_with_shell("xcompmgr -cF&")
+awful.util.spawn_with_shell("xcompmgr -cF &")
 awful.util.spawn("pkill volumeicon")
 awful.util.spawn("pkill xscreensaver")
 awful.util.spawn("pkill conky")
@@ -121,6 +121,7 @@ beautiful.init("/home/samuel/dotfiles/awesome.work/theme.lua")
 terminal = "urxvt"
 editor = os.getenv("EDITOR") or "nano"
 editor_cmd = terminal .. " -e " .. editor
+browser = "chromium"
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
@@ -358,8 +359,8 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey }, "p", function() menubar.show() end),
 
     -- Custom by samuel
-    awful.key({ modkey,           }, "F11", function () awful.util.spawn("transset 0.8") end),
-    awful.key({ modkey, },           "F12", function () awful.util.spawn("xscreensaver-command -lock") end)
+    awful.key({ modkey,           }, "F11", function () awful.util.spawn("transset 0.85") end),
+    awful.key({ modkey, }, "F12", function () awful.util.spawn("xscreensaver-command -lock") end)
 )
 
 clientkeys = awful.util.table.join(
@@ -458,8 +459,8 @@ awful.rules.rules = {
     { rule = { class = "gimp" },
       properties = { floating = true } },
     { rule = { class = "Conky" },
-      properties = { border_width = "0",
-                     sticky = true } },
+      properties = { sticky = true,
+                     border_width = "0" } },
     { rule = { class = "URxvt" },
       callback = function (c)
           awful.util.spawn( "transset -n urxvt 0.85" ) end },
@@ -538,7 +539,17 @@ client.connect_signal("manage", function (c, startup)
     end
 end)
 
-client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
-client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
+client.connect_signal("focus",
+  function(c)
+    c.border_color = beautiful.border_focus;
+    -- c.opacity = 1.0;
+    -- c.above = true
+  end)
 
+client.connect_signal("unfocus",
+  function(c)
+    c.border_color = beautiful.border_normal;
+    -- c.opacity = 0.9;
+    -- c.above = false
+  end)
 -- }}}
