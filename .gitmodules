@@ -81,3 +81,6 @@
 [submodule ".vim/bundle/jshint2.vim"]
 	path = .vim/bundle/jshint2.vim
 	url = https://github.com/Shutnik/jshint2.vim
+[submodule "/home/samuel/dotfiles/.vim/bundle/vim-enhanced-diff"]
+	path = /home/samuel/dotfiles/.vim/bundle/vim-enhanced-diff
+	url = https://github.com/chrisbra/vim-diff-enhanced.git
