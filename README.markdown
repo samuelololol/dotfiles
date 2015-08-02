@@ -112,28 +112,6 @@ This is an repository of the setting files and plugins for some useful tools(scr
 
     >Simplify Doxygen documentation in C, C++, Python.
 
-+ >#[javascript-libraries-syntax](https://github.com/othree/javascript-libraries-syntax.vim)
-
-    >Syntax file for JavaScript libraries. Supports JavaScript libraris I am
-    using (patches welcome).  Should works well with other JavaScript syntax file.
-    [SyntaxComplete][] also works well on all supported languages. 
-
-+ >#[jshint2](https://github.com/Shutnik/jshint2.vim)
-
-    >Lightweight, customizable and functional Vim plugin for JSHint integration.
-
-<!--
-+ >#[LanguageTool](http://www.vim.org/scripts/script.php?script_id=3223)  
-  
-    >[LanguageTool](http://www.languagetool.org/) : Grammar checker for English, French, German (etc.) in Vim   
-    (require _java-jdk_ support)  
-    Project Homepage: [http://www.languagetool.org/](http://www.languagetool.org/)  
-    Project CVS:   
-
-        cvs -z3 \   
-        -d:pserver:anonymous@languagetool.cvs.sourceforge.net:/cvsroot/languagetool \   
-        co -P JLanguageTool   
--->
 + >#[matchit](https://github.com/vim-scripts/matchit.zip)
 
     >Extended % matching for HTML, LaTeX, and many other languages
@@ -142,13 +120,6 @@ This is an repository of the setting files and plugins for some useful tools(scr
 
     >A tree explorer plugin for navigating the filesystem
 
-<!--
-+ >#[python-vim-instant-markdown](https://github.com/isnowfy/python-vim-instant-markdown)
-
-    >fork from isnowfy, updated code and folder structure to support pathogen
-
-        Two python packages required: `pygments` and `markdown`
--->
 + >#[surround](https://github.com/vim-scripts/surround.vim):
 
     >Delete/change/add parentheses/quotes/XML-tags/much more with ease
@@ -160,14 +131,6 @@ This is an repository of the setting files and plugins for some useful tools(scr
 + >#[tasklist](https://github.com/vim-scripts/TaskList.vim)
 
     >Eclipse like task list
-
-+ >#[tern\_for\_vim](https://github.com/marijnh/tern_for_vim)
-
-    >This is a Vim plugin that provides Tern-based JavaScript editing support.
-
-+ >#[trinity](ihttps://github.com/wesleyche/Trinity)
-
-    >A (G)Vim plugin which build the trinity of Source Explorer, TagList and NERD tree to be an IDE for software development
 
 + >#[valgrind](https://github.com/vim-scripts/valgrind.vim)
 
@@ -199,14 +162,10 @@ This is an repository of the setting files and plugins for some useful tools(scr
 
         Many tools and languages required: 
 
-          g++0x support
+          C++11 support
           boost
           pyton
           ...(etc)
-
-+ >#[zencoding-vim](https://github.com/mattn/zencoding-vim)
-
-    >zencoding-vim is vim script support for expanding abbreviation like zen-coding(emmet)
 
 ## FORKED PLUGIN
 ### (with some noob-tweak)
@@ -218,23 +177,6 @@ This is an repository of the setting files and plugins for some useful tools(scr
 
         edit: 
             embedded taglist in Vim folder
-
-+ >#[trinity-local](https://github.com/wesleyche/Trinity)
-
-    >A (G)Vim plugin which build the trinity of Source Explorer, TagList and NERD tree to be an IDE for software development.
-
-        edit: 
-            replace taglist with tagbar
-            disable local searching
-
-+ >#[srcexpl-local](https://github.com/vim-scripts/SrcExpl)
-
-    >A Source code Explorer which works like the context window of "Source Insight". 
-    (Disable the direct preview of one tag result)
-
-        edit:
-            disable local searching
-            disable the preview declaration
 
 ## Vim Personal Features
    
