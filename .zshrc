@@ -53,3 +53,11 @@ alias screen='DISPLAY=:0.0 TERM=xterm-256color screen'
 # keymap
 # https://wiki.archlinux.org/index.php/Zsh#Key_bindings
 [[ -s "$HOME/dotfiles/.myenvvar"  ]] && source "$HOME/dotfiles/.myenvvar"
+
+# nvm, rvm, virtualenv
+#source $HOME/dotfiles/samuel_py_rc
+#source $HOME/dotfiles/samuel_node_rc
+#source $HOME/dotfiles/samuel_ruby_rc
+#echo ""
+[[ -s "/usr/bin/screenfetch"  ]] && screenfetch
+
