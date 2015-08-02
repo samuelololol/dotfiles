@@ -70,6 +70,7 @@
 	path = .vim/bundle/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align
     ignore = dirty
-[submodule "/home/samuel/dotfiles/.vim/bundle/vim-enhanced-diff"]
-	path = /home/samuel/dotfiles/.vim/bundle/vim-enhanced-diff
+[submodule ".vim/bundle/vim-enhanced-diff"]
+	path = .vim/bundle/vim-enhanced-diff
 	url = https://github.com/chrisbra/vim-diff-enhanced.git
+    ignore = dirty
