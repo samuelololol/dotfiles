@@ -49,14 +49,7 @@ export LC_CTYPE="zh_TW.UTF-8"
 alias tmux='DISPLAY=:0.0 TERM=screen-256color tmux -2'
 alias screen='DISPLAY=:0.0 TERM=xterm-256color screen'
 
-source $HOME/dotfiles/samuel_py_rc
-source $HOME/dotfiles/samuel_node_rc
-source $HOME/dotfiles/samuel_ruby_rc
-
 # keymap
 # https://wiki.archlinux.org/index.php/Zsh#Key_bindings
 
-
 [[ -s "$HOME/dotfiles/.myenvvar"  ]] && source "$HOME/dotfiles/.myenvvar"
-[[ -s "/usr/bin/screenfetch" ]] && screenfetch
-

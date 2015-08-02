@@ -1,3 +1,5 @@
+echo "Loading nodejs/nvm environment...."
+echo ""
 # nvm
 [[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh" 
 
