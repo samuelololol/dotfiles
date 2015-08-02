@@ -3,5 +3,5 @@
 
 #TODO: mv nvm to ~/.nvm on mba
 # nvm setting on mba
-[[ -s "$HOME/Development/git/nvm/nvm.sh" ]] && source "$HOME/Development/git/nvm/nvm.sh"
+[[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh"
 

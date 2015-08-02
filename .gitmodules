@@ -62,10 +62,6 @@
 	path = .vim/bundle/presenting
 	url = https://github.com/sotte/presenting.vim.git
     ignore = dirty
-[submodule ".vim/bundle/javascript-libraries-syntax"]
-	path = .vim/bundle/javascript-libraries-syntax
-	url = https://github.com/othree/javascript-libraries-syntax.vim
-    ignore = dirty
 [submodule ".vim/bundle/vim-multiple-cursors"]
 	path = .vim/bundle/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
@@ -74,13 +70,6 @@
 	path = .vim/bundle/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align
     ignore = dirty
-[submodule ".vim/bundle/tern_for_vim"]
-	path = .vim/bundle/tern_for_vim
-	url = https://github.com/marijnh/tern_for_vim
-    ignore = dirty
-[submodule ".vim/bundle/jshint2.vim"]
-	path = .vim/bundle/jshint2.vim
-	url = https://github.com/Shutnik/jshint2.vim
 [submodule "/home/samuel/dotfiles/.vim/bundle/vim-enhanced-diff"]
 	path = /home/samuel/dotfiles/.vim/bundle/vim-enhanced-diff
 	url = https://github.com/chrisbra/vim-diff-enhanced.git
