@@ -1,5 +1,4 @@
 echo "Loading python virtualenv/virtualenvwrapper environment...."
-echo ""
 #TODO: use pyenv instead!
 # pythonbrew
 [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"

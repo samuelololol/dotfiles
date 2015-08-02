@@ -11,7 +11,7 @@
 #  \/\____/ \__/.\_\ \_\ \_\ \_\ \____/ \____\/\____\ \____//\____\/___/ \/____/\/___/ \/____/
 #   \/___/ \/__/\/_/\/_/\/_/\/_/\/___/ \/____/\/____/\/___/ \/____/ by samuelololol@gmail.com
 #                                                                                                            
-
+#                                                                                                            
 
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 ZSH=$HOME/dotfiles/.zsh
@@ -26,9 +26,10 @@ export ZSH_THEME="jreese"
 #plugins=(git vim github svn brew osx npm nvm node yum tmux virtualenv virtualenvwrapper)
 plugins=(git vim github svn brew osx npm nvm node yum tmux docker)
 
-[[ -s "/usr/bin/virtualenvwrapper.sh"  ]] && plugins=(git vim github svn brew osx npm nvm node yum tmux)
+[[ -s "/usr/bin/virtualenvwrapper.sh"  ]] &&\
+    plugins=(git vim github svn brew osx npm nvm node yum tmux docker virtualenvwrapper)
 
-
+echo "Loading oh-my-zsh settings...."
 source $ZSH/oh-my-zsh.sh
 #website:   http://mimosa-pudica.net/zsh-incremental.html
 #file link: http://mimosa-pudica.net/src/incr-0.2.zsh
@@ -51,5 +52,4 @@ alias screen='DISPLAY=:0.0 TERM=xterm-256color screen'
 
 # keymap
 # https://wiki.archlinux.org/index.php/Zsh#Key_bindings
-
 [[ -s "$HOME/dotfiles/.myenvvar"  ]] && source "$HOME/dotfiles/.myenvvar"

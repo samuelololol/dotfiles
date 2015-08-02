@@ -1,3 +1,3 @@
 #!/bin/bash
 cd ~/dotfiles/.vim/bundle/YouCompleteMe
-./install.sh
+./install.sh --clang-completer #--gocode-completer
