@@ -14,5 +14,6 @@ highlight User6 ctermfg=white
 set statusline=%6*%<\ %1*[%F]
 set statusline+=\ %5*[%{&encoding}, " encoding
 set statusline+=%{&fileformat}]%m " file format
+set statusline+=%{fugitive#statusline()} "fugitive
 set statusline+=%6*%=\ %6*%y%6*\ %3*%l%6*\/%L,\ %3*%c%6*\ \<%2*%P%6*\>
 

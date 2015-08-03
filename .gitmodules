@@ -1,76 +1,81 @@
-[submodule ".vim/bundle/crefvim"]
-	path = .vim/bundle/crefvim
-	url = https://github.com/vim-scripts/CRefVim.git
-    ignore = dirty
-[submodule ".vim/bundle/matchit"]
-	path = .vim/bundle/matchit
-	url = https://github.com/vim-scripts/matchit.zip.git
-    ignore = dirty
-[submodule ".vim/bundle/nerdtree"]
-	path = .vim/bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
-    ignore = dirty
-[submodule ".vim/bundle/surround"]
-	path = .vim/bundle/surround
-	url = https://github.com/vim-scripts/surround.vim.git
-    ignore = dirty
-[submodule ".vim/bundle/valgrind"]
-	path = .vim/bundle/valgrind
-	url = https://github.com/vim-scripts/valgrind.vim.git
-    ignore = dirty
-[submodule ".vim/bundle/vim-pathogen"]
-	path = .vim/bundle/vim-pathogen
-	url = https://github.com/tpope/vim-pathogen.git
-    ignore = dirty
-[submodule ".vim/bundle/vim-easymotion"]
-	path = .vim/bundle/vim-easymotion
-	url = https://github.com/Lokaltog/vim-easymotion.git
-    ignore = dirty
 [submodule ".vim/bundle/auto-pairs"]
 	path = .vim/bundle/auto-pairs
 	url = https://github.com/vim-scripts/Auto-Pairs
-    ignore = dirty
-[submodule ".vim/bundle/tagbar"]
-	path = .vim/bundle/tagbar
-	url = https://github.com/majutsushi/tagbar.git
-    ignore = dirty
+	ignore = dirty
+[submodule ".vim/bundle/crefvim"]
+	path = .vim/bundle/crefvim
+	url = https://github.com/vim-scripts/CRefVim.git
+	ignore = dirty
 [submodule ".vim/bundle/doxygentoolkit"]
 	path = .vim/bundle/doxygentoolkit
 	url = https://github.com/vim-scripts/DoxygenToolkit.vim.git
-    ignore = dirty
-[submodule ".zsh"]
-	path = .zsh
-	url = https://github.com/robbyrussell/oh-my-zsh.git
-    ignore = dirty
-[submodule ".vim/bundle/tasklist"]
-	path = .vim/bundle/tasklist
-	url = https://github.com/vim-scripts/TaskList.vim.git
-    ignore = dirty
+	ignore = dirty
 [submodule ".vim/bundle/ctrlp.vim"]
 	path = .vim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
-    ignore = dirty
-[submodule ".vim/bundle/vim-gitgutter"]
-	path = .vim/bundle/vim-gitgutter
-	url = https://github.com/airblade/vim-gitgutter.git
-    ignore = dirty
-[submodule ".vim/bundle/YouCompleteMe"]
-	path = .vim/bundle/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
-    ignore = dirty
+	ignore = dirty
+[submodule ".vim/bundle/matchit"]
+	path = .vim/bundle/matchit
+	url = https://github.com/vim-scripts/matchit.zip.git
+	ignore = dirty
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+	ignore = dirty
 [submodule ".vim/bundle/presenting"]
 	path = .vim/bundle/presenting
 	url = https://github.com/sotte/presenting.vim.git
-    ignore = dirty
-[submodule ".vim/bundle/vim-multiple-cursors"]
-	path = .vim/bundle/vim-multiple-cursors
-	url = https://github.com/terryma/vim-multiple-cursors.git
-    ignore = dirty
+	ignore = dirty
+[submodule ".vim/bundle/surround"]
+	path = .vim/bundle/surround
+	url = https://github.com/vim-scripts/surround.vim.git
+	ignore = dirty
+[submodule ".vim/bundle/tagbar"]
+	path = .vim/bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
+	ignore = dirty
+[submodule ".vim/bundle/tasklist"]
+	path = .vim/bundle/tasklist
+	url = https://github.com/vim-scripts/TaskList.vim.git
+	ignore = dirty
+[submodule ".vim/bundle/valgrind"]
+	path = .vim/bundle/valgrind
+	url = https://github.com/vim-scripts/valgrind.vim.git
+	ignore = dirty
 [submodule ".vim/bundle/vim-easy-align"]
 	path = .vim/bundle/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align
-    ignore = dirty
+	ignore = dirty
+[submodule ".vim/bundle/vim-easymotion"]
+	path = .vim/bundle/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git
+	ignore = dirty
 [submodule ".vim/bundle/vim-enhanced-diff"]
 	path = .vim/bundle/vim-enhanced-diff
 	url = https://github.com/chrisbra/vim-diff-enhanced.git
-    ignore = dirty
+	ignore = dirty
+[submodule ".vim/bundle/vim-fugitive"]
+	path = .vim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+	ignore = dirty
+[submodule ".vim/bundle/vim-pathogen"]
+	path = .vim/bundle/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen.git
+	ignore = dirty
+[submodule ".vim/bundle/vim-gitgutter"]
+	path = .vim/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+	ignore = dirty
+[submodule ".vim/bundle/vim-multiple-cursors"]
+	path = .vim/bundle/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
+	ignore = dirty
+[submodule ".vim/bundle/YouCompleteMe"]
+	path = .vim/bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
+	ignore = dirty
+[submodule ".zsh"]
+	path = .zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
+	ignore = dirty
+
