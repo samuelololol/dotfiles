@@ -67,3 +67,8 @@ runtime ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
 " LanguageTool
 let g:languagetool_jar='~/dotfiles/.vim/bundle/LanguageTool/JLanguageTool/dist/LanguageTool.jar'
 
+
+# modeline default disable by samuel
+#set modeline
+#set modelines=5
+
