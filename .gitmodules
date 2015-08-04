@@ -66,6 +66,10 @@
 	path = .vim/bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
 	ignore = dirty
+[submodule ".vim/bundle/vim-json"]
+	path = .vim/bundle/vim-json
+	url = https://github.com/elzr/vim-json/
+	ignore = dirty
 [submodule ".vim/bundle/vim-multiple-cursors"]
 	path = .vim/bundle/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
@@ -78,4 +82,6 @@
 	path = .zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
 	ignore = dirty
+
+
 
