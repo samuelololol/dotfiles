@@ -6,3 +6,4 @@
 
 let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_Close_On_Select = 1
+let g:Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
