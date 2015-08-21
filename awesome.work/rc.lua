@@ -360,7 +360,10 @@ globalkeys = awful.util.table.join(
 
     -- Custom by samuel
     awful.key({ modkey,           }, "F11", function () awful.util.spawn("transset 0.85") end),
-    awful.key({ modkey, }, "F12", function () awful.util.spawn("xscreensaver-command -lock") end)
+    awful.key({ modkey, }, "F12", function () awful.util.spawn("xscreensaver-command -lock") end),
+    awful.key({ modkey, }, "F10", function ()
+        awful.util.spawn_with_shell("sleep 0.5 && scrot -s -e 'mkdir -p ~/screenshots && mv $f ~/screenshots'")
+    end)
 )
 
 clientkeys = awful.util.table.join(
