@@ -112,6 +112,12 @@ ${color #98c2c7}Swap:$color    $swapperc%
 ${color #78af78}${swapbar 6}$color
 ${color #98c2c7}/:$color       ${fs_free_perc /}%  $fs_free  
 ${color #78af78}${fs_bar 6 /}$color
+${color #98c2c7}/tmp:$color       ${fs_free_perc /tmp}%  ${fs_free /tmp}  
+${color #78af78}${fs_bar 6 /tmp}$color
+${color #98c2c7}/var/tmp/portage:$color       ${fs_free_perc /var/tmp/portage}%  ${fs_free /var/tmp/portage}  
+${color #78af78}${fs_bar 6 /var/tmp/portage}$color
+
+
 
 ${color #98c2c7}Upload:$color    ${upspeed eth0}/s
 ${color #98c2c7}Download:$color  ${downspeed eth0}/s
