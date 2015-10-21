@@ -10,8 +10,10 @@
 theme = {}
 -- 3.5
 theme.wallpaper = {}
-theme.wallpaper[1] = "/home/samuel/dotfiles/awesome_wallpaper/skytree.jpg"
-theme.wallpaper[2] = "/home/samuel/dotfiles/awesome_wallpaper/slumdunk.JPG"
+theme.wallpaper[1] = "/home/samuel/dotfiles/awesome_wallpaper/mt.fuji.jpg"
+theme.wallpaper[2] = "/home/samuel/dotfiles/awesome_wallpaper/skytree.jpg"
+-- theme.wallpaper[2] = "/home/samuel/dotfiles/awesome_wallpaper/slumdunk.JPG"
+
 -- theme.wallpaper[1] = "/home/samuel/dotfiles/awesome_wallpaper/skytree.jpg"
 -- theme.wallpaper[2] = "/home/samuel/dotfiles/awesome_wallpaper/interstellar_truck.jpg"
 -- theme.wallpaper[1] = "/home/samuel/dotfiles/awesome_wallpaper/interstellar.jpg"
