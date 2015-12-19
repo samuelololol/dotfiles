@@ -1,3 +1,8 @@
+! ----------------------
+! list mapping => $ xmodmap -pke
+! detect keyboard => $ xev
+! ----------------------
+
 !
 ! Swap Caps_Lock and Control_L
 !
@@ -8,6 +13,15 @@ keysym Control_L = Caps_Lock
 keysym Caps_Lock = Control_L
 add Lock = Caps_Lock
 add Control = Control_L
+
+
+!
+! Swap esc(0x1b) and backtick(0x60)
+!
+keysym Escape = grave asciitilde
+keysym grave = Escape
+
+
 
 !
 ! Swap LAlt and LWIN
