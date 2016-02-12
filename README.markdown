@@ -252,7 +252,7 @@ This is an repository of the setting files and plugins for some useful tools(scr
 
 + >#tmux
 
-    >![dotfiles][1]
+    >![tmux-statusbar-window-titles.png]
 
     >Key-binding
 
@@ -296,7 +296,7 @@ This is an repository of the setting files and plugins for some useful tools(scr
         # cd ~/dotfiles  
         # ./commands/build_languagetool.sh
 -->
-[1]: https://raw.github.com/samuelololol/dotfiles/master/.img/tmux-statusbar-window-titles.png
+[tmux-statusbar-window-titles.png]: https://raw.github.com/samuelololol/dotfiles/master/.img/tmux-statusbar-window-titles.png
 
 <!-- {{{ 
 * my custom Vim script  
