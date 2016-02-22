@@ -1,0 +1,4 @@
+#compdef twitch
+
+_arguments \
+    "1: :(dinterlolz SixWong Xargon0731 GuraTW ESL_CSGO failverde)"

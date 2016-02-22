@@ -50,6 +50,12 @@ export LC_CTYPE="zh_TW.UTF-8"
 alias tmux='DISPLAY=:0.0 TERM=screen-256color tmux -2'
 alias screen='DISPLAY=:0.0 TERM=xterm-256color screen'
 
+#my zsh_completion
+fpath=($HOME/dotfiles/zsh_completion $HOME/dotfiles/zsh_completion/* $fpath)
+autoload -U compinit
+compinit
+
+
 # keymap
 # https://wiki.archlinux.org/index.php/Zsh#Key_bindings
 [[ -s "$HOME/dotfiles/.myenvvar"  ]] && source "$HOME/dotfiles/.myenvvar"
