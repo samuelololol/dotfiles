@@ -51,7 +51,7 @@ alias tmux='DISPLAY=:0.0 TERM=screen-256color tmux -2'
 alias screen='DISPLAY=:0.0 TERM=xterm-256color screen'
 
 #my zsh_completion
-fpath=($HOME/dotfiles/zsh_completion $HOME/dotfiles/zsh_completion/* $fpath)
+fpath=($HOME/dotfiles/zsh_completion $fpath)
 autoload -U compinit
 compinit
 
