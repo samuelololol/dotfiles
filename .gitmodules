@@ -86,4 +86,7 @@
 	path = .zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
 	ignore = dirty
-
+[submodule "commands/YCM-Generator"]
+	path = commands/YCM-Generator
+	url = https://github.com/rdnetto/YCM-Generator
+	ignore = dirty
