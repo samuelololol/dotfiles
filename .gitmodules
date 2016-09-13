@@ -74,10 +74,6 @@
 	path = .vim/bundle/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
 	ignore = dirty
-[submodule ".vim/bundle/YouCompleteMe"]
-	path = .vim/bundle/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
-	ignore = dirty
 [submodule ".vim/bundle/vim-go"]
 	path = .vim/bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
@@ -86,7 +82,7 @@
 	path = .zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
 	ignore = dirty
-[submodule "commands/YCM-Generator"]
-	path = commands/YCM-Generator
-	url = https://github.com/rdnetto/YCM-Generator
+[submodule ".vim/bundle/YouCompleteMe"]
+	path = .vim/bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
 	ignore = dirty
