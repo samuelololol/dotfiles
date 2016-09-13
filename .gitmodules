@@ -91,3 +91,10 @@
 	url = https://github.com/rdnetto/YCM-Generator
 	branch = stable
 	ignore = dirty
+[submodule "commands/geeknote"]
+	path = commands/geeknote
+	url = git://github.com/VitaliyRodnenko/geeknote.git
+	ignore = dirty
+[submodule ".vim/bundle/vim-geeknote"]
+	path = .vim/bundle/vim-geeknote
+	url = https://github.com/neilagabriel/vim-geeknote
