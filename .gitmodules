@@ -86,3 +86,8 @@
 	path = .vim/bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
 	ignore = dirty
+[submodule "commands/YCM-Generator"]
+	path = commands/YCM-Generator
+	url = https://github.com/rdnetto/YCM-Generator
+	branch = stable
+	ignore = dirty
