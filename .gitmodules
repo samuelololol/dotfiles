@@ -93,8 +93,9 @@
 	ignore = dirty
 [submodule "commands/geeknote"]
 	path = commands/geeknote
-	url = git://github.com/VitaliyRodnenko/geeknote.git
+	url = git://github.com/jeffkowalski/geeknote.git
 	ignore = dirty
 [submodule ".vim/bundle/vim-geeknote"]
 	path = .vim/bundle/vim-geeknote
 	url = https://github.com/neilagabriel/vim-geeknote
+	ignore = dirty
