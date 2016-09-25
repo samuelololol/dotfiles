@@ -99,3 +99,7 @@
 	path = .vim/bundle/vim-geeknote
 	url = https://github.com/neilagabriel/vim-geeknote
 	ignore = dirty
+[submodule ".vim/bundle/pylint.vim"]
+	path = .vim/bundle/pylint.vim
+	url = https://github.com/congma/pylint.vim
+	ignore = dirty
