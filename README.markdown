@@ -55,6 +55,15 @@ This is an repository of the setting files and plugins for some useful tools(scr
         # rm ~/.vimrc   && ln -s dotfiles/.vimrc ~/.vimrc  
         # rm ~/.vim -rf && ln -s dotfiles/.vim   ~/.vim  
 
+* >#NeoVim
+
+    >check the rc file is linked, it is commited in repo
+
+        # ln -s ~/dotfiles/.vimrc ~/dotfiles/.vim/init.vim
+
+    >link .nvim to .vim
+        # ln -s ~/dotfiles/.vim ~/.config/nvim
+
 * ># zsh
 
     >commands:

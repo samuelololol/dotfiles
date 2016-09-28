@@ -4,7 +4,9 @@ set fenc=utf-8
 " fileencodings
 set fencs=utf-8,big5,gbk,euc-jp,latin-1
 " 內部編碼      (encoding inside Vim)
-set enc=utf-8 
+if !has('nvim')
+    set enc=utf-8 
+endif
 " Terminal編碼  (terminal encoding)
 set tenc=utf-8
 
