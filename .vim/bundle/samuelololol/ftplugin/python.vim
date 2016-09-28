@@ -20,6 +20,8 @@ let g:GenCtagsCmdC = "ctags -R --c-kinds=+p --fields=+iaS --extra=+q --language-
 let g:GenCscopeCmd = g:GenCscopeCmdC
 let g:GenCtagsCmd = g:GenCtagsCmdC
 
+let g:NERDTreeSortOrder = ['\/$', '\.py$', '*', '\.swp$',  '\.bak$', '\~$']
+
 "                    ___
 " Documentation     /III\
 " With             /{= =}\__

@@ -3,8 +3,8 @@
 "
 """""""""""""""
 if has("mac")
-    let Tlist_Ctags_Cmd='/usr/local/Cellar/ctags/5.8/bin/ctags'
-    let g:Tlist_Ctags_Cmd='/usr/local/Cellar/ctags/5.8/bin/ctags'
+    let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+    let g:Tlist_Ctags_Cmd='/usr/local/bin/ctags'
     set csprg=/usr/local/bin/cscope
     set cscopeprg=/usr/local/bin/cscope
 else
