@@ -1,9 +1,17 @@
 echo "Loading nodejs/nvm environment...."
 # nvm on linux
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+node_source_file=$(brew --prefix nvm)/nvm.sh
+#echo $node_source_file
+[ -s "$node_source_file" ] && . "$node_source_file"  # This loads nvm
 
-#TODO: mv nvm to ~/.nvm on mba
-# nvm setting on mba
-[[ -s "/usr/local/opt/nvm" ]] && source "/usr/local/opt/nvm"
 
+#install nvm via brew
+# $ brew update
+# $ brew install nvm
+# $ mkdir ~/.nvm
+# $ nvm ls-remote
+# check nodejs official website for the current version
+# $ nvm install 6.7
+# use npm to upgrade npm
+# $ npm install -g npm
