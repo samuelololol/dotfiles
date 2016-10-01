@@ -30,6 +30,9 @@ filetype on
 filetype plugin on
 filetype indent on
 
+set smartcase
+set ignorecase
+
 "folding series setting
 "set fdm=marker
 "set fdm=syntax
