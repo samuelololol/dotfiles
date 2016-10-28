@@ -6,9 +6,9 @@ let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_root_markers = ['.ctrlp']
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc  " MacOSX/Linux
-set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+"set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
 
-set wildignore+=*.o "C/C++ 
+set wildignore+=*.o "C/C++
 set wildignore+=*.pyc "Python
 set wildignore+=*.class "Java
 
