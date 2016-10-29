@@ -10,7 +10,7 @@ function! QFixToggle(forced)
         let g:qfix_win = bufnr("$")
     endif
 endfunction
-nnoremap <leader>q :QFix<CR>
+nnoremap <leader>qo :QFix<CR>
 
 "do filtering in quickfix
 "from: http://stackoverflow.com/a/15409149
