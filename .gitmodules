@@ -2,10 +2,6 @@
 	path = .vim/bundle/auto-pairs
 	url = https://github.com/vim-scripts/Auto-Pairs
 	ignore = dirty
-[submodule ".vim/bundle/crefvim"]
-	path = .vim/bundle/crefvim
-	url = https://github.com/vim-scripts/CRefVim.git
-	ignore = dirty
 [submodule ".vim/bundle/doxygentoolkit"]
 	path = .vim/bundle/doxygentoolkit
 	url = https://github.com/vim-scripts/DoxygenToolkit.vim.git
@@ -90,18 +86,6 @@
 	path = commands/YCM-Generator
 	url = https://github.com/rdnetto/YCM-Generator
 	branch = stable
-	ignore = dirty
-[submodule "commands/geeknote"]
-	path = commands/geeknote
-	url = git://github.com/jeffkowalski/geeknote.git
-	ignore = dirty
-[submodule ".vim/bundle/vim-geeknote"]
-	path = .vim/bundle/vim-geeknote
-	url = https://github.com/neilagabriel/vim-geeknote
-	ignore = dirty
-[submodule ".vim/bundle/pylint.vim"]
-	path = .vim/bundle/pylint.vim
-	url = https://github.com/congma/pylint.vim
 	ignore = dirty
 [submodule ".vim/bundle/nerdtree-git-plugin"]
 	path = .vim/bundle/nerdtree-git-plugin

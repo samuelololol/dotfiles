@@ -29,7 +29,7 @@ let g:NERDTreeSortOrder = ['\/$', '\.py$', '*', '\.swp$',  '\.bak$', '\~$']
 "                 |-| |-|{ |
 "                 /-_--_'-nn/
 "                nnn/  nnn|}
-"                
+"
 "
 "
 
