@@ -111,3 +111,7 @@
 	path = .vim/bundle/vim-indent-object_IngoHeimbach
 	url = https://github.com/IngoHeimbach/vim-indent-object
 	ignore = dirty
+[submodule ".vim/bundle/vim-hier"]
+	path = .vim/bundle/vim-hier
+	url = https://github.com/jceb/vim-hier
+	ignore = dirty

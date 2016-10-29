@@ -24,3 +24,6 @@ function! GrepQuickFix(pat)
   call setqflist(all)
 endfunction
 command! -nargs=* GrepQF call GrepQuickFix(<q-args>)
+
+"enable/disable highlighting
+let g:hier_enabled = 1
