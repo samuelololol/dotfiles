@@ -103,3 +103,7 @@
 	path = .vim/bundle/QFGrep
 	url = https://github.com/sk1418/QFGrep
 	ignore = dirty
+[submodule ".vim/bundle/QFEnter"]
+	path = .vim/bundle/QFEnter
+	url = https://github.com/yssl/QFEnter
+	ignore = dirty

@@ -11,9 +11,9 @@
 
 This is an repository of the setting files and plugins for some useful tools(screen, tmux, vim, zsh, ...).
 
-# PREREQUISITES: 
+# PREREQUISITES:
 
-* git 
+* git
 * svn
 * zsh
 * screen
@@ -41,8 +41,8 @@ This is an repository of the setting files and plugins for some useful tools(scr
 
     >soft-link the setting files
 
-        # rm ~/.screenrc  && ln -s dotfiles/.screenrc  ~/.screenrc  
-        # rm ~/.tmux.conf && ln -s dotfiles/.tmux.conf ~/.tmux.conf  
+        # rm ~/.screenrc  && ln -s dotfiles/.screenrc  ~/.screenrc
+        # rm ~/.tmux.conf && ln -s dotfiles/.tmux.conf ~/.tmux.conf
 
 * >#Vim
 
@@ -52,8 +52,8 @@ This is an repository of the setting files and plugins for some useful tools(scr
 
     >commands:
 
-        # rm ~/.vimrc   && ln -s dotfiles/.vimrc ~/.vimrc  
-        # rm ~/.vim -rf && ln -s dotfiles/.vim   ~/.vim  
+        # rm ~/.vimrc   && ln -s dotfiles/.vimrc ~/.vimrc
+        # rm ~/.vim -rf && ln -s dotfiles/.vim   ~/.vim
 
 * >#NeoVim
 
@@ -76,20 +76,20 @@ This is an repository of the setting files and plugins for some useful tools(scr
     >_svn_ is required
 
         # cd ~/dotfiles
-        # ./commands/update_ydict.sh 
+        # ./commands/update_ydict.sh
 
 * ># Others
 
     >my gnt setting file for finch
 
-        # rm ~/.gntrc && ln -s dotfiles/.gntrc ~/.gntrc  
+        # rm ~/.gntrc && ln -s dotfiles/.gntrc ~/.gntrc
 
 
 ### 3. Sync files
 
 * >### Pull the submodules' files
 
-        # cd dotfiles  
+        # cd dotfiles
         # git pull
         # ./commands/submod_sync.sh
 
@@ -105,7 +105,7 @@ This is an repository of the setting files and plugins for some useful tools(scr
 
 ###Other Installed ViM Plugins in the repository
 
-+ >#[auto-pairs](https://github.com/vim-scripts/Auto-Pairs): 
++ >#[auto-pairs](https://github.com/vim-scripts/Auto-Pairs):
 
     >Insert or delete brackets, parens, quotes in pair.
 
@@ -125,7 +125,7 @@ This is an repository of the setting files and plugins for some useful tools(scr
 
     >Extended % matching for HTML, LaTeX, and many other languages
 
-+ >#[nerdtree](https://github.com/scrooloose/nerdtree): 
++ >#[nerdtree](https://github.com/scrooloose/nerdtree):
 
     >A tree explorer plugin for navigating the filesystem
 
@@ -134,7 +134,7 @@ This is an repository of the setting files and plugins for some useful tools(scr
     >Delete/change/add parentheses/quotes/XML-tags/much more with ease
 
 + >#[tagbar](https://github.com/majutsushi/tagbar)
-    
+
     >Vim plugin that displays tags in a window, ordered by class etc.
 
 + >#[tasklist](https://github.com/vim-scripts/TaskList.vim)
@@ -169,7 +169,7 @@ This is an repository of the setting files and plugins for some useful tools(scr
 
     >A code-completion engine for Vim
 
-        Many tools and languages required: 
+        Many tools and languages required:
 
           C++11 support
           boost
@@ -184,11 +184,11 @@ This is an repository of the setting files and plugins for some useful tools(scr
     >Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc)
     (Switch the Taglist Position to right and save locally as the support for ViM)
 
-        edit: 
+        edit:
             embedded taglist in Vim folder
 
 ## Vim Personal Features
-   
+
 + >#Cscope/ctags
 
     >generating meta files for Cscpoe/ctags
@@ -196,7 +196,7 @@ This is an repository of the setting files and plugins for some useful tools(scr
         :CSCTgenC cscope  "generating cscope.out and processing the add into Vim
         :CSCTgenC ctags   "generation ctags for taglist/tagbar
         :CSCTgenC clean   "remove cscope/ctags files
-    
+
 + >#Switch Window
 
         gw: "next window"
@@ -231,13 +231,13 @@ This is an repository of the setting files and plugins for some useful tools(scr
 
     >[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
-          A community-driven framework for managing your zsh configuration. 
-        Includes 40+ optional plugins (rails, git, OSX, hub, capistrano, 
-        brew, ant, macports, etc), over 80 terminal themes to spice up your 
-        morning, and an auto-update tool so that makes it easy to keep up 
+          A community-driven framework for managing your zsh configuration.
+        Includes 40+ optional plugins (rails, git, OSX, hub, capistrano,
+        brew, ant, macports, etc), over 80 terminal themes to spice up your
+        morning, and an auto-update tool so that makes it easy to keep up
         with the latest updates from the community.
 
-    >[Theme](https://github.com/robbyrussell/oh-my-zsh/wiki/themes): 
+    >[Theme](https://github.com/robbyrussell/oh-my-zsh/wiki/themes):
     [https://github.com/robbyrussell/oh-my-zsh/wiki/themes](https://github.com/robbyrussell/oh-my-zsh/wiki/themes)
 
 
@@ -274,7 +274,7 @@ This is an repository of the setting files and plugins for some useful tools(scr
             next-window      <F12>
 
     **pane split**
-    
+
             split pane             <C-a>s
             split pane vertically  <C-a>v
 
@@ -291,35 +291,35 @@ This is an repository of the setting files and plugins for some useful tools(scr
             OFF              <C-a> M   (enable the X-system native copy/paste behavior)
 
 <!--
-+ LanguageTool installation 
++ LanguageTool installation
 
-    > Requirements:  
+    > Requirements:
 
-        (gentoo)  
-        >= _dev-java/sun-jdk_-1.604  
-        _dev-java/ant_  
-        _dev-vcs/cvs_  
+        (gentoo)
+        >= _dev-java/sun-jdk_-1.604
+        _dev-java/ant_
+        _dev-vcs/cvs_
 
     > Use the following commands
 
-        # cd ~/dotfiles  
+        # cd ~/dotfiles
         # ./commands/build_languagetool.sh
 -->
 [tmux-statusbar-window-titles.png]: https://raw.github.com/samuelololol/dotfiles/master/.img/tmux-statusbar-window-titles.png
 
-<!-- {{{ 
-* my custom Vim script  
+<!-- {{{
+* my custom Vim script
 
     samuelololol/plugin/
 
         mycodetoblogger.vim  function of blogger posting
-        mycscope.vim         key map for cscope  
-        mycsct.vim           ctags/cscope detection and generation  
-        mymaptoggle.vim      contain a function used by MoveTo*()  
-        mymvtotab.vim        MoveTo*() function used for moving tab  
+        mycscope.vim         key map for cscope
+        mycsct.vim           ctags/cscope detection and generation
+        mymaptoggle.vim      contain a function used by MoveTo*()
+        mymvtotab.vim        MoveTo*() function used for moving tab
         myvalgrind.vim       valgrind setting for Vim
-        myydict.vim          bind key to look up yahoo dictionary 
-        mybrace.vim.bak      brace utils (suspending, using auto-pairs) 
+        myydict.vim          bind key to look up yahoo dictionary
+        mybrace.vim.bak      brace utils (suspending, using auto-pairs)
         ...
 
 NOTES
@@ -329,7 +329,7 @@ NOTES
                 ~/dotfiles/ $ ./commands/add_submodule.sh <FULL GIT REPO PATH> \
                                 ./.vim/bundle/<local folder name for the plugin>
 
-            2. delete submodule 
+            2. delete submodule
 
                 Delete the relevant section from the .gitmodules file.
                 Delete the relevant section from .git/config.
@@ -337,7 +337,7 @@ NOTES
                 Commit and delete the now untracked submodule files.
 
             3. add git tag
-                
+
                add tag:
                     git tag -a <tag> <commit sha1>
 
@@ -351,6 +351,6 @@ NOTES
                     git tag -d <tag>
                remote:
                     git push origin :ref/tags/<mytag>
-}}} 
+}}}
 vim:fdm=marker
 -->

@@ -15,3 +15,9 @@ nnoremap <leader>qo :QFix<CR>
 
 "enable/disable highlighting
 let g:hier_enabled = 1
+
+"QFEnter
+let g:qfenter_open_map  = ['<CR>']
+let g:qfenter_vopen_map = ['<Leader><CR>']
+let g:qfenter_hopen_map = ['<Leader><Space>']
+let g:qfenter_topen_map = ['<Leader><Tab>']
