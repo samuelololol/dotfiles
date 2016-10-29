@@ -1,6 +1,9 @@
 "source the keymap function
 source ~/.vim/bundle/samuelololol/plugin/mykeymapfunction.vim
 
+"change <leader> key
+let mapleader = ","
+
 "some key mapping
 "change window
 nmap gw :wincmd w<CR>

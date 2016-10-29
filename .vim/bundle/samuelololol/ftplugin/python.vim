@@ -22,6 +22,15 @@ let g:GenCtagsCmd = g:GenCtagsCmdC
 
 let g:NERDTreeSortOrder = ['\/$', '\.py$', '*', '\.swp$',  '\.bak$', '\~$']
 
+
+
+"vim-flake8
+let g:flake8_quickfix_height=10
+if executable('flake8')
+    autocmd BufWritePost *.py call Flake8()
+endif
+
+
 "                    ___
 " Documentation     /III\
 " With             /{= =}\__

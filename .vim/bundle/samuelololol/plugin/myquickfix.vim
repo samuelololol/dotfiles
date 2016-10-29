@@ -10,7 +10,7 @@ function! QFixToggle(forced)
         let g:qfix_win = bufnr("$")
     endif
 endfunction
-nnoremap <leader>qo :QFix<CR>
+nnoremap <leader>q :QFix<CR>
 
 
 "enable/disable highlighting
