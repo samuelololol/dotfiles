@@ -12,18 +12,6 @@ function! QFixToggle(forced)
 endfunction
 nnoremap <leader>qo :QFix<CR>
 
-"do filtering in quickfix
-"from: http://stackoverflow.com/a/15409149
-function! GrepQuickFix(pat)
-  let all = getqflist()
-  for d in all
-    if bufname(d['bufnr']) !~ a:pat && d['text'] !~ a:pat
-        call remove(all, index(all,d))
-    endif
-  endfor
-  call setqflist(all)
-endfunction
-command! -nargs=* GrepQF call GrepQuickFix(<q-args>)
 
 "enable/disable highlighting
 let g:hier_enabled = 1

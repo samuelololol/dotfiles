@@ -99,3 +99,7 @@
 	path = .vim/bundle/vim-hier
 	url = https://github.com/jceb/vim-hier
 	ignore = dirty
+[submodule ".vim/bundle/QFGrep"]
+	path = .vim/bundle/QFGrep
+	url = https://github.com/sk1418/QFGrep
+	ignore = dirty
