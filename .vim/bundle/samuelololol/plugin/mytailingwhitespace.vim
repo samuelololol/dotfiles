@@ -1,4 +1,4 @@
-let g:check_tailing_white_space=0
+let g:check_tailing_white_space=1
 "0: disalbe
 "1: enable by confirmation
 "2: force enable
@@ -27,6 +27,6 @@ if g:check_tailing_white_space > 0
     "autocmd FileType markdown,python,c,cpp,vim autocmd FileWritePre    * :call TrimTailingWhiteSpaceC()
     "autocmd FileType markdown,python,c,cpp,vim autocmd FileAppendPre   * :call TrimTailingWhiteSpaceC()
     "autocmd FileType markdown,python,c,cpp,vim autocmd FilterWritePre  * :call TrimTailingWhiteSpaceC()
-    autocmd FileType markdown,python,c,cpp,vim autocmd BufWritePre     * :call AutoTrimTailingWhiteSpace()
+    autocmd FileType markdown,python,c,cpp,vim,sh autocmd BufWritePre     * :call AutoTrimTailingWhiteSpace()
 endif
 
