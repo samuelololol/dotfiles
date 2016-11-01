@@ -9,8 +9,8 @@
 set showmatch
 inoremap {      {}<Left>
 inoremap {<CR>  {<CR>}<Esc>O
-inoremap {{     {   
-inoremap {}     {}  
+inoremap {{     {
+inoremap {}     {}
 
 " cursor in the parentheses
 inoremap (  ()<Left>

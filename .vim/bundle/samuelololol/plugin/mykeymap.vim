@@ -3,6 +3,7 @@ source ~/.vim/bundle/samuelololol/plugin/mykeymapfunction.vim
 
 "change <leader> key
 let mapleader = ","
+let g:mapleader = ","
 
 "some key mapping
 "change window
@@ -14,7 +15,7 @@ nmap gmt :call MoveToNextTab() <CR>
 nmap gmT :call MoveToPrevTab() <CR>
 
 "----------------------------------------------------------------------
-"normal mode <F2> open NERDTree 
+"normal mode <F2> open NERDTree
 nmap <F2> :NERDTreeToggle<CR>
 
 "<F3> open TagList

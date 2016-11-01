@@ -8,4 +8,9 @@
 "    patience        Use the patience diff algorithm
 "    histogram       Use the histogram diff algorithm (similar to patience but
 "                    slightly faster)
-EnhancedDiff patience
+let &diffexpr='EnhancedDiff#Diff("git diff", "--diff-algorithm=patience")'
+if &diff
+    colorscheme industry
+    set background=dark
+    syntax off
+endif

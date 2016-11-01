@@ -11,9 +11,11 @@
 " Samuel's .vimrc config file
 "
 "          2010, 09/28 @NSYSU
- 
+
 "關閉vi compatible模式
 set nocompatible
+
+so ~/.vim/bundle/samuelololol/plugin/mykeymap.vim
 
 " show line number
 set nu
@@ -69,4 +71,3 @@ runtime ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
 """modeline default disable by samuel
 "set modeline
 "set modelines=5
-
