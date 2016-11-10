@@ -1,4 +1,4 @@
-let g:check_tailing_white_space=1
+let g:check_tailing_white_space=2
 "0: disalbe
 "1: enable by confirmation
 "2: force enable

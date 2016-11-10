@@ -5,7 +5,8 @@ let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
 
 " Align line-wise comment delimiters flush left instead of following code indentation
-let g:NERDDefaultAlign = 'left'
+"none, left, start, both
+let g:NERDDefaultAlign = 'both'
 
 " Add your own custom formats or override the defaults
 " samuel: python
