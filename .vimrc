@@ -12,9 +12,20 @@
 "
 "          2010, 09/28 @NSYSU
 
-"關閉vi compatible模式
+"vi compatible mode
 set nocompatible
 
+" " handle nvim normal/insert mode switch issue
+" if has('nvim')
+"     set ttimeoutlen=10
+"     augroup FastEscape
+"         autocmd!
+"         au InsertEnter * set timeoutlen=0
+"         au InsertLeave * set timeoutlen=1000
+"     augroup END
+" endif
+"
+" " setting key map must in vimrc
 so ~/.vim/bundle/samuelololol/plugin/mykeymap.vim
 
 " show line number
