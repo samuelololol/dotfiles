@@ -8,7 +8,7 @@ function! Addpyheader()
         execute "norm i__author__ = '" . $USER . "'\n\n"
         execute "norm i\n"
         execute "norm idef main():\n\tpass\n\n"
-        execute "norm iif __name__ == '__main__':\nmain()"
+        execute "norm iif __name__ == '__main__':\n\tmain()"
     endif
 endfunction
 "au BufNewFile *.py call Addpyheader()
