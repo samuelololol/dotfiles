@@ -1,5 +1,5 @@
 "source the keymap function
-source ~/.vim/bundle/samuelololol/plugin/mykeymapfunction.vim
+"source ~/.vim/samuelololol/plugin/mykeymapfunction.vim
 
 "change <leader> key
 let mapleader = ","

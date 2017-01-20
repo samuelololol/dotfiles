@@ -25,8 +25,6 @@ set nocompatible
 "     augroup END
 " endif
 "
-" " setting key map must in vimrc
-so ~/.vim/bundle/samuelololol/plugin/mykeymap.vim
 
 " show line number
 set nu
@@ -86,3 +84,10 @@ set mouse-=a
 "set modeline
 "set modelines=5
 
+" " setting key map must in vimrc
+set runtimepath^=~/.vim/samuelololol/before
+set runtimepath+=~/.vim/samuelololol
+set runtimepath+=~/.vim/local_settings
+" if has('nvim')
+"     set runtimepath+=~/.vim/bundle/samuelololol/after
+" endif
