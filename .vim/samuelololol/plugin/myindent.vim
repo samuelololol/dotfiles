@@ -1,13 +1,10 @@
-"tab-related"
-"
-"translate the <tab> to <space> with the counts: tabstop
-"(counts of space for pressing tab)
-"unset=>   :set noet
-set expandtab
-
-"how many SPACE when read \t (<TAB>) char
-set tabstop=4
-
+" ===
+" tab
+" ===
+setlocal tabstop=4      " <TAB> width after loading file
+setlocal expandtab      " translate <TAB> to space, when press <TAB>, vim will
+                        " insert <softtabstop> of space
+setlocal softtabstop=4  " <BS>, <Tab> width in insert mode
 
 "If useing special key to indicate the tailing sapce, it have to change the
 "SpecialKey color
@@ -17,26 +14,20 @@ set tabstop=4
 set list
 set listchars=tab:>-
 
-"indentation-related"
-"Number of spaces to use for each step of (auto)indent.
-"(counts of space for indentation)
-set shiftwidth=4
+" ======
+" indent
+" ======
+setlocal shiftwidth=4   " >>, <<, ==, and automatic indent
+setlocal smarttab       " if on, use 'shiftwidth' as the indent width at
+                        " beginning of the line. ('tabstop', 'softtabstop'
+                        " used elsewhere)
 
-"explaination for <BackSpace> and <Tab> when u in insert mode editing
-set softtabstop=4
-
-"if 'smarttab' is on,
-"    At beginning <Tab> key inserts indentation according to 'shiftwidth'
-"    elsewhere, to 'tabstop' and 'softtabstop'
-set smarttab
-
-"'smartindent' should not be used with 'cindent'
-set smartindent
-"copy the indentation from the previous line
 set autoindent
-        "setting in c.vim and cpp.vim
-        "set cindent
-        "
-        "
-" setting backspace work
+set smartindent
+"set cindent
+
+
+" =========
+" backspace
+" =========
 set backspace=indent,eol,start
