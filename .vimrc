@@ -85,9 +85,10 @@ set mouse-=a
 "set modelines=5
 
 " " setting key map must in vimrc
-set runtimepath^=~/.vim/samuelololol/before
 set runtimepath+=~/.vim/samuelololol
+set runtimepath+=~/.vim/samuelololol/after
 set runtimepath+=~/.vim/local_settings
+set runtimepath+=~/.vim/local_settings/after
 " if has('nvim')
 "     set runtimepath+=~/.vim/bundle/samuelololol/after
 " endif
