@@ -49,7 +49,6 @@ my $min_conf_desc_length = 4;
 my $spelling_file = "$D/spelling.txt";
 my $codespell = 0;
 my $codespellfile = "/usr/local/share/codespell/dictionary.txt";
-my $allow_typedef = 0;
 
 sub help {
 	my ($exitcode) = @_;
@@ -155,8 +154,7 @@ GetOptions(
 	'codespell!'	=> \$codespell,
 	'codespellfile=s'	=> \$codespellfile,
 	'h|help'	=> \$help,
-	'version'	=> \$help,
-	'allow_typedef'	=> \$allow_typedef
+	'version'	=> \$help
 ) or help(1);
 
 help(0) if ($help);
@@ -466,48 +464,48 @@ our $allowed_asm_includes = qr{(?x:
 my $misspellings;
 my %spelling_fix;
 
-# if (open(my $spelling, '<', $spelling_file)) {
-#     while (<$spelling>) {
-#         my $line = $_;
-#
-#         $line =~ s/\s*\n?$//g;
-#         $line =~ s/^\s*//g;
-#
-#         next if ($line =~ m/^\s*#/);
-#         next if ($line =~ m/^\s*$/);
-#
-#         my ($suspect, $fix) = split(/\|\|/, $line);
-#
-#         $spelling_fix{$suspect} = $fix;
-#     }
-#     close($spelling);
-# } else {
-#     warn "No typos will be found - file '$spelling_file': $!\n";
-# }
-#
-# if ($codespell) {
-#     if (open(my $spelling, '<', $codespellfile)) {
-#         while (<$spelling>) {
-#             my $line = $_;
-#
-#             $line =~ s/\s*\n?$//g;
-#             $line =~ s/^\s*//g;
-#
-#             next if ($line =~ m/^\s*#/);
-#             next if ($line =~ m/^\s*$/);
-#             next if ($line =~ m/, disabled/i);
-#
-#             $line =~ s/,.*$//;
-#
-#             my ($suspect, $fix) = split(/->/, $line);
-#
-#             $spelling_fix{$suspect} = $fix;
-#         }
-#         close($spelling);
-#     } else {
-#         warn "No codespell typos will be found - file '$codespellfile': $!\n";
-#     }
-# }
+if (open(my $spelling, '<', $spelling_file)) {
+	while (<$spelling>) {
+		my $line = $_;
+
+		$line =~ s/\s*\n?$//g;
+		$line =~ s/^\s*//g;
+
+		next if ($line =~ m/^\s*#/);
+		next if ($line =~ m/^\s*$/);
+
+		my ($suspect, $fix) = split(/\|\|/, $line);
+
+		$spelling_fix{$suspect} = $fix;
+	}
+	close($spelling);
+} else {
+	warn "No typos will be found - file '$spelling_file': $!\n";
+}
+
+if ($codespell) {
+	if (open(my $spelling, '<', $codespellfile)) {
+		while (<$spelling>) {
+			my $line = $_;
+
+			$line =~ s/\s*\n?$//g;
+			$line =~ s/^\s*//g;
+
+			next if ($line =~ m/^\s*#/);
+			next if ($line =~ m/^\s*$/);
+			next if ($line =~ m/, disabled/i);
+
+			$line =~ s/,.*$//;
+
+			my ($suspect, $fix) = split(/->/, $line);
+
+			$spelling_fix{$suspect} = $fix;
+		}
+		close($spelling);
+	} else {
+		warn "No codespell typos will be found - file '$codespellfile': $!\n";
+	}
+}
 
 $misspellings = join("|", sort keys %spelling_fix) if keys %spelling_fix;
 
@@ -3262,8 +3260,7 @@ sub process {
 
 # check for new typedefs, only function parameters and sparse annotations
 # make sense.
-		if (!$allow_typedef &&
-		    $line =~ /\btypedef\s/ &&
+		if ($line =~ /\btypedef\s/ &&
 		    $line !~ /\btypedef\s+$Type\s*\(\s*\*?$Ident\s*\)\s*\(/ &&
 		    $line !~ /\btypedef\s+$Type\s+$Ident\s*\(/ &&
 		    $line !~ /\b$typeTypedefs\b/ &&

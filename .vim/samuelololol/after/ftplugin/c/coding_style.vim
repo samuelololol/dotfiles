@@ -2,23 +2,13 @@
 "so ~/dotfiles/.vim_partial/vim-linux-coding-style/plugin/linuxsty.vim
 "LinuxCodingStyle
 if g:samuel_coding_style == 1
-
-	function! KernelLint()
-	    echo "Check Linux Kernel coding style"
-	    silent make
-	    cwindow 10
-	endfunction
-
-	setlocal makeprg=~/dotfiles/commands/checkpatch.pl\ --terse\ --file\ --no-tree\ --no-signoff\ --strict\ --no-summary\ --ignore\ CAMELCASE\ --allow_typedef\ %
-	autocmd BufWritePost <buffer> :call KernelLint()
-
 	"GNU Coding Standards: https://gcc.gnu.org/wiki/FormattingCodeForGCC
-	setlocal cindent
-	setlocal cinoptions=>4,n-2,{2,^-2,:2,=2,g0,h2,p5,t0,+2,(0,u0,w1,m1
+	"setlocal cindent
+	"setlocal cinoptions=>4,n-2,{2,^-2,:2,=2,g0,h2,p5,t0,+2,(0,u0,w1,m1
 	setlocal shiftwidth=2
 	setlocal softtabstop=2
-	setlocal textwidth=79
 	setlocal fo-=ro fo+=cql
+	setlocal textwidth=79
 	setlocal colorcolumn=79
 	let &colorcolumn="".join(range(79,999),",")
 
@@ -33,4 +23,8 @@ if g:samuel_coding_style == 1
 	setlocal smarttab
 	setlocal smartindent
 	setlocal autoindent
+
+elseif g:samuel_coding_style == 0
+	so ~/.vim/samuelololol/plugin/mycodingstyle.vim
+
 endif
