@@ -78,11 +78,11 @@ alignment top_left
 #gap_x 800
 #gap_y 680
 
-#gap_x 700
-#gap_y 480
+gap_x 700
+gap_y 480
 
-gap_x 1120
-gap_y 600
+#gap_x 1120
+#gap_y 600
 
 
 # Subtract file system buffers from used memory?
