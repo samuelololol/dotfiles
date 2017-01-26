@@ -43,12 +43,15 @@ URxvt*keysym.End: \033[4~
 #Appearence
 URxvt*visualBell: false
 URxvt*scrollBar:  false
-URxvt*font:       xft:dina:size=12,xft:size=14:Noto Sans T Chinese:light
-URxvt*boldFont:   xft:dina:bold:size=12,xft:size=14:Noto Sans T Chinese:bold
-URxvt*italicFont: xft:dina:italic:size=12,xft:size=14:Noto Sans T Chinese:italic
+URxvt*font:       xft:Terminus:size=12,xft:size=12:Noto Sans Mono CJK TC:Thin
+URxvt*boldFont:   xft:Terminus:bold:size=12,xft:size=12:Noto Sans Mono CJK TC:Blod
+URxvt*italicFont: xft:Terminus:italic:size=12,xft:size=12:Noto Sans Mono CJK TC:italic
+#URxvt*font:       xft:Terminus:size=12,xft:size=14:Noto Sans T Chinese:light
+#URxvt*boldFont:   xft:Terminus:bold:size=12,xft:size=14:Noto Sans T Chinese:bold
+#URxvt*italicFont: xft:Terminus:italic:size=12,xft:size=14:Noto Sans T Chinese:italic
 #URxvt*font:       xft:dina:bolditalic:size=12
 
-!# color settings: 
+!# color settings:
 !#   http://sdkmvx.wordpress.com/2008/08/13/rxvt-unicode-terminal-colors
 URxvt*background: #0f0f0f
 URxvt*foreground: #c8c8c8
@@ -81,3 +84,5 @@ URxvt*color15:    #efefef
 URxvt*transparent: false
 URxvt*shading: 20
 
+
+Xft.dpi: 120
