@@ -78,7 +78,7 @@ alignment top_left
 #gap_x 800
 #gap_y 680
 
-gap_x 700
+gap_x 500
 gap_y 480
 
 #gap_x 1120
@@ -94,5 +94,6 @@ uppercase no
 # stuff after 'TEXT' will be formatted on screen
 
 TEXT
-${font Noto Sans Japanese:size=30}${color #f2dba9}${time %a. %B %e, %G  %H:%M}
+${font Terminus:size=30}${color #f2dba9}${time %a. %B %e, %G  %H:%M}
+#${font Noto Sans Japanese:size=30}${color #f2dba9}${time %a. %B %e, %G  %H:%M}
 #${font Noto Sans Japanese:size=100}${color #f2dba9}${time %H:%M}

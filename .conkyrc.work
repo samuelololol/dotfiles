@@ -2,14 +2,15 @@
 # YOUR SYSTEM MAY NOT REQUIRE THEM, REPLACE AS DESIRED
 
 # maintain spacing between certain elements
-use_spacer yes
+use_spacer left
 
 # set to yes if you want conky to be forked in the background
 background no
 use_xft yes
 
 # Xft font when Xft is enabled
-xftfont Bitstream Vera Sans Mono-10
+Xftfont Terminus-10
+#xftfont Bitstream Vera Sans Mono-10
 #xftfont Andale Mono-9
 #xftfont Clean-8
 #xftfont cubicfive10:pixelsize=8
@@ -18,7 +19,7 @@ xftfont Bitstream Vera Sans Mono-10
 
 # Text alpha when using Xft
 xftalpha 1
-mail_spool $MAIL
+#mail_spool $MAIL
 
 # Update interval in seconds
 update_interval 0.9
@@ -68,12 +69,12 @@ alignment bottom_left
 #alignment bottom_right
 
 # Gap between borders of screen and text
-#gap_x 250
-#gap_y 30
+gap_x 1300
+gap_y 30
 #gap_x 1350
 #gap_x 3010 #right bottom
-gap_x 1730
-gap_y 120
+#gap_x 1730
+#gap_y 120
 
 
 # Subtract file system buffers from used memory?
