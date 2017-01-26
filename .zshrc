@@ -14,7 +14,7 @@
 #
 
 if [ -d "$HOME/commands" ]; then
-    export PATH="$HOME/commands:/usr/local/bin:/usr/local/sbin:$PATH"
+    export PATH="$HOME/commands/bin:$HOME/commands:/usr/local/bin:/usr/local/sbin:$PATH"
 fi
 ZSH=$HOME/dotfiles/.zsh
 #export ZSH_THEME="miloshadzic"
@@ -25,11 +25,13 @@ export ZSH_THEME="jreese"
 
 # zsh plugin settings
 # --------------------------------------------
+plugins=(git vim brew osx tmux docker docker-compose zsh-navigation-tools)
 #plugins=(git vim github svn brew osx npm nvm node yum tmux virtualenv virtualenvwrapper)
-plugins=(git vim github geeknote svn brew osx npm nvm node virtualenv virtualenvwrapper yum tmux docker docker-compose zsh-navigation-tools web-search)
+#plugins=(git vim github geeknote svn brew osx npm nvm node virtualenv virtualenvwrapper yum tmux docker docker-compose zsh-navigation-tools web-search)
+#[[ -s "/usr/bin/virtualenvwrapper.sh"  ]] &&\
+#    plugins=(git vim github geeknote svn brew osx npm nvm node yum tmux docker docker-compose virtualenvwrapper)
 
-[[ -s "/usr/bin/virtualenvwrapper.sh"  ]] &&\
-    plugins=(git vim github geeknote svn brew osx npm nvm node yum tmux docker docker-compose virtualenvwrapper)
+
 
 echo "Loading oh-my-zsh settings...."
 source $ZSH/oh-my-zsh.sh
