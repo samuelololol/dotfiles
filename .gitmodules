@@ -127,3 +127,7 @@
 	path = .vim/bundle/vim-action-ag
 	url = https://github.com/Chun-Yang/vim-action-ag
 	ignore = dirty
+[submodule ".vim/bundle/vim-buffergator"]
+	path = .vim/bundle/vim-buffergator
+	url = https://github.com/jeetsukumaran/vim-buffergator
+	ignore = dirty

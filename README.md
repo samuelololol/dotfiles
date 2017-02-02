@@ -90,6 +90,7 @@ $ ln -s ~/dotfiles/.vim ~/.config/nvim
 * https://github.com/vim-scripts/TaskList.vim.git
 * https://github.com/vim-scripts/valgrind.vim.git
 * https://github.com/Chun-Yang/vim-action-ag
+* https://github.com/jeetsukumaran/vim-buffergator
 * https://github.com/chrisbra/vim-diff-enhanced.git
 * https://github.com/junegunn/vim-easy-align
 * https://github.com/Lokaltog/vim-easymotion.git
