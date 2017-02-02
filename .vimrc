@@ -79,6 +79,9 @@ runtime ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
 "disable mouse
 set mouse-=a
 
+"change mapleader
+let mapleader = ","
+let g:mapleader = ","
 
 """modeline default disable by samuel
 "set modeline
