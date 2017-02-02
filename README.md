@@ -43,7 +43,7 @@ alias screen='TERM=xterm-256color screen'
 ### for zsh
 ```
 # rm ~/.zshrc   && ln -s dotfiles/.zshrc ~/.zshrc
-# rm ~/.zsh -rf && ln -s dotfiles/.zsh   ~/.zsh
+# rm -rf ~/.zsh && ln -s dotfiles/.zsh   ~/.zsh
 ```
 
 ### for python flake8
@@ -58,7 +58,7 @@ alias screen='TERM=xterm-256color screen'
 
 $cd
 $rm ~/.vimrc && ln -s ~/dotfiles/.vimrc ~/.vimrc
-$rm ~/.vim -rf && ln -s dotfiles/.vim   ~/.vim
+$rm -rf ~/.vim && ln -s dotfiles/.vim   ~/.vim
 
 #nvim
 
