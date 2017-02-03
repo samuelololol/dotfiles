@@ -86,8 +86,16 @@ no_buffers yes
 uppercase no
 
 # stuff after 'TEXT' will be formatted on screen
-
 TEXT
+${if_match ${tcp_portmon 22 22 count} > 0}
+${color #98c2c7}SSH connections(${color red}${tcp_portmon 22 22 count}${color #98c2c7}):
+${color e5e5e5}${tcp_portmon 22 22 lservice 0} ${color #ffcb48}${tcp_portmon 22 22 rip 0}$color
+${color e5e5e5}${tcp_portmon 22 22 rhost 0}
+${color e5e5e5}${tcp_portmon 22 22 lservice 1} ${color #ffcb48}${tcp_portmon 22 22 rip 1}
+${color e5e5e5}${tcp_portmon 22 22 rhost 1}
+${color e5e5e5}${tcp_portmon 22 22 lservice 2} ${color #ffcb48}${tcp_portmon 22 22 rip 2}
+${color e5e5e5}${tcp_portmon 22 22 rhost 2}
+${endif}
 ${color #ffcb48}$nodename$color on $machine$color ${color #828282}$sysname ($uptime)
 
 #${color #ffcb48}PROCESSING$color
@@ -111,10 +119,12 @@ ${color #a3a3a3}${top_mem name 3} ${top_mem pid 3}   ${top_mem cpu 3}   ${top_me
 # Read: ${diskio_read sda4}  $alignr Write: ${diskio_write sda4}
 # ${diskiograph_read sda4 15,150 78af78 a3a3a3} $alignr${diskiograph_write sda4 15,150 78af78 a3a3a3}
 Disk
-${color #98c2c7}/:$color ${fs_free_perc /}%(Free) ${fs_free /} ${color #78af78}${fs_bar 6 /}$color
+${color #98c2c7}/:$color ${fs_free_perc /}%(Free) ${fs_free /}
+${color #78af78}${fs_bar 6 /}$color
 Read: ${diskio_read sda4}  $alignr Write: ${diskio_write sda4}
 ${diskiograph_read sda4 15,185 78af78 a3a3a3} $alignr${diskiograph_write sda4 15,185 78af78 a3a3a3}
-${color #98c2c7}/home:$color ${fs_free_perc /home}%(Free) ${fs_free /home} ${color #78af78}${fs_bar 6 /home}$color
+${color #98c2c7}/home:$color ${fs_free_perc /home}%(Free) ${fs_free /home}
+${color #78af78}${fs_bar 6 /home}$color
 Read: ${diskio_read sda5}  $alignr Write: ${diskio_write sda5}
 ${diskiograph_read sda5 15,185 78af78 a3a3a3} $alignr${diskiograph_write sda5 15,185 78af78 a3a3a3}
 ${color #98c2c7}swap used:$color ${swapperc}% ${color #78af78}${swapbar 6}$color
@@ -131,10 +141,3 @@ ${color #98c2c7}Upload:$color    ${upspeed enp0s25}/s
 ${upspeedgraph enp0s25}
 ${color #98c2c7}Download:$color  ${downspeed enp0s25}/s
 ${downspeedgraph enp0s25}
-${color grey}SSH connections:$color $alignr count:${tcp_portmon 22 22 count}
-${tcp_portmon 22 22 lservice 0} ${tcp_portmon 22 22 rip 0}
-${tcp_portmon 22 22 rhost 0}
-${tcp_portmon 22 22 lservice 1} ${tcp_portmon 22 22 rip 1}
-${tcp_portmon 22 22 rhost 1}
-${tcp_portmon 22 22 lservice 2} ${tcp_portmon 22 22 rip 2}
-${tcp_portmon 22 22 rhost 2}
