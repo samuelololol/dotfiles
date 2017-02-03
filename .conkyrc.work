@@ -1,6 +1,8 @@
 # THIS CONFIG RELIES ON 2 SCRIPTS, CPUSPEED AND CPUTEMP
 # YOUR SYSTEM MAY NOT REQUIRE THEM, REPLACE AS DESIRED
 
+# variables reference: http://conky.sourceforge.net/variables.html
+
 # maintain spacing between certain elements
 use_spacer left
 
@@ -69,8 +71,8 @@ alignment bottom_left
 #alignment bottom_right
 
 # Gap between borders of screen and text
-gap_x 1300
-gap_y 30
+gap_x 1280
+gap_y 40
 #gap_x 1350
 #gap_x 3010 #right bottom
 #gap_x 1730
@@ -86,7 +88,7 @@ uppercase no
 # stuff after 'TEXT' will be formatted on screen
 
 TEXT
-${color #ffcb48}$nodename$color on $machine$color ${color #828282}$sysname
+${color #ffcb48}$nodename$color on $machine$color ${color #828282}$sysname ($uptime)
 
 #${color #ffcb48}PROCESSING$color
 #${color #98c2c7}CPU:$color $freq_g GHz $cpu% $color
@@ -94,28 +96,45 @@ ${color #ffcb48}CPU: $color $freq_g GHz $alignr $cpu% $color
 ${color #78af78}${cpugraph 82,000 78af78 a3a3a3}
 ${color #98c2c7}NAME             PID       CPU%      MEM%
 ${color #e5e5e5}${top name 1} ${top pid 1}   ${top cpu 1}    ${top mem 1}
-${color #c4c4c4}${top name 2} ${top pid 2}   ${top cpu 2}    ${top mem 2}
-${color #a3a3a3}${top name 3} ${top pid 3}   ${top cpu 3}    ${top mem 3}
+${color #e5e5e5}${top name 2} ${top pid 2}   ${top cpu 2}    ${top mem 2}
+${color #c4c4c4}${top name 3} ${top pid 3}   ${top cpu 3}    ${top mem 3}
+${color #a3a3a3}${top name 4} ${top pid 4}   ${top cpu 4}    ${top mem 4}$color
 
-${color #ffcb48}DATA$color  (${color #98c2c7} I/O: $color ${diskio}) $alignr ${color #98c2c7}/ :$color ${fs_free_perc /}%(Free) ${fs_free}
-${color #78af78}${fs_bar 6 /}$color
-Read: $alignr ${diskio_read}
-${diskiograph_read 20,000 78af78 a3a3a3}
-Write: $alignr ${diskio_write}
-${diskiograph_write 20,000 78af78 a3a3a3}
+${color #98c2c7}RAM($memfree) used:$color $memperc%    ${color #78af78}${membar 6}${color}$color
+${color #98c2c7}NAME             PID       CPU%     MEM%$color
+${color #e5e5e5}${top_mem name 1} ${top_mem pid 1}   ${top_mem cpu 1}   ${top_mem mem 1}$color
+${color #c4c4c4}${top_mem name 2} ${top_mem pid 2}   ${top_mem cpu 2}   ${top_mem mem 2}$color
+${color #a3a3a3}${top_mem name 3} ${top_mem pid 3}   ${top_mem cpu 3}   ${top_mem mem 3}$color
 
-${color #98c2c7}RAM used:$color $memperc%    ${color #78af78}${membar 6}${color}
-${color #98c2c7}NAME             PID       CPU%     MEM%
-${color #e5e5e5}${top_mem name 1} ${top_mem pid 1}   ${top_mem cpu 1}   ${top_mem mem 1}
-${color #c4c4c4}${top_mem name 2} ${top_mem pid 2}   ${top_mem cpu 2}   ${top_mem mem 2}
-${color #a3a3a3}${top_mem name 3} ${top_mem pid 3}   ${top_mem cpu 3}   ${top_mem mem 3}
-
-${color #98c2c7}/tmp:$color ${fs_free_perc /tmp}%(Free) ${fs_free /tmp} ${color #78af78}${fs_bar 6 /tmp}$color
-${color #98c2c7}/var/tmp/portage:$color ${fs_free_perc /var/tmp/portage}%(Free) ${fs_free /var/tmp/portage} ${color #78af78}${fs_bar 6 /var/tmp/portage}$color
+# ${color #ffcb48}DATA$color  (${color #98c2c7} I/O: $color ${diskio sda4}) $alignr ${color #98c2c7}/ :$color ${fs_free_perc /}%(Free) ${fs_free /}
+# ${color #78af78}${fs_bar 6 /}$color
+# Read: ${diskio_read sda4}  $alignr Write: ${diskio_write sda4}
+# ${diskiograph_read sda4 15,150 78af78 a3a3a3} $alignr${diskiograph_write sda4 15,150 78af78 a3a3a3}
+Disk
+${color #98c2c7}/:$color ${fs_free_perc /}%(Free) ${fs_free /} ${color #78af78}${fs_bar 6 /}$color
+Read: ${diskio_read sda4}  $alignr Write: ${diskio_write sda4}
+${diskiograph_read sda4 15,185 78af78 a3a3a3} $alignr${diskiograph_write sda4 15,185 78af78 a3a3a3}
+${color #98c2c7}/home:$color ${fs_free_perc /home}%(Free) ${fs_free /home} ${color #78af78}${fs_bar 6 /home}$color
+Read: ${diskio_read sda5}  $alignr Write: ${diskio_write sda5}
+${diskiograph_read sda5 15,185 78af78 a3a3a3} $alignr${diskiograph_write sda5 15,185 78af78 a3a3a3}
 ${color #98c2c7}swap used:$color ${swapperc}% ${color #78af78}${swapbar 6}$color
 
-${color #98c2c7}Upload:$color    ${upspeed enp0s25}/s 
+Portage
+${color #98c2c7}/tmp:$color ${fs_free_perc /tmp}%(Free) ${fs_free /tmp} ${color #78af78}${fs_bar 6 /tmp}$color
+${color #98c2c7}/var/tmp/portage:$color ${fs_free_perc /var/tmp/portage}%(Free) ${fs_free /var/tmp/portage} ${color #78af78}${fs_bar 6 /var/tmp/portage}$color
+${color #98c2c7}/var/tmp/ccachetmp:$color ${fs_free_perc /var/tmp/ccachetmp}%(Free) ${fs_free /var/tmp/ccachetmp} ${color #78af78}${fs_bar 6 /var/tmp/ccachetmp}$color
+
+Projects
+${color #98c2c7}NGIPS-1.1 $color ${color #98c2c7}${fs_free_perc /home/samuel/p4ngips/Core/NGIPS/Dev/NGIPS-1.1}%(Free) ${fs_free /home/samuel/p4ngips/Core/NGIPS/Dev/NGIPS-1.1} ${color #78af78}${fs_bar 6 /home/samuel/p4ngips/Core/NGIPS/Dev/NGIPS-1.1}$color
+
+${color #98c2c7}Upload:$color    ${upspeed enp0s25}/s
 ${upspeedgraph enp0s25}
 ${color #98c2c7}Download:$color  ${downspeed enp0s25}/s
 ${downspeedgraph enp0s25}
-
+${color grey}SSH connections:$color $alignr count:${tcp_portmon 22 22 count}
+${tcp_portmon 22 22 lservice 0} ${tcp_portmon 22 22 rip 0}
+${tcp_portmon 22 22 rhost 0}
+${tcp_portmon 22 22 lservice 1} ${tcp_portmon 22 22 rip 1}
+${tcp_portmon 22 22 rhost 1}
+${tcp_portmon 22 22 lservice 2} ${tcp_portmon 22 22 rip 2}
+${tcp_portmon 22 22 rhost 2}
