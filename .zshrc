@@ -25,7 +25,16 @@ export ZSH_THEME="jreese"
 
 # zsh plugin settings
 # --------------------------------------------
-plugins=(git vim brew osx tmux docker docker-compose zsh-navigation-tools)
+
+platform='unknown'
+unamestr=`uname`
+if [[ "$unamestr" == 'Linux' ]]; then
+    platform='Linux'
+    plugins=(git vim tmux docker docker-compose zsh-navigation-tools)
+elif [[ "$unamestr" == 'Darwin' ]]; then
+    platform='Darwin'
+    plugins=(git vim tmux docker docker-compose zsh-navigation-tools brew osx )
+fi
 #plugins=(git vim github svn brew osx npm nvm node yum tmux virtualenv virtualenvwrapper)
 #plugins=(git vim github geeknote svn brew osx npm nvm node virtualenv virtualenvwrapper yum tmux docker docker-compose zsh-navigation-tools web-search)
 #[[ -s "/usr/bin/virtualenvwrapper.sh"  ]] &&\
@@ -79,4 +88,3 @@ compinit
 #  which is already ignored from git repo for customization)
 #
 #alias vim='/usr/local/bin/nvim'
-
