@@ -5,16 +5,31 @@ let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_autoclose_preview_window_after_insertion=1
 let g:ycm_cache_omnifunc=0
 
-let g:ycm_min_num_of_chars_for_completion=2
+let g:ycm_min_num_of_chars_for_completion=1
 
 let g:ycm_confirm_extra_conf=0
 
+" detect via os
+" if has("unix")
+"     if system('uname') =~ 'Darwin'
+"         let g:ycm_python_binary_path='/usr/local/bin/python'
+"         let g:ycm_path_to_python_interpreter='/usr/local/bin/python'
+"     else
+"         let g:ycm_python_binary_path='/usr/bin/python'
+"         let g:ycm_path_to_python_interpreter='/usr/bin/python'
+"     endif
+" endif
 
-let g:ycm_python_binary_path='/usr/local/bin/python'
-let g:ycm_path_to_python_interpreter='/usr/local/bin/python'
+" detect via file existence
+if filereadable("/usr/local/bin/python")
+    let g:ycm_python_binary_path='/usr/local/bin/python'
+    let g:ycm_path_to_python_interpreter='/usr/local/bin/python'
+else
+    let g:ycm_python_binary_path='/usr/bin/python'
+    let g:ycm_path_to_python_interpreter='/usr/bin/python'
+endif
 
 let g:ycm_filetype_blacklist = {
       \ 'tagbar': 1,
       \ 'qf': 1,
       \}
-
