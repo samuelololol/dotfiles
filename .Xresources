@@ -8,7 +8,7 @@ xterm*FaceName:   Terminus
 xterm*FaceSize:   12
 #xterm*FaceSize:   40
 #xterm*FaceName:   Awesome
-#xterm*FaceNameDoublesize: WenQuanYi 
+#xterm*FaceNameDoublesize: WenQuanYi
 xterm*FaceNameDoublesize: Noto Sans T Chinese:light
 xterm*FontSize:   10
 xterm*altSendsEscape: true
@@ -18,16 +18,18 @@ xterm*metaSendsEscape: true
 
 #URxvt Settings
 #============================================================
-#More Setting about urxvt: 
+#More Setting about urxvt:
 #   https://wiki.archlinux.org/index.php/rxvt-unicode
 #   http://wiki.archbang.org/index.php?title=Rxvt-Unicode_Terminal
 #   http://www.askapache.com/linux/rxvt-xresources.html
 #   http://awesome.naquadah.org/wiki/Urxvt
+#   https://bbs.archlinux.org/viewtopic.php?id=47795
 
 #utils
 URxvt.perl-lib: /usr/lib/urxvt/perl/
 URxvt.perl-ext-common: default,matcher
-URxvt.url-launcher: /usr/bin/chromium
+#URxvt.url-launcher: /usr/bin/chromium
+URxvt.url-launcher: /usr/bin/firefox
 URxvt.matcher.button: 1
 URxvt*colorUL: yellow
 URxvt*saveLines: 0
@@ -38,7 +40,6 @@ URxvt*keysym.End: \033[4~
 
 #URxvt*font: xft:Terminus:size=120:antialias=True
 #URxvt*boldfont: xft:Terminus:size=120:antialias=True
-
 
 #Appearence
 URxvt*visualBell: false
@@ -85,4 +86,5 @@ URxvt*transparent: false
 URxvt*shading: 20
 
 
+#change dpi
 Xft.dpi: 120
