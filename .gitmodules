@@ -135,3 +135,7 @@
 	path = .vim/bundle/Dockerfile.vim
 	url = https://github.com/ekalinin/Dockerfile.vim
 	ignore = dirty
+[submodule ".vim/bundle/asyncrun.vim"]
+	path = .vim/bundle/asyncrun.vim
+	url = https://github.com/skywind3000/asyncrun.vim
+	ignore = dirty
