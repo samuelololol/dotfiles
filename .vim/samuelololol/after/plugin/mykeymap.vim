@@ -10,6 +10,9 @@ let g:mapleader = ","
 nmap gw :wincmd w<CR>
 nmap gW :wincmd W<CR>
 
+"move to last active tab
+au TabLeave * let g:lasttab = tabpagenr()
+nmap gl :exec "tabn ".g:lasttab<CR>
 "move current tab to nexttab as a window
 nmap gmt :call MoveToNextTab() <CR>
 nmap gmT :call MoveToPrevTab() <CR>
