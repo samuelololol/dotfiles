@@ -71,8 +71,8 @@ alignment bottom_left
 #alignment bottom_right
 
 # Gap between borders of screen and text
-gap_x 1280
-gap_y 40
+gap_x 1960 #for 2 screen
+gap_y 60
 #gap_x 1350
 #gap_x 3010 #right bottom
 #gap_x 1730
