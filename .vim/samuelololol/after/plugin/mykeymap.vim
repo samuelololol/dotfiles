@@ -11,6 +11,7 @@ nmap gw :wincmd w<CR>
 nmap gW :wincmd W<CR>
 
 "move to last active tab
+let g:lasttab = tabpagenr()
 au TabLeave * let g:lasttab = tabpagenr()
 nmap gl :exec "tabn ".g:lasttab<CR>
 "move current tab to nexttab as a window
