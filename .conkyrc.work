@@ -24,7 +24,7 @@ xftalpha 1
 #mail_spool $MAIL
 
 # Update interval in seconds
-update_interval 0.9
+update_interval 10
 
 # Create own window instead of using desktop (required in nautilus)
 own_window_class Conky
