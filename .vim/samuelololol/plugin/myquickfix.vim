@@ -10,13 +10,19 @@ function! QFixToggle(forced)
         let g:qfix_win = bufnr("$")
     endif
 endfunction
-nnoremap <leader>q :QFix<CR>
+" nnoremap <leader>q :QFix<CR>
 
 
-"enable/disable highlighting
+" quickfix window will open when something adds to it
+" augroup vimrc
+"     autocmd QuickFixCmdPost * botright copen 10
+" augroup END
+
+
+" enable/disable highlighting
 let g:hier_enabled = 1
 
-"QFEnter
+" QFEnter
 let g:qfenter_open_map  = ['<CR>']
 let g:qfenter_vopen_map = ['<Leader><CR>']
 let g:qfenter_hopen_map = ['<Leader><Space>']

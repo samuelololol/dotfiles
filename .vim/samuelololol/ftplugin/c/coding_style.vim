@@ -31,14 +31,16 @@ function! s:LinuxCodingStyle()
     setlocal autoindent
     let &colorcolumn="".join(range(79,999),",")
 
-    setlocal makeprg=~/dotfiles/commands/checkpatch.pl\ --terse\ --file\ --no-tree\ --no-signoff\ --strict\ --no-summary\ --codespellfile\ ~/dotfiles/commands/spelling.txt\ %
+    "setlocal makeprg=~/dotfiles/commands/checkpatch.pl\ --terse\ --file\ --no-tree\ --no-signoff\ --strict\ --no-summary\ --codespellfile\ ~/dotfiles/commands/spelling.txt\ %
+    setlocal makeprg=~/dotfiles/commands/checkpatch.pl\ --terse\ --file\ --no-tree\ --no-signoff\ --strict\ --no-summary\ --codespellfile\ ~/dotfiles/commands/spelling.txt
     let g:samuel_makeprg_modified=1
 endfunction
 
 
 function! s:SamuelCodingStyle()
     so ~/.vim/samuelololol/plugin/mycodingstyle.vim
-    setlocal makeprg=~/dotfiles/commands/checkpatch.pl\ --ignore\ NEW_TYPEDEFS,CAMELCASE,LEADING_SPACE\ --terse\ --file\ --no-tree\ --no-signoff\ --strict\ --no-summary\ --codespellfile\ ~/dotfiles/commands/spelling.txt\ %
+    "setlocal makeprg=~/dotfiles/commands/checkpatch.pl\ --ignore\ NEW_TYPEDEFS,CAMELCASE,LEADING_SPACE\ --terse\ --file\ --no-tree\ --no-signoff\ --strict\ --no-summary\ --codespellfile\ ~/dotfiles/commands/spelling.txt\ %
+    setlocal makeprg=~/dotfiles/commands/checkpatch.pl\ --ignore\ NEW_TYPEDEFS,CAMELCASE,LEADING_SPACE\ --terse\ --file\ --no-tree\ --no-signoff\ --strict\ --no-summary\ --codespellfile\ ~/dotfiles/commands/spelling.txt
     let g:samuel_makeprg_modified=1
 endfunction
 
@@ -88,7 +90,8 @@ function! s:CheckCodingStyle(...)
         call s:SetCodingStyle(a:1)
     endif
 
-    silent make
+    "silent make
+    AsyncRun -program=make @ %
     cwindow 10
 
     call s:SetCodingStyle(l:original_style)
