@@ -139,3 +139,7 @@
 	path = .vim/bundle/asyncrun.vim
 	url = https://github.com/skywind3000/asyncrun.vim
 	ignore = dirty
+[submodule ".vim/bundle/Mark--Karkat"]
+	path = .vim/bundle/Mark--Karkat
+	url = https://github.com/go2null/Mark--Karkat
+	ignore = dirty

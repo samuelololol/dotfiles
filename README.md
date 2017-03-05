@@ -75,10 +75,12 @@ $ ln -s ~/dotfiles/.vim ~/.config/nvim
 ## for vim
 
 * https://github.com/rking/ag.vim
+* https://github.com/skywind3000/asyncrun.vim
 * https://github.com/jiangmiao/auto-pairs
 * https://github.com/kien/ctrlp.vim.git
 * https://github.com/ekalinin/Dockerfile.vim
 * https://github.com/vim-scripts/DoxygenToolkit.vim.git
+* https://github.com/go2null/Mark--Karkat
 * https://github.com/vim-scripts/matchit.zip.git
 * https://github.com/scrooloose/nerdcommenter
 * https://github.com/Xuyuanp/nerdtree-git-plugin
