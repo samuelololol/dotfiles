@@ -1,1 +1,1 @@
-SetCodingStyle 0
+SetCodingStyle samuel

@@ -55,7 +55,7 @@ endfunction
 function! s:SetCodingStyle(...)
     let l:style = 0
     if a:0 > 0                                       " arg counts > 0
-        echom "coding style?" . a:1
+        "echom "coding style?" . a:1
         if a:1 == 2 || a:1 == "samuel"               " a:1 stands for first arg
             echom "Set coding style to => samuel"
             let l:style = 2
