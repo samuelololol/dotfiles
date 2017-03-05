@@ -79,15 +79,13 @@ runtime ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
 "disable mouse
 set mouse-=a
 
-"change mapleader
-let mapleader = ","
-let g:mapleader = ","
-
 """modeline default disable by samuel
 "set modeline
 "set modelines=5
 
 " " setting key map must in vimrc
+let s:myrtp=&rtp
+exec 'set rtp=' . '~/.vim/samuelololol/before,' . s:myrtp
 set runtimepath+=~/.vim/samuelololol
 set runtimepath+=~/.vim/samuelololol/after
 set runtimepath+=~/.vim/local_settings
