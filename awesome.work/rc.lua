@@ -13,15 +13,15 @@ local menubar = require("menubar")
 local vicious = require("vicious")
 
 awful.util.spawn_with_shell("xcompmgr -cF &")
-awful.util.spawn("pkill volumeicon")
 awful.util.spawn("pkill xscreensaver")
 awful.util.spawn("pkill conky")
 awful.util.spawn("pkill qsynergy")
 awful.util.spawn("conky -c /home/samuel/dotfiles/.conkyrc.work &")
 awful.util.spawn("conky -c /home/samuel/dotfiles/.conkyrc.clock &")
-awful.util.spawn_with_shell("volumeicon")
 awful.util.spawn_with_shell("xscreensaver -no-splash")
 awful.util.spawn_with_shell("qsynergy")
+-- awful.util.spawn("pkill volumeicon")
+-- awful.util.spawn_with_shell("volumeicon")
 
 -- samuel: cpu usage
 -- ###########################################
