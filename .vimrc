@@ -29,7 +29,7 @@ set nocompatible
 " show line number
 set nu
 set cursorline
-syntax on
+syntax enable "syntax on
 
 "spell check
 setlocal spell spelllang=en_us
