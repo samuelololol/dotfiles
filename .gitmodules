@@ -143,3 +143,7 @@
 	path = .vim/bundle/Mark--Karkat
 	url = https://github.com/go2null/Mark--Karkat
 	ignore = dirty
+[submodule ".vim/bundle/vim-hexdec"]
+	path = .vim/bundle/vim-hexdec
+	url = https://github.com/rr-/vim-hexdec
+	ignore = dirty

@@ -101,6 +101,7 @@ $ ln -s ~/dotfiles/.vim ~/.config/nvim
 * https://github.com/tpope/vim-fugitive
 * https://github.com/airblade/vim-gitgutter.git
 * https://github.com/fatih/vim-go.git
+* https://github.com/rr-/vim-hexdec
 * https://github.com/jceb/vim-hier
 * https://github.com/IngoHeimbach/vim-indent-object
 * https://github.com/elzr/vim-json
