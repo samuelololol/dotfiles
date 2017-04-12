@@ -1,56 +1,56 @@
-#Xterm Settings
-#============================================================
+!#Xterm Settings
+!#============================================================
 xterm*Background: grey5
 xterm*Foreground: LightGoldenrodYellow
 xterm*scrollBar:  false
-#xterm*font:    *-terminus-*-*-*-14-*
+!#xterm*font:    *-terminus-*-*-*-14-*
 xterm*FaceName:   Terminus
 xterm*FaceSize:   12
-#xterm*FaceSize:   40
-#xterm*FaceName:   Awesome
-#xterm*FaceNameDoublesize: WenQuanYi
+!#xterm*FaceSize:   40
+!#xterm*FaceName:   Awesome
+!#xterm*FaceNameDoublesize: WenQuanYi
 xterm*FaceNameDoublesize: Noto Sans T Chinese:light
 xterm*FontSize:   10
 xterm*altSendsEscape: true
 xterm*metaSendsEscape: true
-#xterm -fg LightGoldenrodYellow -bg grey5 -fa Terminus -fs 12
+!#xterm -fg LightGoldenrodYellow -bg grey5 -fa Terminus -fs 12
 
 
-#URxvt Settings
-#============================================================
-#More Setting about urxvt:
-#   https://wiki.archlinux.org/index.php/rxvt-unicode
-#   http://wiki.archbang.org/index.php?title=Rxvt-Unicode_Terminal
-#   http://www.askapache.com/linux/rxvt-xresources.html
-#   http://awesome.naquadah.org/wiki/Urxvt
-#   https://bbs.archlinux.org/viewtopic.php?id=47795
+!#URxvt Settings
+!#============================================================
+!#More Setting about urxvt:
+!#   https://wiki.archlinux.org/index.php/rxvt-unicode
+!#   http://wiki.archbang.org/index.php?title=Rxvt-Unicode_Terminal
+!#   http://www.askapache.com/linux/rxvt-xresources.html
+!#   http://awesome.naquadah.org/wiki/Urxvt
+!#   https://bbs.archlinux.org/viewtopic.php?id=47795
 
-#utils
+!#utils
 URxvt.perl-lib: /usr/lib/urxvt/perl/
 URxvt.perl-ext-common: default,matcher
-#URxvt.url-launcher: /usr/bin/chromium
+!#URxvt.url-launcher: /usr/bin/chromium
 URxvt.url-launcher: /usr/bin/firefox
 URxvt.matcher.button: 1
 URxvt*colorUL: yellow
 URxvt*saveLines: 0
 
-#keymap
+!#keymap
 URxvt*keysym.Home: \033[1~
 URxvt*keysym.End: \033[4~
 
-#URxvt*font: xft:Terminus:size=120:antialias=True
-#URxvt*boldfont: xft:Terminus:size=120:antialias=True
+!#URxvt*font: xft:Terminus:size=172:antialias=True
+!#URxvt*boldfont: xft:Terminus:size=172:antialias=True
 
-#Appearence
+!#Appearence
 URxvt*visualBell: false
 URxvt*scrollBar:  false
 URxvt*font:       xft:Terminus:size=12,xft:size=12:Noto Sans Mono CJK TC:Thin
 URxvt*boldFont:   xft:Terminus:bold:size=12,xft:size=12:Noto Sans Mono CJK TC:Blod
 URxvt*italicFont: xft:Terminus:italic:size=12,xft:size=12:Noto Sans Mono CJK TC:italic
-#URxvt*font:       xft:Terminus:size=12,xft:size=14:Noto Sans T Chinese:light
-#URxvt*boldFont:   xft:Terminus:bold:size=12,xft:size=14:Noto Sans T Chinese:bold
-#URxvt*italicFont: xft:Terminus:italic:size=12,xft:size=14:Noto Sans T Chinese:italic
-#URxvt*font:       xft:dina:bolditalic:size=12
+!#URxvt*font:       xft:Terminus:size=12,xft:size=14:Noto Sans T Chinese:light
+!#URxvt*boldFont:   xft:Terminus:bold:size=12,xft:size=14:Noto Sans T Chinese:bold
+!#URxvt*italicFont: xft:Terminus:italic:size=12,xft:size=14:Noto Sans T Chinese:italic
+!#URxvt*font:       xft:dina:bolditalic:size=12
 
 !# color settings:
 !#   http://sdkmvx.wordpress.com/2008/08/13/rxvt-unicode-terminal-colors
@@ -86,5 +86,5 @@ URxvt*transparent: false
 URxvt*shading: 20
 
 
-#change dpi
-Xft.dpi: 120
+!#change dpi
+Xft.dpi: 166
