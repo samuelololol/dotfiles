@@ -45,7 +45,7 @@ URxvt*keysym.End: \033[4~
 URxvt*visualBell: false
 URxvt*scrollBar:  false
 URxvt*font:       xft:Terminus:size=12,xft:size=12:Noto Sans Mono CJK TC:Thin
-URxvt*boldFont:   xft:Terminus:bold:size=12,xft:size=12:Noto Sans Mono CJK TC:Blod
+URxvt*boldFont:   xft:Terminus:bold:size=12,xft:size=12:Noto Sans Mono CJK TC:Bold
 URxvt*italicFont: xft:Terminus:italic:size=12,xft:size=12:Noto Sans Mono CJK TC:italic
 !#URxvt*font:       xft:Terminus:size=12,xft:size=14:Noto Sans T Chinese:light
 !#URxvt*boldFont:   xft:Terminus:bold:size=12,xft:size=14:Noto Sans T Chinese:bold
