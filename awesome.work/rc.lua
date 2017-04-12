@@ -20,6 +20,7 @@ awful.util.spawn("conky -c /home/samuel/dotfiles/.conkyrc.work &")
 awful.util.spawn("conky -c /home/samuel/dotfiles/.conkyrc.clock &")
 awful.util.spawn_with_shell("xscreensaver -no-splash")
 awful.util.spawn_with_shell("qsynergy")
+-- awful.util.spawn_with_shell("sh /home/samuel/.x_vs24rc &")
 -- awful.util.spawn("pkill volumeicon")
 -- awful.util.spawn_with_shell("volumeicon")
 
@@ -453,8 +454,9 @@ awful.rules.rules = {
                      keys = clientkeys,
                      buttons = clientbuttons } },
     { rule = { class = "MPlayer" },
-      properties = { floating = true } },
-    { rule = { class = "MPlayer" },
+      properties = { floating = true,
+                     sticky = false } },
+    { rule = { class = "zoom" },
       properties = { floating = true,
                      sticky = false } },
     { rule = { class = "pinentry" },
