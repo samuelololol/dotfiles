@@ -45,13 +45,13 @@ URxvt*keysym.End: \033[4~
 URxvt*visualBell: false
 URxvt*scrollBar:  false
 URxvt*font:\
-    xft:Terminus:size=12:antialias=true,\
+    xft:xos4 Terminus:size=12:antialias=true,\
     xft:size=12:Noto Sans Mono CJK TC:Thin:antialias=true
 URxvt*boldFont:\
-    xft:Terminus:bold:size=12:antialias=true,\
+    xft:xos4 Terminus:bold:size=12:antialias=true,\
     xft:size=12:Noto Sans Mono CJK TC:bold:antialias=true
 URxvt*italicFont:\
-    xft:Terminus:italic:size=12:antialias=true,\
+    xft:xos4 Terminus:italic:size=12:antialias=true,\
     xft:size=12:Noto Sans Mono CJK TC:italic:antialias=true
 !#URxvt*font:       xft:Terminus:size=12,xft:size=14:Noto Sans T Chinese:light
 !#URxvt*boldFont:   xft:Terminus:bold:size=12,xft:size=14:Noto Sans T Chinese:bold
