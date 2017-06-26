@@ -75,11 +75,11 @@ alignment top_left
 # Gap between borders of screen and text
 #gap_x 250
 #gap_y 30
-#gap_x 800
-#gap_y 680
+gap_x 600
+gap_y 66
 
-gap_x 500
-gap_y 480
+#gap_x 500
+#gap_y 480
 
 #gap_x 1120
 #gap_y 600
@@ -94,6 +94,6 @@ uppercase no
 # stuff after 'TEXT' will be formatted on screen
 
 TEXT
-${font Terminus:size=30}${color #f2dba9}${time %a. %B %e, %G  %H:%M}
+${font xos4 Terminus:size=30}${color #f2dba9}${time %a. %B %e, %G  %H:%M}
 #${font Noto Sans Japanese:size=30}${color #f2dba9}${time %a. %B %e, %G  %H:%M}
 #${font Noto Sans Japanese:size=100}${color #f2dba9}${time %H:%M}

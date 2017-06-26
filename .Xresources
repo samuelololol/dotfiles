@@ -45,12 +45,15 @@ URxvt*keysym.End: \033[4~
 URxvt*visualBell: false
 URxvt*scrollBar:  false
 URxvt*font:\
+    xft:Source Code Pro:size=12:antialias=true,\
     xft:xos4 Terminus:size=12:antialias=true,\
     xft:size=12:Noto Sans Mono CJK TC:Thin:antialias=true
 URxvt*boldFont:\
+    xft:Source Code Pro:bold:size=12:antialias=true,\
     xft:xos4 Terminus:bold:size=12:antialias=true,\
     xft:size=12:Noto Sans Mono CJK TC:bold:antialias=true
 URxvt*italicFont:\
+    xft:Source Code Pro:italic:size=12:antialias=true,\
     xft:xos4 Terminus:italic:size=12:antialias=true,\
     xft:size=12:Noto Sans Mono CJK TC:italic:antialias=true
 !#URxvt*font:       xft:Terminus:size=12,xft:size=14:Noto Sans T Chinese:light
@@ -62,6 +65,10 @@ URxvt*italicFont:\
 !#   http://sdkmvx.wordpress.com/2008/08/13/rxvt-unicode-terminal-colors
 URxvt*background: #0f0f0f
 URxvt*foreground: #c8c8c8
+
+!for SourceCodePro font
+!URxvt*foreground: #FFFFFF
+
 !black
 URxvt*color0:     #251f1f
 URxvt*color8:     #5e5e5e
