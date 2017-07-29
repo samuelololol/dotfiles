@@ -13,9 +13,7 @@
 #
 #
 
-if [ -d "$HOME/commands" ]; then
-    export PATH="$HOME/commands/bin:$HOME/commands:/usr/local/bin:/usr/local/sbin:$PATH"
-fi
+
 ZSH=$HOME/dotfiles/.zsh
 #export ZSH_THEME="miloshadzic"
 #export ZSH_THEME="norm"
@@ -29,9 +27,12 @@ export ZSH_THEME="jreese"
 platform='unknown'
 unamestr=`uname`
 if [[ "$unamestr" == 'Linux' ]]; then
+    echo "using ZSH on Linux"
     platform='Linux'
     plugins=(git vim tmux docker docker-compose zsh-navigation-tools)
 elif [[ "$unamestr" == 'Darwin' ]]; then
+    echo "using ZSH on OS X"
+    export PATH="/usr/local/opt/python/libexec/bin:$PATH"  # homebrew
     platform='Darwin'
     plugins=(git vim tmux docker docker-compose zsh-navigation-tools brew osx )
 fi
@@ -40,6 +41,8 @@ fi
 #[[ -s "/usr/bin/virtualenvwrapper.sh"  ]] &&\
 #    plugins=(git vim github geeknote svn brew osx npm nvm node yum tmux docker docker-compose virtualenvwrapper)
 
+#PATH environment variable
+[[ -d "$HOME/commands" ]] && export PATH="$HOME/commands/bin:$HOME/commands:/usr/local/bin:/usr/local/sbin:$PATH"
 
 
 echo "Loading oh-my-zsh settings...."
