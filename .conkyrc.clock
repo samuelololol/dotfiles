@@ -1,6 +1,5 @@
 # THIS CONFIG RELIES ON 2 SCRIPTS, CPUSPEED AND CPUTEMP
 # YOUR SYSTEM MAY NOT REQUIRE THEM, REPLACE AS DESIRED
-
 # maintain spacing between certain elements
 use_spacer yes
 
@@ -38,7 +37,7 @@ double_buffer yes
 
 # Minimum size of text area
 #minimum_size 280 5
-minimum_size 5 5 
+minimum_size 5 5
 
 # Maximum width
 maximum 28

@@ -16,8 +16,11 @@ awful.util.spawn_with_shell("xcompmgr -cF &")
 awful.util.spawn("pkill xscreensaver")
 awful.util.spawn("pkill conky")
 awful.util.spawn("pkill qsynergy")
+awful.util.spawn("xrandr --output DVI-1 --rotate right")
 awful.util.spawn("conky -c /home/samuel/dotfiles/.conkyrc.work &")
 awful.util.spawn("conky -c /home/samuel/dotfiles/.conkyrc.clock &")
+awful.util.spawn("conky -c /home/samuel/dotfiles/.conkyrc.es &")
+awful.util.spawn("conky -c /home/samuel/dotfiles/.conkyrc.ambari &")
 awful.util.spawn_with_shell("xscreensaver -no-splash")
 awful.util.spawn_with_shell("qsynergy")
 -- awful.util.spawn_with_shell("sh /home/samuel/.x_vs24rc &")
@@ -332,6 +335,7 @@ globalkeys = awful.util.table.join(
 
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
+    awful.key({ modkey, "Shift"   }, "Return", function() awful.util.spawn("urxvts") end),
     awful.key({ modkey, "Control" }, "r", awesome.restart),
     awful.key({ modkey, "Shift"   }, "q", awesome.quit),
 
