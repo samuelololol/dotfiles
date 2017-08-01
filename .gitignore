@@ -4,7 +4,6 @@
 .myenvvar
 .vim/.netrwhist
 .vim/doc/tags
-.vim/init.vim
 .vim/local_settings
 .vim/view/*
 samuel_zshrc
