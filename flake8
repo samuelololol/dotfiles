@@ -2,7 +2,7 @@
 # E501 line too long
 # F405 variable may be undefined, or defined from star imports
 # F403 'import *' used; unable to detect undefined names
-ignore = E501, F403
+ignore = E501, F403, E731
 
 
 exclude =
