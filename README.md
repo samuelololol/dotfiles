@@ -62,7 +62,7 @@ $rm -rf ~/.vim && ln -s dotfiles/.vim   ~/.vim
 
 #nvim
 
-$ ln -s ~/dotfiles/.vimrc ~/dotfiles/.vim/init.vim
+$ ln -s ~/dotfiles/.vimrc ~/dotfiles/.vim/init.vim (already linked in repository)
 $ ln -s ~/dotfiles/.vim ~/.config/nvim
 ```
 
