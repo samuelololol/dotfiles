@@ -29,12 +29,12 @@ unamestr=`uname`
 if [[ "$unamestr" == 'Linux' ]]; then
     echo "using ZSH on Linux"
     platform='Linux'
-    plugins=(git vim tmux docker docker-compose zsh-navigation-tools)
+    plugins=(git vim tmux docker docker-compose zsh-navigation-tools vagrant)
 elif [[ "$unamestr" == 'Darwin' ]]; then
     echo "using ZSH on OS X"
     export PATH="/usr/local/opt/python/libexec/bin:$PATH"  # homebrew
     platform='Darwin'
-    plugins=(git vim tmux docker docker-compose zsh-navigation-tools brew osx )
+    plugins=(git vim tmux docker docker-compose zsh-navigation-tools brew osx vagrant)
 fi
 #plugins=(git vim github svn brew osx npm nvm node yum tmux virtualenv virtualenvwrapper)
 #plugins=(git vim github geeknote svn brew osx npm nvm node virtualenv virtualenvwrapper yum tmux docker docker-compose zsh-navigation-tools web-search)
