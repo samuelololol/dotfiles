@@ -147,3 +147,6 @@
 	path = .vim/bundle/vim-hexdec
 	url = https://github.com/rr-/vim-hexdec
 	ignore = dirty
+[submodule ".vim/bundle/ale"]
+	path = .vim/bundle/ale
+	url = https://github.com/w0rp/ale
