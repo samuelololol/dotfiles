@@ -32,7 +32,7 @@
 	ignore = dirty
 [submodule ".vim/bundle/valgrind"]
 	path = .vim/bundle/valgrind
-	url = https://github.com/vim-scripts/valgrind.vim.git
+	url = https://github.com/LucHermitte/valgrind.vim
 	ignore = dirty
 [submodule ".vim/bundle/vim-easy-align"]
 	path = .vim/bundle/vim-easy-align
