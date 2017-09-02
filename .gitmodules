@@ -150,3 +150,8 @@
 [submodule ".vim/bundle/ale"]
 	path = .vim/bundle/ale
 	url = https://github.com/w0rp/ale
+	ignore = dirty
+[submodule ".vim/bundle/vim-troll-stopper"]
+	path = .vim/bundle/vim-troll-stopper
+	url = https://github.com/vim-utils/vim-troll-stopper
+	ignore = dirty
