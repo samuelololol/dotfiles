@@ -26,17 +26,17 @@ set nocompatible
 " endif
 "
 
-" show line number
-set nu
+""" show line number
+set number
 set cursorline
 syntax enable "syntax on
 
-"spell check
+"""spell check
 setlocal spell spelllang=en_us
 set nospell
-" set spell
+"set spell
 
-" filetype support
+""" filetype support
 filetype on
 filetype plugin on
 filetype indent on
@@ -48,12 +48,13 @@ set ignorecase
 "set fdm=marker
 "set fdm=syntax
 "set fdm=indent
-"        set foldcolumn=3
-"        set foldlevel=0     " fold everything deeper than 0
-"        set foldnestmax=1  " dont fold everything deeper than 1
 "
+"set foldcolumn=3
+"set foldlevel=0    " fold everything deeper than 0
+"set foldnestmax=1  " dont fold everything deeper than 1
 
-"reference from: http://nvie.com/posts/how-i-boosted-my-vim
+
+"""reference from: http://nvie.com/posts/how-i-boosted-my-vim
 set history=1000         " remember more commands and search history
 set undolevels=1000      " use many muchos levels of undo
 set wildignore=*.swp,*.bak,*.pyc,*.class,*.o
@@ -68,7 +69,7 @@ set noswapfile           " don't backup
 set formatoptions+=tmM
 set textwidth=80
 
-"" pathogen setting "
+""" pathogen setting
 "call pathogen#helptags()
 "call pathogen#runtime_append_all_bundles()
 "call pathogen#infect()
@@ -76,20 +77,17 @@ execute pathogen#infect()
 Helptags
 runtime ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
 
-"disable mouse
+"""disable mouse
 set mouse-=a
 
 """modeline default disable by samuel
 "set modeline
 "set modelines=5
 
-" " setting key map must in vimrc
-let s:myrtp=&rtp
+"""setting key map must in vimrc
+let s:myrtp=&runtimepath
 exec 'set rtp=' . '~/.vim/samuelololol/before,' . s:myrtp
 set runtimepath+=~/.vim/samuelololol
 set runtimepath+=~/.vim/samuelololol/after
 set runtimepath+=~/.vim/local_settings
 set runtimepath+=~/.vim/local_settings/after
-" if has('nvim')
-"     set runtimepath+=~/.vim/bundle/samuelololol/after
-" endif
