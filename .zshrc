@@ -42,7 +42,7 @@ fi
 #    plugins=(git vim github geeknote svn brew osx npm nvm node yum tmux docker docker-compose virtualenvwrapper)
 
 #PATH environment variable
-[[ -d "$HOME/commands" ]] && export PATH="$HOME/commands/bin:$HOME/commands:/usr/local/bin:/usr/local/sbin:$PATH"
+#[[ -d "$HOME/commands" ]] && export PATH="$HOME/commands/bin:$HOME/commands:/usr/local/bin:/usr/local/sbin:$PATH"
 
 
 echo "Loading oh-my-zsh settings...."
