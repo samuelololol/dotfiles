@@ -28,12 +28,16 @@ elif [[ "$unamestr" == 'Darwin' ]]; then
     fi
     case "$response" in
         [yY][eE][sS]|[yY])
+            export VIRTUALENV_PYTHON=/usr/local/bin/python3
             export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-            export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='-p /usr/local/bin/python2 --no-site-packages'
+            export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='-p /usr/local/bin/python3 --no-site-packages'
+            printf "Using ${RED}python${YELLOW}3${NC}\n"
             ;;
         *)
+            export VIRTUALENV_PYTHON=/usr/local/bin/python2
             export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
             export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='-p /usr/local/bin/python2 --no-site-packages'
+            printf "Using ${RED}python${YELLOW}2${NC}\n"
             ;;
     esac
     # virtualenvwrapper (mac)
