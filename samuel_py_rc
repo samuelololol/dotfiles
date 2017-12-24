@@ -1,16 +1,41 @@
-echo "Loading python virtualenv/virtualenvwrapper environment...."
-#TODO: use pyenv instead!
-# pythonbrew
-[[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
-[[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && alias pbw='pythonbrew'
-[[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && alias pnv='pbw venv'
+printf "Loading python virtualenv/virtualenvwrapper environment on .... "
+RED='\033[0;31m'
+YELLOW='\033[1;33m'
+NC='\033[0m'
 
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2.7
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='-p /usr/bin/python2.7 --no-site-packages'
+platform='unknown'
+unamestr=`uname`
+if [[ "$unamestr" == 'Linux' ]]; then
+    printf "${YELLOW}[ Linux ]${NC}"
+    export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2.7
+    export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='-p /usr/bin/python2.7 --no-site-packages'
 
-# virtualenvwrapper (linux)
-[[ -s "/usr/bin/virtualenvwrapper.sh"  ]] && source "/usr/bin/virtualenvwrapper.sh" 
+    # virtualenvwrapper (linux)
+    [[ -s "/usr/bin/virtualenvwrapper.sh"  ]] && source "/usr/bin/virtualenvwrapper.sh"
+elif [[ "$unamestr" == 'Darwin' ]]; then
+    echo "${YELLOW}[ OS X ]${NC}"
+    # pythonbrew
+    [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
+    [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && alias pbw='pythonbrew'
+    [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && alias pnv='pbw venv'
 
-# virtualenvwrapper (mac)
-[[ -s "/usr/local/bin/virtualenvwrapper.sh"  ]] && source "/usr/local/bin/virtualenvwrapper.sh" 
-
+    # python2 or python3
+    if [ -n "$ZSH_VERSION"  ]; then
+        printf "Would you like to use ${RED}python3${NC}"
+        read -r "? [y/N]" response
+    else
+        read -r -p "Would you like to use ${RED}python3${NC}? [y/N]" response
+    fi
+    case "$response" in
+        [yY][eE][sS]|[yY])
+            export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+            export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='-p /usr/local/bin/python2 --no-site-packages'
+            ;;
+        *)
+            export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
+            export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='-p /usr/local/bin/python2 --no-site-packages'
+            ;;
+    esac
+    # virtualenvwrapper (mac)
+    [[ -s "/usr/local/bin/virtualenvwrapper.sh"  ]] && source "/usr/local/bin/virtualenvwrapper.sh"
+fi
