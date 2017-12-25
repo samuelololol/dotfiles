@@ -32,7 +32,7 @@ if [[ "$unamestr" == 'Linux' ]]; then
     plugins=(git vim tmux docker docker-compose zsh-navigation-tools vagrant)
 elif [[ "$unamestr" == 'Darwin' ]]; then
     echo "using ZSH on OS X"
-    export PATH="/usr/local/opt/python/libexec/bin:$PATH"  # homebrew
+    export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/opt/python/libexec/bin:$PATH"  # homebrew
     platform='Darwin'
     plugins=(git vim tmux docker docker-compose zsh-navigation-tools brew osx vagrant)
 fi
