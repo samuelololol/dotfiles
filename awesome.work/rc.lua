@@ -19,8 +19,7 @@ awful.util.spawn("pkill -9 qsynergy")
 awful.util.spawn("xrandr --output DVI-1 --rotate right")
 awful.util.spawn("conky -c /home/samuel/dotfiles/.conkyrc.work &")
 awful.util.spawn("conky -c /home/samuel/dotfiles/.conkyrc.clock &")
-awful.util.spawn("conky -c /home/samuel/dotfiles/.conkyrc.shards &")
-awful.util.spawn("conky -c /home/samuel/dotfiles/.conkyrc.ambari &")
+awful.util.spawn("conky -c /home/samuel/dotfiles/.conkyrc.ptt &")
 awful.util.spawn_with_shell("xscreensaver -no-splash")
 awful.util.spawn_with_shell("qsynergy")
 -- awful.util.spawn_with_shell("sh /home/samuel/.x_vs24rc &")
@@ -466,6 +465,8 @@ awful.rules.rules = {
     { rule = { class = "pinentry" },
       properties = { floating = true } },
     { rule = { class = "gimp" },
+      properties = { floating = true } },
+    { rule = { class = "zeal" },
       properties = { floating = true } },
     { rule = { class = "Conky" },
       properties = { sticky = true,
