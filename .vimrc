@@ -11,6 +11,8 @@
 " Samuel's .vimrc config file
 "
 "          2010, 09/28 @NSYSU
+"LVSTHW: LearnVimScriptTheHardWay
+
 
 "vi compatible mode
 set nocompatible
@@ -28,6 +30,8 @@ set nocompatible
 
 """ show line number
 set number
+set shiftround "LVSTHW
+set showmatch  "LVSTHW
 set cursorline
 syntax enable "syntax on
 
