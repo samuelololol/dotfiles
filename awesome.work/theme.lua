@@ -10,7 +10,8 @@
 theme = {}
 -- 3.5
 theme.wallpaper = {}
-theme.wallpaper[1] = "/home/samuel/dotfiles/awesome_wallpaper/shinyi1.jpg"
+-- theme.wallpaper[1] = "/home/samuel/dotfiles/awesome_wallpaper/shinyi1.jpg"
+theme.wallpaper[1] = "/home/samuel/dotfiles/awesome_wallpaper/mt.fuji2.jpg"
 theme.wallpaper[2] = "/home/samuel/dotfiles/awesome_wallpaper/remote_101.jpg"
 -- theme.wallpaper[2] = "/home/samuel/dotfiles/awesome_wallpaper/101.jpg"
 -- theme.wallpaper[1] = "/home/samuel/dotfiles/awesome_wallpaper/mt.fuji.jpg"

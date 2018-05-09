@@ -31,7 +31,7 @@ own_window_class Conky
 own_window yes
 own_window_type desktop
 #own_window_type override
-own_window_transparent no
+own_window_transparent yes
 own_window_argb_visual yes
 own_window_argb_value 0
 
@@ -71,7 +71,7 @@ alignment bottom_left
 #alignment bottom_right
 
 # Gap between borders of screen and text
-gap_x 1960 #for 2 screen
+gap_x 1960
 gap_y 60
 #gap_x 1350
 #gap_x 3010 #right bottom
@@ -86,6 +86,7 @@ no_buffers yes
 uppercase no
 
 # stuff after 'TEXT' will be formatted on screen
+own_window_colour 000000
 TEXT
 ${if_match ${tcp_portmon 22 22 count} > 0}
 ${color #98c2c7}SSH connections(${color red}${tcp_portmon 22 22 count}${color #98c2c7}):

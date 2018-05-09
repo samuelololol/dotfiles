@@ -27,7 +27,7 @@ xterm*metaSendsEscape: true
 
 !#utils
 URxvt.perl-lib: /usr/lib/urxvt/perl/
-URxvt.perl-ext-common: default,matcher
+URxvt.perl-ext-common: default,matcher,font-size
 !#URxvt.url-launcher: /usr/bin/chromium
 URxvt.url-launcher: /usr/bin/firefox
 URxvt.matcher.button: 1
