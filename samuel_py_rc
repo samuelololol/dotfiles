@@ -12,6 +12,11 @@ if [[ "$unamestr" == 'Linux' ]]; then
     # export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2.7
     # export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='-p /usr/bin/python2.7 --no-site-packages'
 
+    # scipy:
+    # You might want to set the variable SCIPY_PIL_IMAGE_VIEWER
+    # to your prefered image viewer.
+    export SCIPY_PIL_IMAGE_VIEWER=/usr/bin/gqview
+
     # virtualenvwrapper (linux)
     [[ -s "/usr/bin/virtualenvwrapper.sh"  ]] && source "/usr/bin/virtualenvwrapper.sh"
     # python2 or python3
@@ -42,6 +47,12 @@ if [[ "$unamestr" == 'Linux' ]]; then
 
 elif [[ "$unamestr" == 'Darwin' ]]; then
     echo "${YELLOW}[ OS X ]${NC}"
+
+    # scipy:
+    # You might want to set the variable SCIPY_PIL_IMAGE_VIEWER
+    # to your prefered image viewer.
+    export SCIPY_PIL_IMAGE_VIEWER=/usr/bin/open
+
     # pythonbrew
     [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
     [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && alias pbw='pythonbrew'

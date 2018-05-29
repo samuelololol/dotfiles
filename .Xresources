@@ -8,8 +8,9 @@ xterm*FaceName:   Terminus
 xterm*FaceSize:   12
 !#xterm*FaceSize:   40
 !#xterm*FaceName:   Awesome
-!#xterm*FaceNameDoublesize: WenQuanYi
-xterm*FaceNameDoublesize: Noto Sans T Chinese:light
+xterm*FaceNameDoublesize: WenQuanYi
+!#xterm*FaceNameDoublesize: Noto Sans T Chinese:light
+!#xterm*FaceNameDoublesize: Source Code Pro:light
 xterm*FontSize:   10
 xterm*altSendsEscape: true
 xterm*metaSendsEscape: true
