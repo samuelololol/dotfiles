@@ -41,10 +41,6 @@ if [[ "$unamestr" == 'Linux' ]]; then
             printf "Using ${RED}python${YELLOW}2${NC}\n"
             ;;
     esac
-
-
-
-
 elif [[ "$unamestr" == 'Darwin' ]]; then
     echo "${YELLOW}[ OS X ]${NC}"
 
@@ -52,11 +48,6 @@ elif [[ "$unamestr" == 'Darwin' ]]; then
     # You might want to set the variable SCIPY_PIL_IMAGE_VIEWER
     # to your prefered image viewer.
     export SCIPY_PIL_IMAGE_VIEWER=/usr/bin/open
-
-    # pythonbrew
-    [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
-    [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && alias pbw='pythonbrew'
-    [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && alias pnv='pbw venv'
 
     # python2 or python3
     if [ -n "$ZSH_VERSION"  ]; then
@@ -82,6 +73,11 @@ elif [[ "$unamestr" == 'Darwin' ]]; then
 
     # virtualenvwrapper (mac)
     [[ -s "/usr/local/bin/virtualenvwrapper.sh"  ]] && source "/usr/local/bin/virtualenvwrapper.sh"
+    #
+    # # pyenv virtualenv
+    # eval "$(pyenv init -)"
+    # eval "$(pyenv virtualenv-init -)"
+    # alias brew="env PATH=${PATH/\/Users\/${USER}\/\.pyenv\/shims:/} brew"
 fi
 
 # pip '--user' binary location
