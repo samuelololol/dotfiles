@@ -21,13 +21,16 @@ let g:ycm_confirm_extra_conf=0
 " endif
 
 " detect via file existence
-if filereadable("/usr/local/bin/python")
-    let g:ycm_python_binary_path='/usr/local/bin/python'
-    let g:ycm_path_to_python_interpreter='/usr/local/bin/python'
-else
-    let g:ycm_python_binary_path='/usr/bin/python'
-    let g:ycm_path_to_python_interpreter='/usr/bin/python'
-endif
+" if filereadable("/usr/local/bin/python")
+"     let g:ycm_python_binary_path='/usr/local/bin/python'
+"     let g:ycm_path_to_python_interpreter='/usr/local/bin/python'
+" else
+"     let g:ycm_python_binary_path='/usr/bin/python'
+"     let g:ycm_path_to_python_interpreter='/usr/bin/python'
+" endif
+let venv_python_path = system('which python')
+let g:ycm_python_binary_path = venv_python_path
+let g:ycm_path_to_python_interpreter = venv_python_path
 
 let g:ycm_filetype_blacklist = {
       \ 'tagbar': 1,
