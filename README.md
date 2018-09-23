@@ -78,13 +78,11 @@ $ ln -s ~/dotfiles/.vim ~/.config/nvim
 * https://github.com/jiangmiao/auto-pairs
 * https://github.com/kien/ctrlp.vim.git
 * https://github.com/ekalinin/Dockerfile.vim
-* https://github.com/vim-scripts/DoxygenToolkit.vim.git
 * https://github.com/go2null/Mark--Karkat
 * https://github.com/vim-scripts/matchit.zip.git
 * https://github.com/scrooloose/nerdcommenter
 * https://github.com/Xuyuanp/nerdtree-git-plugin
 * https://github.com/scrooloose/nerdtree.git
-* https://github.com/sotte/presenting.vim.git
 * https://github.com/yssl/QFEnter
 * https://github.com/sk1418/QFGrep
 * https://github.com/vim-scripts/surround.vim.git
@@ -100,7 +98,6 @@ $ ln -s ~/dotfiles/.vim ~/.config/nvim
 * https://github.com/airblade/vim-gitgutter.git
 * https://github.com/rr-/vim-hexdec
 * https://github.com/jceb/vim-hier
-* https://github.com/IngoHeimbach/vim-indent-object
 * https://github.com/elzr/vim-json
 * https://github.com/terryma/vim-multiple-cursors.git
 * https://github.com/tpope/vim-pathogen.git
