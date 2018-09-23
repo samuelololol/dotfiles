@@ -74,7 +74,6 @@ $ ln -s ~/dotfiles/.vim ~/.config/nvim
 
 ## for vim
 
-* https://github.com/rking/ag.vim
 * https://github.com/skywind3000/asyncrun.vim
 * https://github.com/jiangmiao/auto-pairs
 * https://github.com/kien/ctrlp.vim.git
@@ -99,7 +98,6 @@ $ ln -s ~/dotfiles/.vim ~/.config/nvim
 * https://github.com/Lokaltog/vim-easymotion.git
 * https://github.com/tpope/vim-fugitive
 * https://github.com/airblade/vim-gitgutter.git
-* https://github.com/fatih/vim-go.git
 * https://github.com/rr-/vim-hexdec
 * https://github.com/jceb/vim-hier
 * https://github.com/IngoHeimbach/vim-indent-object

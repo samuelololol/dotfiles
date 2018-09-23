@@ -66,10 +66,6 @@
 	path = .vim/bundle/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
 	ignore = dirty
-[submodule ".vim/bundle/vim-go"]
-	path = .vim/bundle/vim-go
-	url = https://github.com/fatih/vim-go.git
-	ignore = dirty
 [submodule ".zsh"]
 	path = .zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
@@ -114,10 +110,6 @@
 [submodule ".vim/bundle/auto-pairs"]
 	path = .vim/bundle/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs
-	ignore = dirty
-[submodule ".vim/bundle/ag.vim"]
-	path = .vim/bundle/ag.vim
-	url = https://github.com/rking/ag.vim
 	ignore = dirty
 [submodule ".vim/bundle/vim-action-ag"]
 	path = .vim/bundle/vim-action-ag
