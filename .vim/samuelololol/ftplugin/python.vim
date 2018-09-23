@@ -2,6 +2,10 @@
 setlocal textwidth=79
 let &colorcolumn="80,".join(range(81,999),",")
 
+
+":help cinoptions-values
+setlocal cinoptions=+4,(0,(s,U1,(0,w1,(0,W4,(s,j1,(s,m1
+
 function! Addpyheader()
     if getfsize(@%) <= 0
         execute "norm i#!/usr/bin/env python\n"
