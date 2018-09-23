@@ -75,10 +75,6 @@
 	path = .vim/bundle/nerdtree-git-plugin
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin
 	ignore = dirty
-[submodule ".vim/bundle/vim-indent-object_IngoHeimbach"]
-	path = .vim/bundle/vim-indent-object_IngoHeimbach
-	url = https://github.com/IngoHeimbach/vim-indent-object
-	ignore = dirty
 [submodule ".vim/bundle/vim-hier"]
 	path = .vim/bundle/vim-hier
 	url = https://github.com/jceb/vim-hier
