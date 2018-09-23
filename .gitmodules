@@ -103,10 +103,6 @@
 	path = .vim/bundle/QFEnter
 	url = https://github.com/yssl/QFEnter
 	ignore = dirty
-[submodule ".vim/bundle/vim-flake8"]
-	path = .vim/bundle/vim-flake8
-	url = https://github.com/nvie/vim-flake8
-	ignore = dirty
 [submodule ".vim/bundle/nerdcommenter"]
 	path = .vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter

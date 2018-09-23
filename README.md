@@ -97,7 +97,6 @@ $ ln -s ~/dotfiles/.vim ~/.config/nvim
 * https://github.com/chrisbra/vim-diff-enhanced.git
 * https://github.com/junegunn/vim-easy-align
 * https://github.com/Lokaltog/vim-easymotion.git
-* https://github.com/nvie/vim-flake8
 * https://github.com/tpope/vim-fugitive
 * https://github.com/airblade/vim-gitgutter.git
 * https://github.com/fatih/vim-go.git
