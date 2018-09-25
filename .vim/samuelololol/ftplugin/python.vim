@@ -26,12 +26,6 @@ call Addpyheader()
 
 let g:NERDTreeSortOrder = ['\/$', '\.py$', '*', '\.swp$',  '\.bak$', '\~$']
 
-"vim-flake8
-let g:flake8_quickfix_height=10
-if executable('flake8')
-    autocmd BufWritePost *.py call Flake8()
-endif
-
 "TODO: prepare to deprecated below
 let g:GenCscopeCmdC = "find . -name \"*.py\" > cscope.files && cscope -bkq -i cscope.files"
 let g:GenCtagsCmdC = "ctags -R --c-kinds=+p --fields=+iaS --extra=+q --language-force=Python"
