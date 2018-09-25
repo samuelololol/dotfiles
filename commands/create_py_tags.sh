@@ -1,29 +1,35 @@
 #!/bin/bash
-if [ $# -ne 1 ] ; then
+if [ $# -lt 1 ] ; then
     echo './create_py_tags.sh <PROJECT_ROOT_PATH>'
     exit 1
 fi
 PROJECT_ROOT_PATH=$1
 UNAME_STR=`uname`
 
-# remove previous
-if [ -n "$ZSH_VERSION"  ]; then
-    printf "Would you like to remove previous tag file"
-    read -r " ? [Y/N]" response
+if [ $2 = "-f" ]; then
+    printf "Rmove previous tag file"
+    rm -rf tags
+    printf "tags are removed\n"
 else
-    read -r -p " Would you like to remove previous tag file? [Y/N]" response
-fi
+    # remove previous
+    if [ -n "$ZSH_VERSION"  ]; then
+        printf "Would you like to remove previous tag file"
+        read -r " ? [Y/N]" response
+    else
+        read -r -p " Would you like to remove previous tag file? [Y/N]" response
+    fi
 
-# removing old tags
-case "$response" in
-    [yY][eE][sS]|[yY])
-        rm -rf tags
-        printf "tags are removed\n"
-        ;;
-    *)
-        printf "tags are keeped\n"
-        ;;
-esac
+    # removing old tags
+    case "$response" in
+        [yY][eE][sS]|[yY])
+            rm -rf tags
+            printf "tags are removed\n"
+            ;;
+        *)
+            printf "tags are keeped\n"
+            ;;
+    esac
+fi
 
 ctags -R \
 -h ".py" \
