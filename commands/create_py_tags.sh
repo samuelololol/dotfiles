@@ -7,7 +7,7 @@ PROJECT_ROOT_PATH=$1
 UNAME_STR=`uname`
 
 if [ $2 = "-f" ]; then
-    printf "Rmove previous tag file"
+    printf "Remove previous tag file\n"
     rm -rf tags
     printf "tags are removed\n"
 else
