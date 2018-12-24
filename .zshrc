@@ -31,6 +31,7 @@ if [[ "$unamestr" == 'Linux' ]]; then
     echo "using ZSH on Linux"
     platform='Linux'
     plugins=(git vim tmux docker docker-compose zsh-navigation-tools vagrant)
+    export SCIPY_PIL_IMAGE_VIEWER=gqview
 elif [[ "$unamestr" == 'Darwin' ]]; then
     echo "using ZSH on OS X"
     export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/opt/python/libexec/bin:$PATH"  # homebrew
