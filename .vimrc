@@ -47,6 +47,7 @@ filetype indent on
 
 set smartcase
 set ignorecase
+set encoding=utf-8
 
 "folding series setting
 "set fdm=marker
