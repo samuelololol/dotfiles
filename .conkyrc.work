@@ -155,7 +155,7 @@ ${color #98c2c7}/var/tmp/portage:$color ${fs_free_perc /var/tmp/portage}%(Free) 
 ${color #98c2c7}/var/tmp/ccachetmp:$color ${fs_free_perc /var/tmp/ccachetmp}%(Free) ${fs_free /var/tmp/ccachetmp} ${color #78af78}${fs_bar 6 /var/tmp/ccachetmp}$color
 
 Projects
-${color #98c2c7}NGIPS-1.1 $color ${color #98c2c7}${fs_free_perc /home/samuel/p4ngips/Core/NGIPS/Dev/NGIPS-1.1}%(Free) ${fs_free /home/samuel/p4ngips/Core/NGIPS/Dev/NGIPS-1.1} ${color #78af78}${fs_bar 6 /home/samuel/p4ngips/Core/NGIPS/Dev/NGIPS-1.1}$color
+${color #98c2c7}libvirt images $color ${color #98c2c7}${fs_free_perc /var/lib/libvirt/images}%(Free) ${fs_free /var/lib/libvirt/images} ${color #78af78}${fs_bar 6 /var/lib/libvirt/images}$color
 
 ${color #98c2c7}Upload:$color    ${upspeed enp0s25}/s
 ${upspeedgraph enp0s25}
