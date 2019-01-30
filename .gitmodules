@@ -127,3 +127,7 @@
 	path = .vim/bundle/ale
 	url = https://github.com/w0rp/ale
 	ignore = dirty
+[submodule "gdb/gdb-dashboard"]
+	path = gdb/gdb-dashboard
+	url = https://github.com/cyrus-and/gdb-dashboard
+	ignore = dirty

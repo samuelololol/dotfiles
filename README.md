@@ -27,11 +27,12 @@ The listed apps are optional, choosing only needed
 * cscope
 * Doxygen
 * valgrind
+* gdb
 
 
 ## PREPARASIONS
 
-### .bashrc, .zshrc
+### TERM settings
 
 ```
 export TERM=xterm
@@ -51,7 +52,7 @@ alias screen='TERM=xterm-256color screen'
 # ln -s ~/dotfiles/flake8 ~/.config/flake8
 ```
 
-### vim, neovim
+### for vim, neovim
 
 ```
 #vim
@@ -64,6 +65,13 @@ $rm -rf ~/.vim && ln -s dotfiles/.vim   ~/.vim
 
 $ ln -s ~/dotfiles/.vimrc ~/dotfiles/.vim/init.vim (already linked in repository)
 $ ln -s ~/dotfiles/.vim ~/.config/nvim
+```
+
+### for gdb
+
+```
+$ cd ~
+$ ln -s dotfiles/gdb/gdb-dashboard/.gdbinit
 ```
 
 # plugins
