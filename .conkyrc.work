@@ -149,13 +149,15 @@ Read: ${diskio_read sda5}  $alignr Write: ${diskio_write sda5}
 ${diskiograph_read sda5 15,185 78af78 a3a3a3} $alignr${diskiograph_write sda5 15,185 78af78 a3a3a3}
 ${color #98c2c7}swap used:$color ${swapperc}% ${color #78af78}${swapbar 6}$color
 
-Portage
+tmpfs
 ${color #98c2c7}/tmp:$color ${fs_free_perc /tmp}%(Free) ${fs_free /tmp} ${color #78af78}${fs_bar 6 /tmp}$color
 ${color #98c2c7}/var/tmp/portage:$color ${fs_free_perc /var/tmp/portage}%(Free) ${fs_free /var/tmp/portage} ${color #78af78}${fs_bar 6 /var/tmp/portage}$color
-${color #98c2c7}/var/tmp/ccachetmp:$color ${fs_free_perc /var/tmp/ccachetmp}%(Free) ${fs_free /var/tmp/ccachetmp} ${color #78af78}${fs_bar 6 /var/tmp/ccachetmp}$color
 
-Projects
-${color #98c2c7}libvirt images $color ${color #98c2c7}${fs_free_perc /var/lib/libvirt/images}%(Free) ${fs_free /var/lib/libvirt/images} ${color #78af78}${fs_bar 6 /var/lib/libvirt/images}$color
+SSD
+${color #98c2c7}SSD_VMPOOL $color ${color #98c2c7}${fs_free_perc /home/samuel/SSD_VMPOOL}%(Free) ${fs_free /home/samuel/SSD_VMPOOL} ${color #78af78}${fs_bar 6 /home/samuel/SSD_VMPOOL}$color
+${color #98c2c7}SSD_MISC $color ${color #98c2c7}${fs_free_perc /home/samuel/SSD_MISC}%(Free) ${fs_free /home/samuel/SSD_MISC} ${color #78af78}${fs_bar 6 /home/samuel/SSD_MISC}$color
+${color #98c2c7}SSD_REST $color ${color #98c2c7}${fs_free_perc /home/samuel/SSD_REST}%(Free) ${fs_free /home/samuel/SSD_REST} ${color #78af78}${fs_bar 6 /home/samuel/SSD_REST}$color
+
 
 ${color #98c2c7}Upload:$color    ${upspeed enp0s25}/s
 ${upspeedgraph enp0s25}
