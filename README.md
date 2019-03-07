@@ -101,7 +101,6 @@ $ ln -s dotfiles/gdb/gdb-dashboard/.gdbinit
 * https://github.com/jeetsukumaran/vim-buffergator
 * https://github.com/chrisbra/vim-diff-enhanced.git
 * https://github.com/junegunn/vim-easy-align
-* https://github.com/Lokaltog/vim-easymotion.git
 * https://github.com/tpope/vim-fugitive
 * https://github.com/airblade/vim-gitgutter.git
 * https://github.com/rr-/vim-hexdec
