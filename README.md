@@ -84,7 +84,6 @@ $ ln -s dotfiles/gdb/gdb-dashboard/.gdbinit
 
 * https://github.com/skywind3000/asyncrun.vim
 * https://github.com/jiangmiao/auto-pairs
-* https://github.com/kien/ctrlp.vim.git
 * https://github.com/ekalinin/Dockerfile.vim
 * https://github.com/go2null/Mark--Karkat
 * https://github.com/vim-scripts/matchit.zip.git
