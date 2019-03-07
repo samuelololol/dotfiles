@@ -20,7 +20,6 @@ set statusline+=%{&encoding},  " encoding
 set statusline+=%{&fileformat} " file format
 set statusline+=,%{strftime(\"%H:%M:%S\",getftime(expand(\"\%\%\")))}  " file last modified time
 set statusline+=]
-set statusline+=%8*%{fugitive#statusline()} "fugitive
 set statusline+=%6*%=\ %6*%y%6*\ %3*%l%6*\/%L,\ %3*%c%6*\ \<%2*%P%6*\>
 
 set wildmenu

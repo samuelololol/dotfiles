@@ -109,7 +109,7 @@ $ ln -s dotfiles/gdb/gdb-dashboard/.gdbinit
 * https://github.com/rdnetto/YCM-Generator
 * https://github.com/Valloric/YouCompleteMe.git
 
-(not in `bundle/` folder)
+(not in `.vim/pack/original` package)
 
 * https://github.com/vivien/vim-linux-coding-style
 

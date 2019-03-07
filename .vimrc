@@ -78,9 +78,9 @@ set textwidth=80
 "call pathogen#helptags()
 "call pathogen#runtime_append_all_bundles()
 "call pathogen#infect()
-execute pathogen#infect()
-Helptags
-runtime ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
+"execute pathogen#infect()
+"Helptags
+"runtime ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
 
 """disable mouse
 set mouse-=a
@@ -91,8 +91,22 @@ set mouse-=a
 
 """setting key map must in vimrc
 let s:myrtp=&runtimepath
-exec 'set rtp=' . '~/.vim/samuelololol/before,' . s:myrtp
-set runtimepath+=~/.vim/samuelololol
-set runtimepath+=~/.vim/samuelololol/after
-set runtimepath+=~/.vim/local_settings
-set runtimepath+=~/.vim/local_settings/after
+exec 'set rtp=' . '~/.vim/pack/samuelololol/start/samuelololol/before,' . s:myrtp
+"set runtimepath+=~/.vim/samuelololol
+"set runtimepath+=~/.vim/samuelololol/after
+"set runtimepath+=~/.vim/local_settings
+"set runtimepath+=~/.vim/local_settings/after
+
+
+"check whether a git repo folder
+let gitdir=system("git rev-parse --show-toplevel 2>&1 /dev/null;")
+let isnotgitdir=matchstr(gitdir, '^fatal:.*')
+
+if empty(isnotgitdir)
+    "original
+    :packadd nerdtree-git-plugin
+    :packadd vim-fugitive
+    :packadd vim-gitgutter
+    "samuelololol
+    :packadd for_git
+endif

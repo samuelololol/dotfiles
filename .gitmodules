@@ -1,61 +1,61 @@
-[submodule ".vim/bundle/matchit"]
-	path = .vim/bundle/matchit
+[submodule ".vim/pack/original/start/matchit"]
+	path = .vim/pack/original/start/matchit
 	url = https://github.com/vim-scripts/matchit.zip.git
 	ignore = dirty
-[submodule ".vim/bundle/nerdtree"]
-	path = .vim/bundle/nerdtree
+[submodule ".vim/pack/original/start/nerdtree"]
+	path = .vim/pack/original/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 	ignore = dirty
-[submodule ".vim/bundle/surround"]
-	path = .vim/bundle/surround
+[submodule ".vim/pack/original/start/surround"]
+	path = .vim/pack/original/start/surround
 	url = https://github.com/vim-scripts/surround.vim.git
 	ignore = dirty
-[submodule ".vim/bundle/tagbar"]
-	path = .vim/bundle/tagbar
+[submodule ".vim/pack/original/start/tagbar"]
+	path = .vim/pack/original/start/tagbar
 	url = https://github.com/majutsushi/tagbar.git
 	ignore = dirty
-[submodule ".vim/bundle/tasklist"]
-	path = .vim/bundle/tasklist
+[submodule ".vim/pack/original/start/tasklist"]
+	path = .vim/pack/original/start/tasklist
 	url = https://github.com/vim-scripts/TaskList.vim.git
 	ignore = dirty
-[submodule ".vim/bundle/valgrind"]
-	path = .vim/bundle/valgrind
+[submodule ".vim/pack/original/start/valgrind"]
+	path = .vim/pack/original/start/valgrind
 	url = https://github.com/LucHermitte/valgrind.vim
 	ignore = dirty
-[submodule ".vim/bundle/vim-easy-align"]
-	path = .vim/bundle/vim-easy-align
+[submodule ".vim/pack/original/start/vim-easy-align"]
+	path = .vim/pack/original/start/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align
 	ignore = dirty
-[submodule ".vim/bundle/vim-enhanced-diff"]
-	path = .vim/bundle/vim-enhanced-diff
+[submodule ".vim/pack/original/start/vim-enhanced-diff"]
+	path = .vim/pack/original/start/vim-enhanced-diff
 	url = https://github.com/chrisbra/vim-diff-enhanced.git
 	ignore = dirty
-[submodule ".vim/bundle/vim-fugitive"]
-	path = .vim/bundle/vim-fugitive
+[submodule ".vim/pack/original/opt/vim-fugitive"]
+	path = .vim/pack/original/opt/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
 	ignore = dirty
 [submodule ".vim/bundle/vim-pathogen"]
 	path = .vim/bundle/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
 	ignore = dirty
-[submodule ".vim/bundle/vim-gitgutter"]
-	path = .vim/bundle/vim-gitgutter
+[submodule ".vim/pack/original/opt/vim-gitgutter"]
+	path = .vim/pack/original/opt/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
 	ignore = dirty
-[submodule ".vim/bundle/vim-json"]
-	path = .vim/bundle/vim-json
+[submodule ".vim/pack/original/start/vim-json"]
+	path = .vim/pack/original/start/vim-json
 	url = https://github.com/elzr/vim-json/
 	ignore = dirty
-[submodule ".vim/bundle/vim-multiple-cursors"]
-	path = .vim/bundle/vim-multiple-cursors
+[submodule ".vim/pack/original/start/vim-multiple-cursors"]
+	path = .vim/pack/original/start/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
 	ignore = dirty
 [submodule ".zsh"]
 	path = .zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
 	ignore = dirty
-[submodule ".vim/bundle/YouCompleteMe"]
-	path = .vim/bundle/YouCompleteMe
+[submodule ".vim/pack/original/start/YouCompleteMe"]
+	path = .vim/pack/original/start/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
 	ignore = dirty
 [submodule "commands/YCM-Generator"]
@@ -63,56 +63,56 @@
 	url = https://github.com/rdnetto/YCM-Generator
 	branch = stable
 	ignore = dirty
-[submodule ".vim/bundle/nerdtree-git-plugin"]
-	path = .vim/bundle/nerdtree-git-plugin
+[submodule ".vim/pack/original/opt/nerdtree-git-plugin"]
+	path = .vim/pack/original/opt/nerdtree-git-plugin
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin
 	ignore = dirty
-[submodule ".vim/bundle/vim-hier"]
-	path = .vim/bundle/vim-hier
+[submodule ".vim/pack/original/start/vim-hier"]
+	path = .vim/pack/original/start/vim-hier
 	url = https://github.com/jceb/vim-hier
 	ignore = dirty
-[submodule ".vim/bundle/QFGrep"]
-	path = .vim/bundle/QFGrep
+[submodule ".vim/pack/original/start/QFGrep"]
+	path = .vim/pack/original/start/QFGrep
 	url = https://github.com/sk1418/QFGrep
 	ignore = dirty
-[submodule ".vim/bundle/QFEnter"]
-	path = .vim/bundle/QFEnter
+[submodule ".vim/pack/original/start/QFEnter"]
+	path = .vim/pack/original/start/QFEnter
 	url = https://github.com/yssl/QFEnter
 	ignore = dirty
-[submodule ".vim/bundle/nerdcommenter"]
-	path = .vim/bundle/nerdcommenter
+[submodule ".vim/pack/original/start/nerdcommenter"]
+	path = .vim/pack/original/start/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter
 	ignore = dirty
 [submodule ".vim_partial/vim-linux-coding-style"]
 	path = .vim_partial/vim-linux-coding-style
 	url = https://github.com/vivien/vim-linux-coding-style
 	ignore = dirty
-[submodule ".vim/bundle/auto-pairs"]
-	path = .vim/bundle/auto-pairs
+[submodule ".vim/pack/original/start/auto-pairs"]
+	path = .vim/pack/original/start/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs
 	ignore = dirty
-[submodule ".vim/bundle/vim-buffergator"]
-	path = .vim/bundle/vim-buffergator
+[submodule ".vim/pack/original/start/vim-buffergator"]
+	path = .vim/pack/original/start/vim-buffergator
 	url = https://github.com/jeetsukumaran/vim-buffergator
 	ignore = dirty
-[submodule ".vim/bundle/Dockerfile.vim"]
-	path = .vim/bundle/Dockerfile.vim
+[submodule ".vim/pack/original/start/Dockerfile.vim"]
+	path = .vim/pack/original/start/Dockerfile.vim
 	url = https://github.com/ekalinin/Dockerfile.vim
 	ignore = dirty
-[submodule ".vim/bundle/asyncrun.vim"]
-	path = .vim/bundle/asyncrun.vim
+[submodule ".vim/pack/original/start/asyncrun.vim"]
+	path = .vim/pack/original/start/asyncrun.vim
 	url = https://github.com/skywind3000/asyncrun.vim
 	ignore = dirty
-[submodule ".vim/bundle/Mark--Karkat"]
-	path = .vim/bundle/Mark--Karkat
+[submodule ".vim/pack/original/start/Mark--Karkat"]
+	path = .vim/pack/original/start/Mark--Karkat
 	url = https://github.com/go2null/Mark--Karkat
 	ignore = dirty
-[submodule ".vim/bundle/vim-hexdec"]
-	path = .vim/bundle/vim-hexdec
+[submodule ".vim/pack/original/start/vim-hexdec"]
+	path = .vim/pack/original/start/vim-hexdec
 	url = https://github.com/rr-/vim-hexdec
 	ignore = dirty
-[submodule ".vim/bundle/ale"]
-	path = .vim/bundle/ale
+[submodule ".vim/pack/original/start/ale"]
+	path = .vim/pack/original/start/ale
 	url = https://github.com/w0rp/ale
 	ignore = dirty
 [submodule "gdb/gdb-dashboard"]

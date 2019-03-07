@@ -6,7 +6,7 @@ git submodule foreach --recursive git clean -fdx
 #git clean -fdx
 #cd ..
 #git add .zsh
-#cd ~/dotfiles/.vim/bundle/
+#cd ~/dotfiles/.vim/pack/original/start/
 #modules=(
 #auto-pairs
 #crefvim

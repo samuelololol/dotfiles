@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ~/dotfiles/.vim/bundle/YouCompleteMe
+cd ~/dotfiles/.vim/pack/original/start/YouCompleteMe
 if [ "$(uname)" == "Darwin" ]; then
     echo "Build ycm in OS X environment ..."
     #./install.py --clang-completer --gocode-completer --system-libclang --system-boost
