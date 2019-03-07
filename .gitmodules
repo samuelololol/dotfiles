@@ -91,10 +91,6 @@
 	path = .vim/bundle/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs
 	ignore = dirty
-[submodule ".vim/bundle/vim-action-ag"]
-	path = .vim/bundle/vim-action-ag
-	url = https://github.com/Chun-Yang/vim-action-ag
-	ignore = dirty
 [submodule ".vim/bundle/vim-buffergator"]
 	path = .vim/bundle/vim-buffergator
 	url = https://github.com/jeetsukumaran/vim-buffergator
