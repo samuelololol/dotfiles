@@ -91,22 +91,23 @@ set mouse-=a
 
 """setting key map must in vimrc
 let s:myrtp=&runtimepath
-exec 'set rtp=' . '~/.vim/pack/samuelololol/start/samuelololol/before,' . s:myrtp
+exec 'set rtp=' . '~/.vim/before,' . s:myrtp
+"set runtimepath+=~/.vim/pack-after
 "set runtimepath+=~/.vim/samuelololol
 "set runtimepath+=~/.vim/samuelololol/after
 "set runtimepath+=~/.vim/local_settings
 "set runtimepath+=~/.vim/local_settings/after
 
 
-"check whether a git repo folder
-let gitdir=system("git rev-parse --show-toplevel 2>&1 /dev/null;")
-let isnotgitdir=matchstr(gitdir, '^fatal:.*')
-
-if empty(isnotgitdir)
-    "original
-    :packadd nerdtree-git-plugin
-    :packadd vim-fugitive
-    :packadd vim-gitgutter
-    "samuelololol
-    :packadd for_git
-endif
+""check whether a git repo folder
+"let gitdir=system("git rev-parse --show-toplevel 2>&1 /dev/null;")
+"let isnotgitdir=matchstr(gitdir, '^fatal:.*')
+"
+"if empty(isnotgitdir)
+"    "original
+"    :packadd nerdtree-git-plugin
+"    :packadd vim-fugitive
+"    :packadd vim-gitgutter
+"    "samuelololol
+"    :packadd for_git
+"endif
