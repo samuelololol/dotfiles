@@ -197,7 +197,7 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    awful.tag({ "壹", "貳", "參", "肆", "伍", "陸" }, s, awful.layout.layouts[1])
+    awful.tag({ "壹", "貳", "參", "肆", "伍", "陸", "柒", "捌", "玖" }, s, awful.layout.layouts[1])
 
 
     -- Create a promptbox for each screen
