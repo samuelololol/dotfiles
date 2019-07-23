@@ -84,9 +84,14 @@ compinit
 #source $HOME/dotfiles/samuel_node_rc
 #source $HOME/dotfiles/samuel_ruby_rc
 #echo ""
-[[ -s "/usr/bin/neofetch" ]] && neofetch
-[[ -s "/usr/local/bin/neofetch" ]] && neofetch
-[[ -s "/usr/bin/screenfetch"  ]] && screenfetch
+
+if [[ -s "/usr/bin/neofetch" ]]; then
+    neofetch
+elif [[ -s "/usr/local/bin/neofetch" ]]; then
+    neofetch
+elif [[ -s "/usr/bin/screenfetch" ]]; then
+    screenfetch
+fi
 
 #source personal rc setting with gitignored file
 [[ -s "$HOME/dotfiles/samuel_zshrc" ]] && source $HOME/dotfiles/samuel_zshrc
