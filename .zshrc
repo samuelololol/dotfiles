@@ -15,6 +15,7 @@
 
 
 ZSH=$HOME/dotfiles/.zsh
+ZSH_CUSTOM=$HOME/dotfiles/zsh_customization
 #export ZSH_THEME="miloshadzic"
 #export ZSH_THEME="norm"
 #export ZSH_THEME="funky"
