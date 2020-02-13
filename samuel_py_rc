@@ -22,23 +22,23 @@ if [[ "$unamestr" == 'Linux' ]]; then
     # python2 or python3
     if [ -n "$ZSH_VERSION"  ]; then
         printf "Would you like to use ${RED}python3${NC}"
-        read -r "? [y/N]" response
+        read -r "? [Y/n]" response
     else
-        read -r -p "Would you like to use ${RED}python3${NC}? [y/N]" response
+        read -r -p "Would you like to use ${RED}python3${NC}? [Y/n]" response
     fi
 
     case "$response" in
-        [yY][eE][sS]|[yY])
-            export VIRTUALENV_PYTHON=/usr/bin/python3
-            export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-            export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='-p /usr/bin/python3 --no-site-packages'
-            printf "Using ${RED}python${YELLOW}3${NC}\n"
-            ;;
-        *)
+        [nN][oO]|[nN])
             export VIRTUALENV_PYTHON=/usr/bin/python2.7
             export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2.7
             export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='-p /usr/bin/python2.7 --no-site-packages'
             printf "Using ${RED}python${YELLOW}2${NC}\n"
+            ;;
+        *)
+            export VIRTUALENV_PYTHON=/usr/bin/python3
+            export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+            export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='-p /usr/bin/python3 --no-site-packages'
+            printf "Using ${RED}python${YELLOW}3${NC}\n"
             ;;
     esac
 elif [[ "$unamestr" == 'Darwin' ]]; then
@@ -52,26 +52,24 @@ elif [[ "$unamestr" == 'Darwin' ]]; then
     # python2 or python3
     if [ -n "$ZSH_VERSION"  ]; then
         printf "Would you like to use ${RED}python3${NC}"
-        read -r "? [y/N]" response
+        read -r "? [Y/n]" response
     else
-        read -r -p "Would you like to use ${RED}python3${NC}? [y/N]" response
+        read -r -p "Would you like to use ${RED}python3${NC}? [Y/n]" response
     fi
     case "$response" in
-        [yY][eE][sS]|[yY])
-            export PATH=/usr/local/opt/python/libexec/bin:$PATH
-            export VIRTUALENV_PYTHON=/usr/local/bin/python3
-            export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-            export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='-p /usr/local/bin/python3 --no-site-packages'
-            printf "Using ${RED}python${YELLOW}3${NC}\n"
-            ;;
-        *)
-            export VIRTUALENV_PYTHON=/usr/local/bin/python2
-            export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
-            export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='-p /usr/local/bin/python2 --no-site-packages'
+        [nN][oO]|[nN])
+            export VIRTUALENV_PYTHON=/usr/bin/python2.7
+            export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2.7
+            export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='-p /usr/bin/python2.7 --no-site-packages'
             printf "Using ${RED}python${YELLOW}2${NC}\n"
             ;;
+        *)
+            export VIRTUALENV_PYTHON=/usr/bin/python3
+            export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+            export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='-p /usr/bin/python3 --no-site-packages'
+            printf "Using ${RED}python${YELLOW}3${NC}\n"
+            ;;
     esac
-
     # virtualenvwrapper (mac)
     [[ -s "/usr/local/bin/virtualenvwrapper.sh"  ]] && source "/usr/local/bin/virtualenvwrapper.sh"
     #
