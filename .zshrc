@@ -75,6 +75,7 @@ fpath=($HOME/dotfiles/zsh_completion $fpath)
 autoload -U compinit
 compinit
 
+bindkey \^U backward-kill-line
 
 # keymap
 # https://wiki.archlinux.org/index.php/Zsh#Key_bindings
