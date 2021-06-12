@@ -119,3 +119,7 @@
 	path = gdb/gdb-dashboard
 	url = https://github.com/cyrus-and/gdb-dashboard
 	ignore = dirty
+[submodule ".vim/pack/original/start/plantuml-syntax"]
+	path = .vim/pack/original/start/plantuml-syntax
+	url = https://github.com/aklt/plantuml-syntax
+	ignore = dirty
