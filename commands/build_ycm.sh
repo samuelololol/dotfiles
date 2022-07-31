@@ -8,7 +8,7 @@ if [ "$(uname)" == "Darwin" ]; then
     #PATH="/usr/local/opt/llvm/bin:$PATH" \
     #LDFLAGS="-L/usr/local/opt/llvm/lib" \
     #CPPFLAGS="-I/usr/local/opt/llvm/include" \
-    python3 ./install.py --clang-completer --system-boost
+    python3 ./install.py --clang-completer #--system-boost
 
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     echo "Build ycm in Linux environment ..."
