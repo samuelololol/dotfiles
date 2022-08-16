@@ -44,7 +44,7 @@ elif [[ "$unamestr" == 'Darwin' ]]; then
     CPPFLAGS="-I/usr/local/opt/openjdk@11/include"
 
     platform='Darwin'
-    plugins=(git tmux docker docker-compose zsh-navigation-tools osx vagrant)
+    plugins=(git tmux docker docker-compose zsh-navigation-tools vagrant)
 fi
 #plugins=(git vim github svn brew osx npm nvm node yum tmux virtualenv virtualenvwrapper)
 #plugins=(git vim github geeknote svn brew osx npm nvm node virtualenv virtualenvwrapper yum tmux docker docker-compose zsh-navigation-tools web-search)
