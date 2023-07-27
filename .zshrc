@@ -36,12 +36,15 @@ if [[ "$unamestr" == 'Linux' ]]; then
 elif [[ "$unamestr" == 'Darwin' ]]; then
     echo "using ZSH on OS X"
 
-    # homebrew golang
-    export PATH="/Users/samuel/go/bin:/Users/samuel/sdk/go1.18/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/python/libexec/bin:$PATH"
+    # goland golang
+    #export PATH="/Users/samuel/go/bin:/Users/samuel/sdk/go1.18/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/python/libexec/bin:$PATH"
+
+    # home brew golang
+    export PATH="/usr/local/Cellar/go/1.19/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/python/libexec/bin:$PATH"
 
     # homebrew java
     export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
-    CPPFLAGS="-I/usr/local/opt/openjdk@11/include"
+    export CPPFLAGS="-I/usr/local/opt/openjdk@11/include"
 
     platform='Darwin'
     plugins=(git tmux docker docker-compose zsh-navigation-tools macos vagrant)
