@@ -31,7 +31,7 @@ unamestr=`uname`
 if [[ "$unamestr" == 'Linux' ]]; then
     echo "using ZSH on Linux"
     platform='Linux'
-    plugins=(git tmux docker docker-compose zsh-navigation-tools vagrant)
+    plugins=(autoupdate git tmux docker docker-compose zsh-navigation-tools vagrant)
     export SCIPY_PIL_IMAGE_VIEWER=gqview
 elif [[ "$unamestr" == 'Darwin' ]]; then
     echo "using ZSH on OS X"
@@ -47,7 +47,7 @@ elif [[ "$unamestr" == 'Darwin' ]]; then
     export CPPFLAGS="-I/usr/local/opt/openjdk@11/include"
 
     platform='Darwin'
-    plugins=(git tmux docker docker-compose zsh-navigation-tools macos vagrant)
+    plugins=(autoupdate git tmux docker docker-compose zsh-navigation-tools macos vagrant)
 fi
 #plugins=(git vim github svn brew osx npm nvm node yum tmux virtualenv virtualenvwrapper)
 #plugins=(git vim github geeknote svn brew osx npm nvm node virtualenv virtualenvwrapper yum tmux docker docker-compose zsh-navigation-tools web-search)
@@ -97,7 +97,7 @@ bindkey \^U backward-kill-line
 #source $HOME/dotfiles/samuel_ruby_rc
 #echo ""
 
-if [[ -s "/usr/bin/neofetch" ]]; then
+if [[ -s "/usr/bin/neofetch" ]] || [[ -s "/opt/homebrew/bin/neofetch" ]]; then
     neofetch
 elif [[ -s "/usr/local/bin/neofetch" ]]; then
     neofetch
