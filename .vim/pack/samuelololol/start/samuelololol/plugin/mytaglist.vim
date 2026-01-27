@@ -4,7 +4,7 @@
 "     let g:Tlist_Ctags_Cmd='/usr/local/bin/ctags'
 " endif
 
-"let g:Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
+let g:Tlist_Ctags_Cmd = 'ctags'
 let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_Close_On_Select = 1
 
@@ -12,7 +12,7 @@ let Tlist_Close_On_Select = 1
 "Languages
 "Golang
 let s:tlist_def_go_settings ='go;f:function;p:package;t:struct;c:const;v:vars'
- 
+
 "markdown language
 let s:tlist_def_markdown_settings = 'markdown;h:heading'
 

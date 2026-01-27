@@ -31,7 +31,7 @@ unamestr=`uname`
 if [[ "$unamestr" == 'Linux' ]]; then
     echo "using ZSH on Linux"
     platform='Linux'
-    plugins=(autoupdate git tmux docker docker-compose zsh-navigation-tools vagrant)
+    plugins=(git tmux docker docker-compose zsh-navigation-tools vagrant postgres)
     export SCIPY_PIL_IMAGE_VIEWER=gqview
 elif [[ "$unamestr" == 'Darwin' ]]; then
     echo "using ZSH on OS X"
@@ -40,14 +40,15 @@ elif [[ "$unamestr" == 'Darwin' ]]; then
     #export PATH="/Users/samuel/go/bin:/Users/samuel/sdk/go1.18/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/python/libexec/bin:$PATH"
 
     # home brew golang
-    export PATH="/usr/local/Cellar/go/1.19/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/python/libexec/bin:$PATH"
+    # export PATH="/usr/local/Cellar/go/1.19/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/python/libexec/bin:$PATH"
 
     # homebrew java
-    export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
-    export CPPFLAGS="-I/usr/local/opt/openjdk@11/include"
+    # export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
+    # export CPPFLAGS="-I/usr/local/opt/openjdk@11/include"
+    export PATH="/usr/local/bin:/opt/homebrew/bin:$PATH"
 
     platform='Darwin'
-    plugins=(autoupdate git tmux docker docker-compose zsh-navigation-tools macos vagrant)
+    plugins=(git tmux docker docker-compose zsh-navigation-tools macos vagrant postgres)
 fi
 #plugins=(git vim github svn brew osx npm nvm node yum tmux virtualenv virtualenvwrapper)
 #plugins=(git vim github geeknote svn brew osx npm nvm node virtualenv virtualenvwrapper yum tmux docker docker-compose zsh-navigation-tools web-search)
@@ -113,3 +114,10 @@ fi
 #  which is already ignored from git repo for customization)
 #
 #alias vim='/usr/local/bin/nvim'
+
+
+#If you need to have libxml2 first in your PATH, run:
+export PATH="/opt/homebrew/opt/libxml2/bin:$PATH"
+#For compilers to find libxml2 you may need to set:
+export LDFLAGS="-L/opt/homebrew/opt/libxml2/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/libxml2/include"
