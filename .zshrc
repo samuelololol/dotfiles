@@ -45,7 +45,7 @@ elif [[ "$unamestr" == 'Darwin' ]]; then
     # homebrew java
     # export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
     # export CPPFLAGS="-I/usr/local/opt/openjdk@11/include"
-    export PATH="/usr/local/bin:/opt/homebrew/bin:$PATH"
+    export PATH="~/.local/bin:/usr/local/bin:/opt/homebrew/bin:$PATH"
 
     platform='Darwin'
     plugins=(git tmux docker docker-compose zsh-navigation-tools macos vagrant postgres)
@@ -121,3 +121,6 @@ export PATH="/opt/homebrew/opt/libxml2/bin:$PATH"
 #For compilers to find libxml2 you may need to set:
 export LDFLAGS="-L/opt/homebrew/opt/libxml2/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/libxml2/include"
+
+# Added by codebase-memory-mcp install
+export PATH="/Users/samuelchen/.local/bin:$PATH"

@@ -123,7 +123,3 @@
 	path = .vim/pack/original/start/plantuml-syntax
 	url = https://github.com/aklt/plantuml-syntax
 	ignore = dirty
-[submodule ".vim/pack/original/start/copilot.vim"]
-	path = .vim/pack/original/start/copilot.vim
-	url = https://github.com/github/copilot.vim
-	ignore = dirty
